@@ -1,0 +1,23 @@
+uuid: ea84f5d5-8660-451a-9cfd-a3f3677879c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dpi
+    - node.type.islandora_object
+id: node.islandora_object.field_dpi
+field_name: field_dpi
+entity_type: node
+bundle: islandora_object
+label: DPI
+description: 'The number of dots that can be placed in a line across one inch - Physical paper (Printed document).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

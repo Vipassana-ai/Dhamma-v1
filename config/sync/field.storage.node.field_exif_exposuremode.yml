@@ -1,0 +1,20 @@
+uuid: 5109e48f-9acb-4ecc-a334-d24dda3fd83c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_exif_exposuremode
+field_name: field_exif_exposuremode
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

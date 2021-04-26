@@ -1,0 +1,78 @@
+uuid: 90e37aae-3bd8-47fb-b437-e4cdeef8971c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.fits_technical_metadata.field_complete
+    - field.field.media.fits_technical_metadata.field_file_size
+    - field.field.media.fits_technical_metadata.field_media_file
+    - field.field.media.fits_technical_metadata.field_media_of
+    - field.field.media.fits_technical_metadata.field_media_use
+    - field.field.media.fits_technical_metadata.field_mime_type
+    - field.field.media.fits_technical_metadata.fits_ois_file_information_md5che
+    - image.style.medium
+    - media.type.fits_technical_metadata
+  module:
+    - field_layout
+    - image
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          a41e2c59-eb8d-419c-929f-4e3d948d5343:
+            uuid: a41e2c59-eb8d-419c-929f-4e3d948d5343
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:fits_technical_metadata:thumbnail'
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_style: medium
+                  image_link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: media.fits_technical_metadata.media_library
+targetEntityType: media
+bundle: fits_technical_metadata
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    weight: 0
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_complete: true
+  field_file_size: true
+  field_media_file: true
+  field_media_of: true
+  field_media_use: true
+  field_mime_type: true
+  fits_ois_file_information_md5che: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  uid: true

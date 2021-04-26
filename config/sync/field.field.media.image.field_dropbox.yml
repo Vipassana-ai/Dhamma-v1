@@ -1,0 +1,23 @@
+uuid: 4fab9315-8565-4486-8d77-55df68d58d1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_dropbox
+    - media.type.image
+  module:
+    - link
+id: media.image.field_dropbox
+field_name: field_dropbox
+entity_type: media
+bundle: image
+label: Dropbox
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

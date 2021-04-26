@@ -1,0 +1,23 @@
+uuid: 2bff4f63-a041-41f1-b17b-f727a06bf588
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_separatedmaterial
+    - node.type.archival_resource
+  module:
+    - text
+_core:
+  default_config_hash: '-J5WNix3ve7a5IqQFhjJ-0jKYyVfvOx-BLa49W45uos'
+id: node.archival_resource.field_separatedmaterial
+field_name: field_separatedmaterial
+entity_type: node
+bundle: archival_resource
+label: 'Separated Materials'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

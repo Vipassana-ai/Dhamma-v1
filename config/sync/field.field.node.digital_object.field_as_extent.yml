@@ -1,0 +1,40 @@
+uuid: 188490c0-3dd1-4c64-a34e-85a5e438624d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_as_extent
+    - node.type.digital_object
+  module:
+    - archivesspace
+_core:
+  default_config_hash: _6NAktoHU2nkajDGYUl7ZCjFGnTrm2SnJa3KbAhfJ_I
+id: node.digital_object.field_as_extent
+field_name: field_as_extent
+entity_type: node
+bundle: digital_object
+label: Extents
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  extent_types:
+    linear_feet: 'Linear Feet'
+    cubic_feet: 'Cubic Feet'
+    cassettes: Cassettes
+    files: Files
+    gigabytes: Gigabytes
+    leaves: Leaves
+    megabytes: Megabytes
+    photographic_prints: 'Photographic Prints'
+    photographic_slides: 'Photographic Slides'
+    reels: Reels
+    sheets: Sheets
+    terabytes: Terabytes
+    volumes: Volumes
+  portion_values:
+    whole: Whole
+    part: Part
+field_type: as_extent

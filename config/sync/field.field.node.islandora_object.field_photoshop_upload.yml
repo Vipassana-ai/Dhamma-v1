@@ -1,0 +1,28 @@
+uuid: 06307aa2-99b2-4345-a747-4d2088f61cbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_photoshop_upload
+    - media.type.image
+    - node.type.islandora_object
+id: node.islandora_object.field_photoshop_upload
+field_name: field_photoshop_upload
+entity_type: node
+bundle: islandora_object
+label: 'Enhanced File Upload'
+description: 'Photoshop, Corel draw'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

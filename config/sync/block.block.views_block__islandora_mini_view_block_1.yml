@@ -1,0 +1,24 @@
+uuid: 3c4f7cd2-f956-4f0d-8f18-5e15460eb682
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.islandora_mini_view
+  module:
+    - views
+  theme:
+    - solid
+id: views_block__islandora_mini_view_block_1
+theme: solid
+region: sidebar
+weight: 0
+provider: null
+plugin: 'views_block:islandora_mini_view-block_1'
+settings:
+  id: 'views_block:islandora_mini_view-block_1'
+  label: 'Islandora - Recently Added'
+  provider: views
+  label_display: visible
+  views_label: 'Islandora - Recently Added'
+  items_per_page: none
+visibility: {  }

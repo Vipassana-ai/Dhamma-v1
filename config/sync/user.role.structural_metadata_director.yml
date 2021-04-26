@@ -1,0 +1,27 @@
+uuid: 12f5136a-3f8f-4d6d-9244-4d3e6ab0f40e
+langcode: en
+status: true
+dependencies: {  }
+id: structural_metadata_director
+label: 'Structural Metadata Director'
+weight: 4
+is_admin: null
+permissions:
+  - 'edit field_unique_id'
+  - 'edit own field_at_location'
+  - 'edit own field_at_location1'
+  - 'edit own field_bt_location'
+  - 'edit own field_bt_location1'
+  - 'edit own field_dt_location'
+  - 'edit own field_dt_location1'
+  - 'edit own field_physical_color_mode'
+  - 'edit own field_physical_condition'
+  - 'edit own field_physical_location'
+  - 'edit own field_physical_location11'
+  - 'edit own field_processing_location'
+  - 'edit own field_processing_location1'
+  - 'edit own field_raw_location'
+  - 'edit own field_raw_location1'
+  - 'edit own field_rescan_date1'
+  - 'edit own field_rescan_done'
+  - 'edit own field_scanner_name'

@@ -1,0 +1,13 @@
+uuid: 9589c813-045d-4ca6-8b71-6cd6b6dd0c90
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.digital_object
+_core:
+  default_config_hash: vUCgM0CGxbc9oLKMyNXfJAFG7stQjhTH1g5XWPJq04A
+id: node.digital_object
+target_entity_type_id: node
+target_bundle: digital_object
+default_langcode: site_default
+language_alterable: false

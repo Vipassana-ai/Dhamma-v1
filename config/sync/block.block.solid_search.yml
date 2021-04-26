@@ -1,0 +1,23 @@
+uuid: e9123e22-0f32-439f-87f0-6bdb742bb5d9
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - solid
+_core:
+  default_config_hash: wKNSQKJuNYu3wPkV8Zm0vXMtpGC2dd-2AVOtTqLJuto
+id: solid_search
+theme: solid
+region: navigation
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+  page_id: ''
+visibility: {  }

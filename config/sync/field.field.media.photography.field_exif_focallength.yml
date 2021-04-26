@@ -1,0 +1,21 @@
+uuid: 3e2aa096-98a2-4838-8e30-114a16e822bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_exif_focallength
+    - media.type.photography
+  module:
+    - text
+id: media.photography.field_exif_focallength
+field_name: field_exif_focallength
+entity_type: media
+bundle: photography
+label: Focal
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

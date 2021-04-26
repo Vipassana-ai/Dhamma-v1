@@ -1,0 +1,9 @@
+status: 1
+pattern: '[node:field_identifier]_[node:field_unique_id]_[node:langcode]_[node:field_owner]_[node:field_period_date]_[node:field_description]'
+escape: false
+preserve_titles: false
+save: 0
+chunk: '50'
+dependencies:
+  config:
+    - node.type.islandora_object

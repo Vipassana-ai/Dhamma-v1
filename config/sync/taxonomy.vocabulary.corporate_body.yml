@@ -1,0 +1,10 @@
+uuid: d05874fb-19b5-48f9-a020-717c0c6ea53f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: yJCIaRn817xheJ5ZxlH81SsHrBpPBYZVVPUUV5Haza8
+name: Centres
+vid: corporate_body
+description: 'An organization or group of where Vipassana is practiced, research is done, Headquarters.'
+weight: -11

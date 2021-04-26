@@ -1,0 +1,20 @@
+uuid: 37eb4ca0-ef38-491a-91dc-fa35b9401fcf
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - taxonomy
+id: media.field_exif_keywords
+field_name: field_exif_keywords
+entity_type: media
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

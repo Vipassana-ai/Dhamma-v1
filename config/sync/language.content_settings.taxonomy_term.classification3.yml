@@ -1,0 +1,11 @@
+uuid: 05ab0505-9446-4ae8-9bbb-73640998fda1
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.classification3
+id: taxonomy_term.classification3
+target_entity_type_id: taxonomy_term
+target_bundle: classification3
+default_langcode: site_default
+language_alterable: false

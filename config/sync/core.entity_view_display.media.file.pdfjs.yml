@@ -1,0 +1,90 @@
+uuid: acc79264-8fa4-47f4-9658-22c3c438db6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.pdfjs
+    - field.field.media.file.field_access_terms
+    - field.field.media.file.field_file_size
+    - field.field.media.file.field_media_file
+    - field.field.media.file.field_media_of
+    - field.field.media.file.field_media_use
+    - field.field.media.file.field_mime_type
+    - field.field.media.file.field_original_name
+    - media.type.file
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - pdf
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          755cb5c5-3c27-42af-b2d4-d49c9f4bdb9f:
+            uuid: 755cb5c5-3c27-42af-b2d4-d49c9f4bdb9f
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:file:field_media_file'
+              formatter:
+                type: pdf_default
+                label: visually_hidden
+                settings:
+                  keep_pdfjs: '1'
+                  width: 100%
+                  height: 640px
+                  page: ''
+                  zoom: ''
+                  custom_zoom: ''
+                  pagemode: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+_core:
+  default_config_hash: PZaIIWkXbfvvBYE9K8KmowscOHs80noZtxzo8AVn2Dc
+id: media.file.pdfjs
+targetEntityType: media
+bundle: file
+mode: pdfjs
+content:
+  field_media_file:
+    type: pdf_default
+    weight: 0
+    region: content
+    label: visually_hidden
+    settings:
+      keep_pdfjs: '1'
+      width: 100%
+      height: 640px
+      page: ''
+      zoom: ''
+      custom_zoom: ''
+      pagemode: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_access_terms: true
+  field_file_size: true
+  field_gemini_uri: true
+  field_media_of: true
+  field_media_use: true
+  field_mime_type: true
+  field_original_name: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

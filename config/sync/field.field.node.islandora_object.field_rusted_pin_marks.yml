@@ -1,0 +1,29 @@
+uuid: 475cc0b2-31dd-40a5-9f9a-ecd55aa20838
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rusted_pin_marks
+    - node.type.islandora_object
+    - taxonomy.vocabulary.conservator
+id: node.islandora_object.field_rusted_pin_marks
+field_name: field_rusted_pin_marks
+entity_type: node
+bundle: islandora_object
+label: 'Rusted Pin Marks'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      conservator: conservator
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

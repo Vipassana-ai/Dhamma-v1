@@ -1,0 +1,39 @@
+uuid: 454df2f2-6cd2-4101-9cdc-137ee2d748c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dimensions_height_11
+    - node.type.islandora_object
+  module:
+    - dimension
+id: node.islandora_object.field_dimensions_height_11
+field_name: field_dimensions_height_11
+entity_type: node
+bundle: islandora_object
+label: Dimensions
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  width:
+    factor: '1'
+    min: ''
+    max: ''
+    prefix: ''
+    suffix: ''
+  height:
+    factor: '1'
+    min: ''
+    max: ''
+    prefix: ''
+    suffix: ''
+  value:
+    factor: 1
+    min: ''
+    max: ''
+    prefix: ''
+    suffix: ''
+field_type: area_field_type

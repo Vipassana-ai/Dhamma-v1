@@ -1,0 +1,19 @@
+uuid: 0401c2ed-958b-4e07-acbf-9cefdc9322db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_re_name_1
+    - node.type.islandora_object
+id: node.islandora_object.field_file_re_name_1
+field_name: field_file_re_name_1
+entity_type: node
+bundle: islandora_object
+label: 'File Re-name 1'
+description: 'Renaming done? If yes, then enter the renamed file name.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

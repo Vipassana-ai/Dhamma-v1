@@ -1,0 +1,20 @@
+uuid: 9e57bcf2-5bbe-4488-895f-94b58ba9ac9e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_exif_whitebalance
+field_name: field_exif_whitebalance
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,14 @@
+name: Flysystem SFTP
+description: 'Provides an SFTP plugin for Flysystem.'
+package: Flysystem
+type: module
+# core: 8.x
+# version: 8.0-dev
+dependencies:
+ - flysystem
+
+# Information added by Drupal.org packaging script on 2017-06-14
+version: '8.x-1.x-dev'
+core: '8.x'
+project: 'flysystem_sftp'
+datestamp: 1497470344

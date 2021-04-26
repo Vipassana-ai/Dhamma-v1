@@ -1,0 +1,23 @@
+uuid: b0f50e19-5431-426c-9766-4e507bbe5f73
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_archival_box_number
+    - node.type.islandora_object
+id: node.islandora_object.field_archival_box_number
+field_name: field_archival_box_number
+entity_type: node
+bundle: islandora_object
+label: 'Archival Box Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

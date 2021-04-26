@@ -1,0 +1,21 @@
+uuid: 423b97a4-6feb-4357-8784-febf4c4611c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_medium
+    - node.type.islandora_object
+  module:
+    - options
+id: node.islandora_object.field_medium
+field_name: field_medium
+entity_type: node
+bundle: islandora_object
+label: Medium
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

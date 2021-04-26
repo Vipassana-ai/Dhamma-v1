@@ -1,0 +1,7 @@
+addSuccess: 'Annotation has been successfully added.'
+addFailed: 'Annotation cannot be added.'
+addNotAllowed: 'Sorry, you do not have permission to annotate on this image.'
+removeSuccess: 'Annotation has been successfully removed.'
+removeFailed: 'Annotation cannot be removed.'
+updateSuccess: 'Annotation has been successfully updated.'
+updateFailed: 'Annotation cannot be updated.'

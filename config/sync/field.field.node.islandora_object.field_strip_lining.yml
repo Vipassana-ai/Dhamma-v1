@@ -1,0 +1,29 @@
+uuid: 005be248-6694-46e7-9e67-5bd54173543f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_strip_lining
+    - node.type.islandora_object
+    - taxonomy.vocabulary.conservator
+id: node.islandora_object.field_strip_lining
+field_name: field_strip_lining
+entity_type: node
+bundle: islandora_object
+label: 'Strip lining'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      conservator: conservator
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

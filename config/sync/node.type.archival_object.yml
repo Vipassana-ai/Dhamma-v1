@@ -1,0 +1,23 @@
+uuid: 9da15ff3-355b-4401-8e4f-5e29328c5a56
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - archivesspace
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: XXG4ikWETO3hBFWQG0AvMTWmH2uv8SqgAdf2rBp9kU8
+name: 'Archival Object'
+type: archival_object
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

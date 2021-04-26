@@ -1,0 +1,23 @@
+uuid: e258fc17-9b08-4ba0-a098-cb0aa3a147d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_after_treatment_ph
+    - node.type.islandora_object
+id: node.islandora_object.field_after_treatment_ph
+field_name: field_after_treatment_ph
+entity_type: node
+bundle: islandora_object
+label: 'After Treatment pH'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 14
+  prefix: ''
+  suffix: ' pH'
+field_type: float

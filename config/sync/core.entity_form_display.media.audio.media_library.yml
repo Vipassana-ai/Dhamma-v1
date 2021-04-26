@@ -1,0 +1,54 @@
+uuid: 13ce6748-ed4f-470b-8d46-c55fea726a4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.audio.field_access_terms
+    - field.field.media.audio.field_file_size
+    - field.field.media.audio.field_media_audio_file
+    - field.field.media.audio.field_media_of
+    - field.field.media.audio.field_media_use
+    - field.field.media.audio.field_mime_type
+    - field.field.media.audio.field_original_name
+    - media.type.audio
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+_core:
+  default_config_hash: 28vwMIYtvyjPcD4RyciZXIztxtZgmuWRCNgYemr_SZE
+id: media.audio.media_library
+targetEntityType: media
+bundle: audio
+mode: media_library
+content:
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_access_terms: true
+  field_file_size: true
+  field_media_audio_file: true
+  field_media_of: true
+  field_media_use: true
+  field_mime_type: true
+  field_original_name: true
+  name: true
+  path: true
+  status: true
+  uid: true

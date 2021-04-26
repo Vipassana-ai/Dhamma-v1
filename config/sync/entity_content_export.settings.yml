@@ -1,0 +1,6 @@
+entity_type_bundles:
+  'node:islandora_object': 'node:islandora_object'
+entity_bundle_configuration:
+  node:
+    islandora_object:
+      display_mode: node.islandora_object.open_seadragon

@@ -1,0 +1,24 @@
+uuid: 67caad33-e708-4e5a-8a57-e06b340585d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.digital_object
+_core:
+  default_config_hash: ClTT9BPapUmcNbxZjnprfddKNRLyHA5mBWavuJuT7KU
+id: node.digital_object.promote
+field_name: promote
+entity_type: node
+bundle: digital_object
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

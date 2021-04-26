@@ -1,0 +1,91 @@
+uuid: 889cb6b2-3b4b-4058-af2b-8eb01c51f1a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.subject.field_authority_link
+    - taxonomy.vocabulary.subject
+  module:
+    - controlled_access_terms
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          c93d5f6b-de7f-4677-adfd-b31e55e9f7f8:
+            uuid: c93d5f6b-de7f-4677-adfd-b31e55e9f7f8
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:subject:description'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          01a9b48c-df0a-44a7-826b-7557b1db55a7:
+            uuid: 01a9b48c-df0a-44a7-826b-7557b1db55a7
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:subject:field_authority_link'
+              formatter:
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: _blank
+                third_party_settings: {  }
+                type: authority_formatter_default
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+_core:
+  default_config_hash: 3yMrATFYT7qVlZ_yZ36wuZPE_ueigt20gMnev5Yf_QE
+id: taxonomy_term.subject.default
+targetEntityType: taxonomy_term
+bundle: subject
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_authority_link:
+    weight: 103
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: _blank
+    third_party_settings: {  }
+    type: authority_formatter_default
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

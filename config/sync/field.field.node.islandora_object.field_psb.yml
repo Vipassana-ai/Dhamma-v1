@@ -1,0 +1,23 @@
+uuid: f6817af2-1571-47ae-952b-b5bb4ff94fd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_psb
+    - node.type.islandora_object
+id: node.islandora_object.field_psb
+field_name: field_psb
+entity_type: node
+bundle: islandora_object
+label: 'Enhanced Image'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

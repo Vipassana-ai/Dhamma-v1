@@ -1,0 +1,14 @@
+uuid: c3f82af8-7f84-44d2-9e62-c3b234f527fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.structural_metadata_director
+  module:
+    - user
+id: user_remove_role_action.structural_metadata_director
+label: 'Remove the Structural Metadata Director role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: structural_metadata_director

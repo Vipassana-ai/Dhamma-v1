@@ -1,0 +1,10 @@
+name: 'date_range_picker'
+type: module
+description: 'Pick a date range.'
+core: 8.x
+package: 'Custom'
+
+# Information added by Drupal.org packaging script on 2020-01-27
+version: '8.x-1.0-beta1'
+project: 'date_range_picker'
+datestamp: 1580121756

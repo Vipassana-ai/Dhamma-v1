@@ -1,0 +1,6 @@
+mediasync.admin:
+  title: 'MediaSync Settings'
+  description: 'Settings for the media synchonization'
+  parent: system.admin_config_media
+  route_name: mediasync.settings
+  weight: 100

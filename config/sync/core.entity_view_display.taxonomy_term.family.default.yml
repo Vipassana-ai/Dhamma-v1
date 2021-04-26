@@ -1,0 +1,178 @@
+uuid: 80e28d5f-0fa8-4f3a-8491-e6ddd6345850
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.family.field_authority_link
+    - field.field.taxonomy_term.family.field_cat_date_begin
+    - field.field.taxonomy_term.family.field_cat_date_end
+    - field.field.taxonomy_term.family.field_relationships
+    - taxonomy.vocabulary.family
+  module:
+    - controlled_access_terms
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          1ca2832e-6b49-4df2-ba8c-003def1de4a8:
+            uuid: 1ca2832e-6b49-4df2-ba8c-003def1de4a8
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:family:description'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          f0adc09f-b1ed-4778-8f08-b0f84f6f90a0:
+            uuid: f0adc09f-b1ed-4778-8f08-b0f84f6f90a0
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:family:field_cat_date_begin'
+              formatter:
+                label: above
+                settings:
+                  date_separator: dash
+                  date_order: big_endian
+                  month_format: mm
+                  day_format: dd
+                third_party_settings: {  }
+                type: edtf_default
+            additional: {  }
+            weight: 1
+          34f78ed5-1ed7-4825-81f7-309fdefb1342:
+            uuid: 34f78ed5-1ed7-4825-81f7-309fdefb1342
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:family:field_cat_date_end'
+              formatter:
+                label: above
+                settings:
+                  date_separator: dash
+                  date_order: big_endian
+                  month_format: mm
+                  day_format: dd
+                third_party_settings: {  }
+                type: edtf_default
+            additional: {  }
+            weight: 2
+          346b26ad-46b9-413a-937f-385cb43af3c6:
+            uuid: 346b26ad-46b9-413a-937f-385cb43af3c6
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:family:field_authority_link'
+              formatter:
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: _blank
+                third_party_settings: {  }
+                type: authority_formatter_default
+            additional: {  }
+            weight: 3
+          df7f7b36-79ce-435e-9c82-24ea9acfa8b1:
+            uuid: df7f7b36-79ce-435e-9c82-24ea9acfa8b1
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:family:field_relationships'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: typed_relation_default
+            additional: {  }
+            weight: 4
+        third_party_settings: {  }
+_core:
+  default_config_hash: 4NbQYruYFUapF4M8iOlQBaNczr0hr6KhxR-PhRQxjZs
+id: taxonomy_term.family.default
+targetEntityType: taxonomy_term
+bundle: family
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_authority_link:
+    weight: 10
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: _blank
+    third_party_settings: {  }
+    type: authority_formatter_default
+    region: content
+  field_cat_date_begin:
+    weight: 8
+    label: above
+    settings:
+      date_separator: dash
+      date_order: big_endian
+      month_format: mm
+      day_format: dd
+    third_party_settings: {  }
+    type: edtf_default
+    region: content
+  field_cat_date_end:
+    weight: 9
+    label: above
+    settings:
+      date_separator: dash
+      date_order: big_endian
+      month_format: mm
+      day_format: dd
+    third_party_settings: {  }
+    type: edtf_default
+    region: content
+  field_relationships:
+    weight: 11
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: typed_relation_default
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,30 @@
+uuid: 8ef033cb-ea48-4071-9d4d-dfce000b3b06
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_final_high_jpeg_upload
+    - media.type.file
+    - media.type.image
+    - node.type.islandora_object
+id: node.islandora_object.field_final_high_jpeg_upload
+field_name: field_final_high_jpeg_upload
+entity_type: node
+bundle: islandora_object
+label: 'Final High Jpeg Upload'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      file: file
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: file
+field_type: entity_reference

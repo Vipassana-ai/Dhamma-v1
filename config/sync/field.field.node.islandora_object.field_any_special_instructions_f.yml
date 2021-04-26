@@ -1,0 +1,19 @@
+uuid: f5dbcb56-f432-4891-8c3c-defbe20de2c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_any_special_instructions_f
+    - node.type.islandora_object
+id: node.islandora_object.field_any_special_instructions_f
+field_name: field_any_special_instructions_f
+entity_type: node
+bundle: islandora_object
+label: 'Any Special instructions for handling '
+description: 'Eg: Don''t handle in this manner/ Handal with care'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

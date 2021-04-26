@@ -1,0 +1,7 @@
+mediasync.settings:
+  path: '/admin/config/media/mediasync'
+  defaults:
+    _form: '\Drupal\mediasync\Form\MediasyncSettingsForm'
+    _title: 'MediaSync'
+  requirements:
+    _permission: 'administer site configuration'

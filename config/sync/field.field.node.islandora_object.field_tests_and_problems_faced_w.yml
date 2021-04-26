@@ -1,0 +1,19 @@
+uuid: 22f6538c-d772-48da-8ae3-d2e833077630
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tests_and_problems_faced_w
+    - node.type.islandora_object
+id: node.islandora_object.field_tests_and_problems_faced_w
+field_name: field_tests_and_problems_faced_w
+entity_type: node
+bundle: islandora_object
+label: 'Tests and problems faced with proposed treatment '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

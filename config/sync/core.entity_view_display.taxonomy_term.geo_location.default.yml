@@ -1,0 +1,165 @@
+uuid: cbebd1df-f22f-46a2-b1de-8ddd330ba616
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.geo_location.field_authority_link
+    - field.field.taxonomy_term.geo_location.field_geo_alt_name
+    - field.field.taxonomy_term.geo_location.field_geo_broader
+    - field.field.taxonomy_term.geo_location.field_geo_geolocation
+    - taxonomy.vocabulary.geo_location
+  module:
+    - controlled_access_terms
+    - field_layout
+    - geolocation
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          659c6643-568c-4884-a769-1dd6f0beb4c2:
+            uuid: 659c6643-568c-4884-a769-1dd6f0beb4c2
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:geo_location:field_authority_link'
+              formatter:
+                label: inline
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: _blank
+                third_party_settings: {  }
+                type: authority_formatter_default
+            additional: {  }
+            weight: 0
+          1b20aaf7-1581-4346-a399-defd362ff3ef:
+            uuid: 1b20aaf7-1581-4346-a399-defd362ff3ef
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:geo_location:field_geo_geolocation'
+              formatter:
+                label: inline
+                settings: {  }
+                third_party_settings: {  }
+                type: geolocation_latlng
+            additional: {  }
+            weight: 1
+          a1a554b4-ee84-4fb8-b652-07c86c419665:
+            uuid: a1a554b4-ee84-4fb8-b652-07c86c419665
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:geo_location:field_geo_alt_name'
+              formatter:
+                label: inline
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 2
+          1a07c455-13d3-4d0c-bf69-632119fd9366:
+            uuid: 1a07c455-13d3-4d0c-bf69-632119fd9366
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:geo_location:field_geo_broader'
+              formatter:
+                label: inline
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 3
+          c5dbe0d7-9891-4606-bfff-cc3623b9cd9f:
+            uuid: c5dbe0d7-9891-4606-bfff-cc3623b9cd9f
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:geo_location:description'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 4
+        third_party_settings: {  }
+_core:
+  default_config_hash: 2IWu7AK6BJrbzWfbJyQntIT3yljHO6KDqltuhjUMQQU
+id: taxonomy_term.geo_location.default
+targetEntityType: taxonomy_term
+bundle: geo_location
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_authority_link:
+    weight: 1
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: _blank
+    third_party_settings: {  }
+    type: authority_formatter_default
+    region: content
+  field_geo_alt_name:
+    weight: 4
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_geo_broader:
+    weight: 5
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_geo_geolocation:
+    weight: 2
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: geolocation_latlng
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

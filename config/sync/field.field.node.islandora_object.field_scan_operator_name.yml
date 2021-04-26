@@ -1,0 +1,19 @@
+uuid: f276ff33-c783-4188-8b5a-278e6bfd7e91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_scan_operator_name
+    - node.type.islandora_object
+id: node.islandora_object.field_scan_operator_name
+field_name: field_scan_operator_name
+entity_type: node
+bundle: islandora_object
+label: 'Scan Operator Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

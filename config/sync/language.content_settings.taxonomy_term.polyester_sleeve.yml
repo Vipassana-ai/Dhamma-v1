@@ -1,0 +1,11 @@
+uuid: 8c5ff83b-5acc-4708-9e7e-05ffc9a69c64
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.polyester_sleeve
+id: taxonomy_term.polyester_sleeve
+target_entity_type_id: taxonomy_term
+target_bundle: polyester_sleeve
+default_langcode: site_default
+language_alterable: false

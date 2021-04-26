@@ -1,0 +1,19 @@
+uuid: 6de610bf-fd8d-435a-b90d-e9026c91a4b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_white_background
+    - node.type.islandora_object
+id: node.islandora_object.field_white_background
+field_name: field_white_background
+entity_type: node
+bundle: islandora_object
+label: 'White Background'
+description: 'Type Yes/No. (Photoshop terms to remove background)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

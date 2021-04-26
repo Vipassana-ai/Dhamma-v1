@@ -1,0 +1,21 @@
+uuid: 27e09017-ee54-4e6b-8e32-1c26c824edc6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_owner
+    - node.type.islandora_object
+id: node.islandora_object.field_owner
+field_name: field_owner
+entity_type: node
+bundle: islandora_object
+label: Owner
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: VRI
+default_value_callback: ''
+settings: {  }
+field_type: string

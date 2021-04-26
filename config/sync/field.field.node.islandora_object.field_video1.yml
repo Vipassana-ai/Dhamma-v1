@@ -1,0 +1,26 @@
+uuid: fb459ab3-164d-4283-93e9-7e7e5a0cdf91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video1
+    - node.type.islandora_object
+  module:
+    - video
+id: node.islandora_object.field_video1
+field_name: field_video1
+entity_type: node
+bundle: islandora_object
+label: Video1
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: ''
+  file_directory: 'videos/[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: video

@@ -1,0 +1,21 @@
+uuid: 05bb0fd6-eb94-4767-9c3f-3e8b23899653
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_scan_color_mode
+    - node.type.islandora_object
+  module:
+    - options
+id: node.islandora_object.field_scan_color_mode
+field_name: field_scan_color_mode
+entity_type: node
+bundle: islandora_object
+label: 'Scan color mode'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

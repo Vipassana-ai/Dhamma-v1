@@ -1,0 +1,23 @@
+uuid: e1b2d98f-4d58-4abc-b09d-dfd87bf713c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bt_location
+    - node.type.islandora_object
+id: node.islandora_object.field_bt_location
+field_name: field_bt_location
+entity_type: node
+bundle: islandora_object
+label: 'BT Location'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

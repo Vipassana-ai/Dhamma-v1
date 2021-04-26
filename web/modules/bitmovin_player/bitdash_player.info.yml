@@ -1,0 +1,10 @@
+name: 'Bitdash Player'
+description: 'Adds a Bitdash HTML5 Adaptive Player as a Drupal field.'
+# core: 8.x
+type: module
+
+# Information added by Drupal.org packaging script on 2016-10-21
+version: '8.x-1.x-dev'
+core: '8.x'
+project: 'bitmovin_player'
+datestamp: 1477049647

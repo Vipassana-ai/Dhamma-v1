@@ -1,0 +1,4 @@
+img_annotator.prompt_admin_settings:
+  route_name: img_annotator.prompt_admin_settings
+  title: 'Prompt settings'
+  base_route: img_annotator.prompt_admin_settings

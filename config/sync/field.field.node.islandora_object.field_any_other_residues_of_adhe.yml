@@ -1,0 +1,29 @@
+uuid: cc178554-a17d-4a1b-8273-1dca6644ed4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_any_other_residues_of_adhe
+    - node.type.islandora_object
+    - taxonomy.vocabulary.conservator
+id: node.islandora_object.field_any_other_residues_of_adhe
+field_name: field_any_other_residues_of_adhe
+entity_type: node
+bundle: islandora_object
+label: 'Any other residues of Adhesive'
+description: 'The adhesive that is left behind on a substrate when a self-adhesive label is removed'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      conservator: conservator
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

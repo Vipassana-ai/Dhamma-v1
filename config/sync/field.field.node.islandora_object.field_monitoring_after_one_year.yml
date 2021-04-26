@@ -1,0 +1,29 @@
+uuid: 173f30ef-7574-430d-8aab-1f758a6c98dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_monitoring_after_one_year
+    - node.type.islandora_object
+    - taxonomy.vocabulary.conservator
+id: node.islandora_object.field_monitoring_after_one_year
+field_name: field_monitoring_after_one_year
+entity_type: node
+bundle: islandora_object
+label: 'Monitoring After one year'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      conservator: conservator
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

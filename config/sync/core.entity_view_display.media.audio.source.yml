@@ -1,0 +1,101 @@
+uuid: eada0c92-8bfe-4480-9c2f-c825b52dcbb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.source
+    - field.field.media.audio.field_access_terms
+    - field.field.media.audio.field_file_size
+    - field.field.media.audio.field_media_audio_file
+    - field.field.media.audio.field_media_of
+    - field.field.media.audio.field_media_use
+    - field.field.media.audio.field_mime_type
+    - field.field.media.audio.field_original_name
+    - media.type.audio
+  enforced:
+    module:
+      - islandora_core_feature
+  module:
+    - field_layout
+    - file
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          2678e5dc-1344-4c76-9ce6-fa7a472adb93:
+            uuid: 2678e5dc-1344-4c76-9ce6-fa7a472adb93
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:audio:field_media_audio_file'
+              formatter:
+                type: file_audio
+                label: visually_hidden
+                settings:
+                  controls: true
+                  multiple_file_display_type: tags
+                  autoplay: false
+                  loop: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          29303310-05ba-49c4-9a37-a066bd6123d8:
+            uuid: 29303310-05ba-49c4-9a37-a066bd6123d8
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:media:audio:field_gemini_uri'
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+_core:
+  default_config_hash: tDCyYVpxmp1mDsORGEQYEKD7w9ouL0h8HzMl9SFjPYo
+id: media.audio.source
+targetEntityType: media
+bundle: audio
+mode: source
+content:
+  field_gemini_uri:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_media_audio_file:
+    type: file_audio
+    weight: 0
+    label: visually_hidden
+    settings:
+      controls: true
+      multiple_file_display_type: tags
+      autoplay: false
+      loop: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_access_terms: true
+  field_file_size: true
+  field_media_of: true
+  field_media_use: true
+  field_mime_type: true
+  field_original_name: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

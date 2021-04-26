@@ -1,0 +1,10 @@
+uuid: 74a85caf-18f3-4853-9d2b-f4a8557d8bbf
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: FbKJCP8hHad8W3AR8WNWA56OJD--aW9qGrqTzyIMVDM
+name: Subject
+vid: subject
+description: 'Subject matter to which the records pertain, such as topics, events, people, and organizations.'
+weight: -4

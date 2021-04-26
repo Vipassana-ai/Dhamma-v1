@@ -1,0 +1,21 @@
+uuid: 38596304-62b9-40df-9a93-39641892b547
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_exif_flash
+    - media.type.photography
+  module:
+    - text
+id: media.photography.field_exif_flash
+field_name: field_exif_flash
+entity_type: media
+bundle: photography
+label: Flash
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

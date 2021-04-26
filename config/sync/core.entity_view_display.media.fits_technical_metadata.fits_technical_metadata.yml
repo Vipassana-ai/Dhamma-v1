@@ -1,0 +1,154 @@
+uuid: 5eed1eb8-ed6e-475f-9c82-a420c6667dfc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.fits_technical_metadata
+    - field.field.media.fits_technical_metadata.field_complete
+    - field.field.media.fits_technical_metadata.field_file_size
+    - field.field.media.fits_technical_metadata.field_media_file
+    - field.field.media.fits_technical_metadata.field_media_of
+    - field.field.media.fits_technical_metadata.field_media_use
+    - field.field.media.fits_technical_metadata.field_mime_type
+    - field.field.media.fits_technical_metadata.fits_ois_file_information_md5che
+    - image.style.thumbnail
+    - media.type.fits_technical_metadata
+  enforced:
+    module:
+      - islandora_fits
+  module:
+    - field_layout
+    - image
+    - islandora_fits
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          442187cc-1cfe-4ebd-ae15-ebb1e60c45a5:
+            uuid: 442187cc-1cfe-4ebd-ae15-ebb1e60c45a5
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:fits_technical_metadata:created'
+              formatter:
+                label: hidden
+                type: timestamp
+                settings:
+                  date_format: medium
+                  custom_date_format: ''
+                  timezone: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          95f47228-ab2e-4049-9646-26c64194d605:
+            uuid: 95f47228-ab2e-4049-9646-26c64194d605
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:fits_technical_metadata:uid'
+              formatter:
+                label: hidden
+                type: author
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
+          35f49627-1c4d-43c1-baf7-33dd912221d6:
+            uuid: 35f49627-1c4d-43c1-baf7-33dd912221d6
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:fits_technical_metadata:thumbnail'
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_style: thumbnail
+                  image_link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 2
+          6cd0ff03-d9cc-4899-998b-e691023e8608:
+            uuid: 6cd0ff03-d9cc-4899-998b-e691023e8608
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:fits_technical_metadata:field_media_file'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: fits_formatter
+            additional: {  }
+            weight: 3
+        third_party_settings: {  }
+_core:
+  default_config_hash: 26WttTG6uQXIDjcL50RF8WEpTDsIDtDaUjZDd0AwBAg
+id: media.fits_technical_metadata.fits_technical_metadata
+targetEntityType: media
+bundle: fits_technical_metadata
+mode: fits_technical_metadata
+content:
+  created:
+    label: hidden
+    type: timestamp
+    weight: 0
+    region: content
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  field_media_file:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: fits_formatter
+    region: content
+  thumbnail:
+    type: image
+    weight: 5
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    region: content
+    third_party_settings: {  }
+  uid:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_complete: true
+  field_file_size: true
+  field_media_of: true
+  field_media_use: true
+  field_mime_type: true
+  fits_ois_file_information_md5che: true
+  langcode: true
+  name: true
+  search_api_excerpt: true

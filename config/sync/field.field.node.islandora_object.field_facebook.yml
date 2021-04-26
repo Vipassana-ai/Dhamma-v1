@@ -1,0 +1,23 @@
+uuid: 326f2b01-757a-4b87-8fbc-9bf51579a8c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_facebook
+    - node.type.islandora_object
+id: node.islandora_object.field_facebook
+field_name: field_facebook
+entity_type: node
+bundle: islandora_object
+label: Facebook
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

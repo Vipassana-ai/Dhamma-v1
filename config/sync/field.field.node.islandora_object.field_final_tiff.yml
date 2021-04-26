@@ -1,0 +1,23 @@
+uuid: c594a7ac-c166-41cb-8e67-9afb9c2795c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_final_tiff
+    - node.type.islandora_object
+id: node.islandora_object.field_final_tiff
+field_name: field_final_tiff
+entity_type: node
+bundle: islandora_object
+label: 'Final TIFF'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

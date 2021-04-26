@@ -1,0 +1,257 @@
+uuid: 7553d724-c0c2-4b74-9975-06758800897b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.person.field_authority_link
+    - field.field.taxonomy_term.person.field_cat_date_begin
+    - field.field.taxonomy_term.person.field_cat_date_end
+    - field.field.taxonomy_term.person.field_person_alternate_names
+    - field.field.taxonomy_term.person.field_person_preferred_name
+    - field.field.taxonomy_term.person.field_relationships
+    - taxonomy.vocabulary.person
+  module:
+    - controlled_access_terms
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - name
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          41bf06a6-ef88-47f1-aa6c-1d46ec839032:
+            uuid: 41bf06a6-ef88-47f1-aa6c-1d46ec839032
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:person:field_person_preferred_name'
+              formatter:
+                label: above
+                settings:
+                  format: default
+                  markup: ''
+                  list_format: ''
+                  link_target: ''
+                  preferred_field_reference: ''
+                  preferred_field_reference_separator: ', '
+                  alternative_field_reference: ''
+                  alternative_field_reference_separator: ', '
+                third_party_settings: {  }
+                type: name_default
+            additional: {  }
+            weight: 0
+          db9fe879-9efd-4715-b383-e7d13c2ef600:
+            uuid: db9fe879-9efd-4715-b383-e7d13c2ef600
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:person:field_authority_link'
+              formatter:
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: _blank
+                third_party_settings: {  }
+                type: authority_formatter_default
+            additional: {  }
+            weight: 1
+          4beb6ef4-fdf1-4def-8cc6-35580edd91fd:
+            uuid: 4beb6ef4-fdf1-4def-8cc6-35580edd91fd
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:person:field_person_alternate_names'
+              formatter:
+                label: above
+                settings:
+                  format: default
+                  markup: ''
+                  list_format: ''
+                  link_target: ''
+                  preferred_field_reference: ''
+                  preferred_field_reference_separator: ', '
+                  alternative_field_reference: ''
+                  alternative_field_reference_separator: ', '
+                third_party_settings: {  }
+                type: name_default
+            additional: {  }
+            weight: 2
+          e3e1aeb9-7c13-4cc9-ae0e-aa8fa14589ef:
+            uuid: e3e1aeb9-7c13-4cc9-ae0e-aa8fa14589ef
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:person:description'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 3
+          29c171b9-f75c-4ac5-8ac8-444ca4d0479d:
+            uuid: 29c171b9-f75c-4ac5-8ac8-444ca4d0479d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:person:field_cat_date_begin'
+              formatter:
+                label: above
+                settings:
+                  date_separator: space
+                  date_order: little_endian
+                  month_format: mmm
+                  day_format: dd
+                third_party_settings: {  }
+                type: edtf_default
+            additional: {  }
+            weight: 4
+          3681a886-aecd-4e9b-9a84-f924b41dd108:
+            uuid: 3681a886-aecd-4e9b-9a84-f924b41dd108
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:person:field_cat_date_end'
+              formatter:
+                label: above
+                settings:
+                  date_separator: space
+                  date_order: little_endian
+                  month_format: mmm
+                  day_format: dd
+                third_party_settings: {  }
+                type: edtf_default
+            additional: {  }
+            weight: 5
+          a9a0d469-d978-4e42-ac12-ec88c3081bdd:
+            uuid: a9a0d469-d978-4e42-ac12-ec88c3081bdd
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:person:field_relationships'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: typed_relation_default
+            additional: {  }
+            weight: 6
+        third_party_settings: {  }
+_core:
+  default_config_hash: d1WYYSrPyj65a3bdcgSOPjGGaLdNjISkMjC0gY_1fME
+id: taxonomy_term.person.default
+targetEntityType: taxonomy_term
+bundle: person
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_authority_link:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: _blank
+    third_party_settings: {  }
+    type: authority_formatter_default
+    region: content
+  field_cat_date_begin:
+    weight: 6
+    label: above
+    settings:
+      date_separator: space
+      date_order: little_endian
+      month_format: mmm
+      day_format: dd
+    third_party_settings: {  }
+    type: edtf_default
+    region: content
+  field_cat_date_end:
+    weight: 7
+    label: above
+    settings:
+      date_separator: space
+      date_order: little_endian
+      month_format: mmm
+      day_format: dd
+    third_party_settings: {  }
+    type: edtf_default
+    region: content
+  field_person_alternate_names:
+    weight: 3
+    label: above
+    settings:
+      format: default
+      markup: ''
+      list_format: ''
+      link_target: ''
+      preferred_field_reference: ''
+      preferred_field_reference_separator: ', '
+      alternative_field_reference: ''
+      alternative_field_reference_separator: ', '
+    third_party_settings: {  }
+    type: name_default
+    region: content
+  field_person_preferred_name:
+    weight: 1
+    label: above
+    settings:
+      format: default
+      markup: ''
+      list_format: ''
+      link_target: ''
+      preferred_field_reference: ''
+      preferred_field_reference_separator: ', '
+      alternative_field_reference: ''
+      alternative_field_reference_separator: ', '
+    third_party_settings: {  }
+    type: name_default
+    region: content
+  field_relationships:
+    weight: 9
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: typed_relation_default
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

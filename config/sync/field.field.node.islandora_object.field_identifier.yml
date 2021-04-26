@@ -1,0 +1,21 @@
+uuid: dfd9c910-0cf3-4e2b-b01c-20a0b1935bbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_identifier
+    - node.type.islandora_object
+_core:
+  default_config_hash: dxi9NM-C39djxUptg_qVZLiAYIAo-yS7KVL85GACi80
+id: node.islandora_object.field_identifier
+field_name: field_identifier
+entity_type: node
+bundle: islandora_object
+label: Identifier
+description: 'Code created by Classification and their sub-classification. Eg: LTLSZZ'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

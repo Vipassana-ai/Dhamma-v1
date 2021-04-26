@@ -1,0 +1,21 @@
+uuid: 3f331af2-7112-471d-b093-1ce1bdcd5486
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_exif_whitebalance
+    - media.type.photography
+  module:
+    - text
+id: media.photography.field_exif_whitebalance
+field_name: field_exif_whitebalance
+entity_type: media
+bundle: photography
+label: 'White Balance Mode'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

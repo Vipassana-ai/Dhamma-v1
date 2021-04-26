@@ -1,0 +1,64 @@
+img_annotator.basic_settings:
+  type: config_object
+  label: 'Image Annotator basic settings'
+  mapping:
+    anno_theme:
+      type: string
+      label: 'The Annotorious theme.'
+
+img_annotator.prompt_settings:
+  type: config_object
+  label: 'Image Annotator prompt settings'
+  mapping:
+    prompt:
+      type: string
+      label: 'To display message or not.'
+
+img_annotator.prompt_message:
+  type: config_object
+  label: 'Image Annotator prompt messages'
+  mapping:
+    addSuccess:
+      type: label
+      label: 'The message in case of success of addition.'
+    addFailed:
+      type: label
+      label: 'The message in case of failure of addition.'
+    addNotAllowed:
+      type: label
+      label: 'The message in case of addition is not allowed.'
+    removeSuccess:
+      type: label
+      label: 'The message in case of success of deletion.'
+    removeFailed:
+      type: label
+      label: 'The message in case of failure of deletion.'
+    updateSuccess:
+      type: label
+      label: 'The message in case of success of update.'
+    updateFailed:
+      type: label
+      label: 'The message in case of failure of update.'
+
+img_annotator.node_settings:
+  type: config_object
+  label: 'Image Annotator node settings'
+  mapping:
+    bundles:
+      type: sequence
+      label: 'The list of content types.'
+      sequence:
+        type: img_annotator.bundle_settings
+
+img_annotator.bundle_settings:
+  type: mapping
+  label: 'Annotation settings of a bundle'
+  mapping:
+    flag:
+      type: boolean
+      label: 'If annotation is active for this content type.'
+    img_fields:
+      type: sequence
+      sequence:
+        type: string
+        label: 'The fields for which annotation is enabled.'

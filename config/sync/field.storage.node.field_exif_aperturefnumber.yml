@@ -1,0 +1,20 @@
+uuid: 3d5479aa-3fce-453f-9a44-26d26c435fc9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_exif_aperturefnumber
+field_name: field_exif_aperturefnumber
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

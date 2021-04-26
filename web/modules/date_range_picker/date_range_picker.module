@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains datetime_range_picker.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function date_range_picker_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the datetime_range_picker module.
+    case 'help.page.datetime_range_picker':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Pick a date range') . '</p>';
+      return $output;
+
+    default:
+  }
+}

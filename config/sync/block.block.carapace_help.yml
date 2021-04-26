@@ -1,0 +1,22 @@
+uuid: f8cc64fd-8090-4c00-b9d0-00d421d7dab1
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - carapace
+_core:
+  default_config_hash: 8k55sFyi9PZRZy_KISBEYwkhiBDLg6nVDAdcDT7njcM
+id: carapace_help
+theme: carapace
+region: content
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

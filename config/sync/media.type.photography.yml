@@ -1,0 +1,13 @@
+uuid: 85485c2c-2310-42b4-8fb4-8cade92e7e20
+langcode: en
+status: true
+dependencies: {  }
+id: photography
+label: Photography
+description: 'Use Photography for content where the photo is the main content. You still can have some other information related to the photo itself.'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_image
+field_map: {  }

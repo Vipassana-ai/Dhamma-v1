@@ -1,0 +1,21 @@
+uuid: b88c145d-2e69-4475-8cdb-66d0356c21cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_exif_datetime
+    - node.type.photography
+  module:
+    - datetime
+id: node.photography.field_exif_datetime
+field_name: field_exif_datetime
+entity_type: node
+bundle: photography
+label: 'Creation date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

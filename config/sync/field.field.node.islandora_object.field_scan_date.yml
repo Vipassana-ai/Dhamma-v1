@@ -1,0 +1,21 @@
+uuid: 6a0fd834-a871-4e5b-ab4f-f0bcc1c901a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_scan_date
+    - node.type.islandora_object
+  module:
+    - datetime
+id: node.islandora_object.field_scan_date
+field_name: field_scan_date
+entity_type: node
+bundle: islandora_object
+label: 'Scan date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

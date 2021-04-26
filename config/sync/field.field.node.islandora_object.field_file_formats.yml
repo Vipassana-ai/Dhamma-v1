@@ -1,0 +1,21 @@
+uuid: e80c9d03-5df5-4858-ba22-7744b32ed9d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_formats
+    - node.type.islandora_object
+id: node.islandora_object.field_file_formats
+field_name: field_file_formats
+entity_type: node
+bundle: islandora_object
+label: 'File formats'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'OCR, Low-Res JPEG, High-Res JPEG, Low-Res TIFF, High-Res JPEG, Final TIFF, PSB'
+default_value_callback: ''
+settings: {  }
+field_type: string

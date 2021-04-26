@@ -1,0 +1,21 @@
+uuid: 58575941-43e8-4b8e-a271-178a586dd460
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: T-3Oagel_bYRR7rExssXIsbYvj70Cv01NGNBF4DXINY
+id: node.field_physfacet
+field_name: field_physfacet
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

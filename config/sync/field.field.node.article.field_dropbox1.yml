@@ -1,0 +1,26 @@
+uuid: 24391291-56e7-486a-8e54-84ca2da1f4f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dropbox1
+    - node.type.article
+  module:
+    - video
+id: node.article.field_dropbox1
+field_name: field_dropbox1
+entity_type: node
+bundle: article
+label: Dropbox1
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: ''
+  file_directory: 'videos/[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: video

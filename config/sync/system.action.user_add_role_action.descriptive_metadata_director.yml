@@ -1,0 +1,14 @@
+uuid: 2a7734f7-b559-435f-9970-6b99f8316da4
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.descriptive_metadata_director
+  module:
+    - user
+id: user_add_role_action.descriptive_metadata_director
+label: 'Add the Descriptive Metadata Director role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: descriptive_metadata_director

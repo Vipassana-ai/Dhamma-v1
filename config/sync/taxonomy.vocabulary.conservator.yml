@@ -1,0 +1,8 @@
+uuid: 7d165718-d645-4368-9123-a510a572564b
+langcode: en
+status: true
+dependencies: {  }
+name: 'Conservator (TL, TR, etc.)'
+vid: conservator
+description: ''
+weight: -10

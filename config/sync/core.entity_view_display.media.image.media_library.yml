@@ -1,0 +1,101 @@
+uuid: 4f7328db-3e8a-450d-81fb-c8530b2b9848
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.image.field_access_terms
+    - field.field.media.image.field_dropbox
+    - field.field.media.image.field_file_size
+    - field.field.media.image.field_height
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_media_of
+    - field.field.media.image.field_media_use
+    - field.field.media.image.field_mime_type
+    - field.field.media.image.field_original_name
+    - field.field.media.image.field_width
+    - image.style.medium
+    - media.type.image
+  module:
+    - field_layout
+    - image
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          f44e4725-5884-44f6-a2a7-3bd8e4749f03:
+            uuid: f44e4725-5884-44f6-a2a7-3bd8e4749f03
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:image:thumbnail'
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_style: medium
+                  image_link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          97e6dabb-5354-45fb-b3db-1fa1bf50484e:
+            uuid: 97e6dabb-5354-45fb-b3db-1fa1bf50484e
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:media:image:field_gemini_uri'
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+_core:
+  default_config_hash: PaGXvzRcL9eII--JV4eCVfObjrNo0l-u1dB_WJtB9ig
+id: media.image.media_library
+targetEntityType: media
+bundle: image
+mode: media_library
+content:
+  field_gemini_uri:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  thumbnail:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_access_terms: true
+  field_dropbox: true
+  field_file_size: true
+  field_height: true
+  field_media_image: true
+  field_media_of: true
+  field_media_use: true
+  field_mime_type: true
+  field_original_name: true
+  field_width: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  uid: true

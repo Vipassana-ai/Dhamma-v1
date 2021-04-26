@@ -1,0 +1,24 @@
+uuid: 48a9db92-5f19-40ba-837f-9c9fed33ec65
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.repository
+_core:
+  default_config_hash: sre1Tbls7tXryLS6pTASiNEIYj4I3a0Daez7RK8jbHI
+id: node.repository.promote
+field_name: promote
+entity_type: node
+bundle: repository
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,259 @@
+uuid: 6b90c7d4-3ea0-4d7a-812c-d77520ff1f92
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.photography.field_exif_aperturefnumber
+    - field.field.media.photography.field_exif_author
+    - field.field.media.photography.field_exif_comments
+    - field.field.media.photography.field_exif_datetime
+    - field.field.media.photography.field_exif_exposuremode
+    - field.field.media.photography.field_exif_exposureprogram
+    - field.field.media.photography.field_exif_exposuretime
+    - field.field.media.photography.field_exif_flash
+    - field.field.media.photography.field_exif_focallength
+    - field.field.media.photography.field_exif_imagedescription
+    - field.field.media.photography.field_exif_isospeedratings
+    - field.field.media.photography.field_exif_keywords
+    - field.field.media.photography.field_exif_make
+    - field.field.media.photography.field_exif_model
+    - field.field.media.photography.field_exif_orientation
+    - field.field.media.photography.field_exif_scenecapturetype
+    - field.field.media.photography.field_exif_title
+    - field.field.media.photography.field_exif_whitebalance
+    - field.field.media.photography.field_image
+    - image.style.thumbnail
+    - media.type.photography
+  module:
+    - exif
+    - field_layout
+    - image
+    - layout_discovery
+    - path
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: media.photography.media_library
+targetEntityType: media
+bundle: photography
+mode: media_library
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_exif_aperturefnumber:
+    type: exif_readonly
+    settings:
+      image_field: field_image
+      exif_field: naming_convention
+      exif_field_separator: ''
+    weight: 127
+    third_party_settings: {  }
+    region: content
+  field_exif_author:
+    type: exif_readonly
+    settings:
+      image_field: field_image
+      exif_field: naming_convention
+      exif_field_separator: ''
+    weight: 137
+    third_party_settings: {  }
+    region: content
+  field_exif_comments:
+    type: exif_readonly
+    settings:
+      image_field: field_image
+      exif_field: naming_convention
+      exif_field_separator: ''
+    weight: 123
+    third_party_settings: {  }
+    region: content
+  field_exif_datetime:
+    type: exif_readonly
+    settings:
+      image_field: field_image
+      exif_field: naming_convention
+      exif_field_separator: ''
+    weight: 122
+    third_party_settings: {  }
+    region: content
+  field_exif_exposuremode:
+    type: exif_readonly
+    settings:
+      image_field: field_image
+      exif_field: naming_convention
+      exif_field_separator: ''
+    weight: 133
+    third_party_settings: {  }
+    region: content
+  field_exif_exposureprogram:
+    type: exif_readonly
+    settings:
+      image_field: field_image
+      exif_field: naming_convention
+      exif_field_separator: ''
+    weight: 132
+    third_party_settings: {  }
+    region: content
+  field_exif_exposuretime:
+    type: exif_readonly
+    settings:
+      image_field: field_image
+      exif_field: naming_convention
+      exif_field_separator: ''
+    weight: 128
+    third_party_settings: {  }
+    region: content
+  field_exif_flash:
+    type: exif_readonly
+    settings:
+      image_field: field_image
+      exif_field: naming_convention
+      exif_field_separator: ''
+    weight: 131
+    third_party_settings: {  }
+    region: content
+  field_exif_focallength:
+    type: exif_readonly
+    settings:
+      image_field: field_image
+      exif_field: naming_convention
+      exif_field_separator: ''
+    weight: 130
+    third_party_settings: {  }
+    region: content
+  field_exif_imagedescription:
+    type: exif_readonly
+    settings:
+      image_field: field_image
+      exif_field: naming_convention
+      exif_field_separator: ''
+    weight: 124
+    third_party_settings: {  }
+    region: content
+  field_exif_isospeedratings:
+    type: exif_readonly
+    settings:
+      image_field: field_image
+      exif_field: naming_convention
+      exif_field_separator: ''
+    weight: 139
+    third_party_settings: {  }
+    region: content
+  field_exif_keywords:
+    type: exif_readonly
+    settings:
+      image_field: field_image
+      exif_field: naming_convention
+      exif_field_separator: ;
+    weight: 140
+    third_party_settings: {  }
+    region: content
+  field_exif_make:
+    type: exif_readonly
+    settings:
+      image_field: field_image
+      exif_field: naming_convention
+      exif_field_separator: ''
+    weight: 126
+    third_party_settings: {  }
+    region: content
+  field_exif_model:
+    type: exif_readonly
+    settings:
+      image_field: field_image
+      exif_field: naming_convention
+      exif_field_separator: ''
+    weight: 138
+    third_party_settings: {  }
+    region: content
+  field_exif_orientation:
+    type: exif_readonly
+    settings:
+      image_field: field_image
+      exif_field: naming_convention
+      exif_field_separator: ''
+    weight: 136
+    third_party_settings: {  }
+    region: content
+  field_exif_scenecapturetype:
+    type: exif_readonly
+    settings:
+      image_field: field_image
+      exif_field: naming_convention
+      exif_field_separator: ''
+    weight: 135
+    third_party_settings: {  }
+    region: content
+  field_exif_title:
+    type: exif_readonly
+    settings:
+      image_field: field_image
+      exif_field: naming_convention
+      exif_field_separator: ''
+    weight: 125
+    third_party_settings: {  }
+    region: content
+  field_exif_whitebalance:
+    type: exif_readonly
+    settings:
+      image_field: field_image
+      exif_field: naming_convention
+      exif_field_separator: ''
+    weight: 134
+    third_party_settings: {  }
+    region: content
+  field_image:
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    weight: 121
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: exif_readonly
+    weight: -5
+    region: content
+    settings:
+      exif_field_separator: ''
+      exif_field: naming_convention
+      image_field: null
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 100
+    region: content
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden: {  }

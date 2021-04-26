@@ -1,0 +1,287 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@type": "sc:Manifest",
+  "@id": "http://foo.test/1/manifest",
+  "label": "Manifest to be used for SidebarIndexTableOfContents.test.js",
+  "sequences" : [
+    {
+      "@type": "sc:Sequence",
+      "canvases": [
+        {
+          "@id": "http://foo.test/1/canvas/c1", 
+          "@type": "sc:Canvas", 
+          "label": "Canvas: 1" 
+        },
+        {
+          "@id": "http://foo.test/1/canvas/c2", 
+          "@type": "sc:Canvas", 
+          "label": "Canvas: 2" 
+        },
+        {
+          "@id": "http://foo.test/1/canvas/c3", 
+          "@type": "sc:Canvas", 
+          "label": "Canvas: 3" 
+        },
+        {
+          "@id": "http://foo.test/1/canvas/c4", 
+          "@type": "sc:Canvas", 
+          "label": "Canvas: 4" 
+        },
+        {
+          "@id": "http://foo.test/1/canvas/c5", 
+          "@type": "sc:Canvas", 
+          "label": "Canvas: 5" 
+        },
+        {
+          "@id": "http://foo.test/1/canvas/c6", 
+          "@type": "sc:Canvas", 
+          "label": "Canvas: 6" 
+        },
+        {
+          "@id": "http://foo.test/1/canvas/c7", 
+          "@type": "sc:Canvas", 
+          "label": "Canvas: 7" 
+        },
+        {
+          "@id": "http://foo.test/1/canvas/c8", 
+          "@type": "sc:Canvas", 
+          "label": "Canvas: 8" 
+        },
+        {
+          "@id": "http://foo.test/1/canvas/c9", 
+          "@type": "sc:Canvas", 
+          "label": "Canvas: 9" 
+        },
+        {
+          "@id": "http://foo.test/1/canvas/c10", 
+          "@type": "sc:Canvas", 
+          "label": "Canvas: 10" 
+        },
+        {
+          "@id": "http://foo.test/1/canvas/c11", 
+          "@type": "sc:Canvas", 
+          "label": "Canvas: 11" 
+        },
+        {
+          "@id": "http://foo.test/1/canvas/c12", 
+          "@type": "sc:Canvas", 
+          "label": "Canvas: 12" 
+        },
+        {
+          "@id": "http://foo.test/1/canvas/c13", 
+          "@type": "sc:Canvas", 
+          "label": "Canvas: 13" 
+        }
+      ]
+    }
+  ],
+  "structures": [
+    {
+      "@id": "http://foo.test/1/range/root",
+      "@type": "sc:Range",
+      "viewingHint": "top",
+      "ranges": [
+        "http://foo.test/1/range/0-0",
+        "http://foo.test/1/range/0-1",
+        "http://foo.test/1/range/0-2",
+        "http://foo.test/1/range/0-3",
+        "http://foo.test/1/range/0-4"
+      ],
+      "canvases": []
+    },
+    {
+      "@id": "http://foo.test/1/range/0-0",
+      "@type": "sc:Range",
+      "ranges": [
+        "http://foo.test/1/range/0-0-0",
+        "http://foo.test/1/range/0-0-1",
+        "http://foo.test/1/range/0-0-2"
+      ],
+      "canvases": [
+        "http://foo.test/1/canvas/c1",
+        "http://foo.test/1/canvas/c2",
+        "http://foo.test/1/canvas/c3",
+        "http://foo.test/1/canvas/c4"
+      ]
+    },
+    {
+      "@id": "http://foo.test/1/range/0-0-0",
+      "@type": "sc:Range",
+      "ranges": [],
+      "canvases": [
+        "http://foo.test/1/canvas/c1",
+        "http://foo.test/1/canvas/c2"
+      ]
+    },
+    {
+      "@id": "http://foo.test/1/range/0-0-1",
+      "@type": "sc:Range",
+      "ranges": [],
+      "canvases": [
+        "http://foo.test/1/canvas/c2",
+        "http://foo.test/1/canvas/c3#xywh=0,0,5,5"
+      ]
+    },
+    {
+      "@id": "http://foo.test/1/range/0-0-2",
+      "@type": "sc:Range",
+      "ranges": [],
+      "canvases": [
+        "http://foo.test/1/canvas/c4"
+      ]
+    },
+    {
+      "@id": "http://foo.test/1/range/0-1",
+      "@type": "sc:Range",
+      "ranges": [
+        "http://foo.test/1/range/0-1-0",
+        "http://foo.test/1/range/0-1-1",
+        "http://foo.test/1/range/0-1-2"
+      ],
+      "canvases": []
+    },
+    {
+      "@id": "http://foo.test/1/range/0-1-0",
+      "@type": "sc:Range",
+      "ranges": [],
+      "canvases": []
+    },
+    {
+      "@id": "http://foo.test/1/range/0-1-1",
+      "@type": "sc:Range",
+      "ranges": [
+        "http://foo.test/1/range/0-1-1-0",
+        "http://foo.test/1/range/0-1-1-1"
+      ],
+      "canvases": [
+        "http://foo.test/1/canvas/c6"
+      ]
+    },
+    {
+      "@id": "http://foo.test/1/range/0-1-1-0",
+      "@type": "sc:Range",
+      "ranges": [],
+      "canvases": [
+        "http://foo.test/1/canvas/c5",
+        "http://foo.test/1/canvas/c6"
+      ]
+    },
+    {
+      "@id": "http://foo.test/1/range/0-1-1-1",
+      "@type": "sc:Range",
+      "ranges": [],
+      "canvases": [
+        "http://foo.test/1/canvas/c6",
+        "http://foo.test/1/canvas/c7",
+        "http://foo.test/1/canvas/c8"
+      ]
+    },
+    {
+      "@id": "http://foo.test/1/range/0-1-2",
+      "@type": "sc:Range",
+      "ranges": [],
+      "canvases": [
+        "http://foo.test/1/canvas/c8"
+      ]
+    },
+    {
+      "@id": "http://foo.test/1/range/0-1-2-0",
+      "@type": "sc:Range",
+      "ranges": [],
+      "canvases": [
+        "http://foo.test/1/canvas/c8",
+        "http://foo.test/1/canvas/c9"
+      ]
+    },
+    {
+      "@id": "http://foo.test/1/range/0-2",
+      "@type": "sc:Range",
+      "ranges": [
+        "http://foo.test/1/range/0-2-0",
+        "http://foo.test/1/range/0-2-1",
+        "http://foo.test/1/range/0-2-2"
+      ],
+      "canvases": []
+    },
+    {
+      "@id": "http://foo.test/1/range/0-2-0",
+      "@type": "sc:Range",
+      "ranges": [],
+      "canvases": []
+    },
+    {
+      "@id": "http://foo.test/1/range/0-2-1",
+      "@type": "sc:Range",
+      "ranges": [
+        "http://foo.test/1/range/0-2-1-0",
+        "http://foo.test/1/range/0-2-1-1"
+      ],
+      "canvases": [
+        "http://foo.test/1/canvas/c10"
+      ]
+    },
+    {
+      "@id": "http://foo.test/1/range/0-2-1-0",
+      "@type": "sc:Range",
+      "ranges": [],
+      "canvases": [
+        "http://foo.test/1/canvas/c9"
+      ]
+    },
+    {
+      "@id": "http://foo.test/1/range/0-2-1-1",
+      "@type": "sc:Range",
+      "ranges": [],
+      "canvases": []
+    },
+    {
+      "@id": "http://foo.test/1/range/0-2-2",
+      "@type": "sc:Range",
+      "ranges": [
+        "http://foo.test/1/range/0-2-2-0",
+        "http://foo.test/1/range/0-2-2-1"
+      ],
+      "canvases": []
+    },
+    {
+      "@id": "http://foo.test/1/range/0-2-2-0",
+      "@type": "sc:Range",
+      "ranges": [],
+      "canvases": []
+    },
+    {
+      "@id": "http://foo.test/1/range/0-2-2-1",
+      "@type": "sc:Range",
+      "ranges": [],
+      "canvases": [
+        "http://foo.test/1/canvas/c9"
+      ]
+    },
+    {
+      "@id": "http://foo.test/1/range/0-3",
+      "@type": "sc:Range",
+      "ranges": [],
+      "canvases": [
+        "http://foo.test/1/canvas/c10",
+        "http://foo.test/1/canvas/c11"
+     ],
+     "startCanvas": "http://foo.test/1/canvas/c11"
+    },
+    {
+      "@id": "http://foo.test/1/range/0-4",
+      "@type": "sc:Range",
+      "ranges": [
+        "http://foo.test/1/range/0-4-0"
+      ],
+      "canvases": [
+        "http://foo.test/1/canvas/c13"
+     ]
+    },
+    {
+      "@id": "http://foo.test/1/range/0-4-0",
+      "@type": "sc:Range",
+      "ranges": [],
+      "canvases": []
+    }
+  ]
+}

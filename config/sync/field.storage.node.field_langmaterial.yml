@@ -1,0 +1,21 @@
+uuid: b5e8c5d9-354c-494b-b9b2-5d7de07c4167
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: ElYLMlS5DF_w-nkCdrVpobK832j28bMwF6UaO1g1coo
+id: node.field_langmaterial
+field_name: field_langmaterial
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

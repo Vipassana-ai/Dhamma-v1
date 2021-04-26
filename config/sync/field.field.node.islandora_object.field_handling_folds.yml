@@ -1,0 +1,29 @@
+uuid: 17d01a19-71d4-4d13-8c14-b2cccdc7289d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_handling_folds
+    - node.type.islandora_object
+    - taxonomy.vocabulary.conservator
+id: node.islandora_object.field_handling_folds
+field_name: field_handling_folds
+entity_type: node
+bundle: islandora_object
+label: 'Handling folds'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      conservator: conservator
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

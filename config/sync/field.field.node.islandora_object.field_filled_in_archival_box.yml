@@ -1,0 +1,21 @@
+uuid: 0536cabf-11f2-4575-9347-0da7a6cc0f95
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_filled_in_archival_box
+    - node.type.islandora_object
+  module:
+    - datetime
+id: node.islandora_object.field_filled_in_archival_box
+field_name: field_filled_in_archival_box
+entity_type: node
+bundle: islandora_object
+label: 'Filled in Archival box'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,21 @@
+uuid: 9078a2d2-41bb-4f53-961e-480448e219f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_exif_imagedescription
+    - media.type.photography
+  module:
+    - text
+id: media.photography.field_exif_imagedescription
+field_name: field_exif_imagedescription
+entity_type: media
+bundle: photography
+label: 'Photo Description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

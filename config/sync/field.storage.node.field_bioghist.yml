@@ -1,0 +1,21 @@
+uuid: e9e09c41-4c7b-40a7-9f11-167219bff5a4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: 9cSvPkY1bErR66GBSzBLTdrJgnLuLE3iy93CPIAcO_U
+id: node.field_bioghist
+field_name: field_bioghist
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

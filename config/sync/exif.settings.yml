@@ -1,0 +1,32 @@
+date_format_exif: null
+granularity: 1
+update_metadata: true
+write_empty_values: true
+extraction_solution: simple_exiftool
+exiftool_location: /var/lib/exiv2-0.27.3-Source
+vocabulary: '0'
+mediatypes:
+  audio: audio
+  document: document
+  extracted_text: extracted_text
+  file: file
+  fits_technical_metadata: fits_technical_metadata
+  image: image
+  photography: photography
+  remote_video: remote_video
+  video: video
+nodetypes:
+  archival_object: archival_object
+  archival_resource: archival_resource
+  archival_top_container: archival_top_container
+  article: article
+  book: book
+  digital_object: digital_object
+  forum: forum
+  islandora_object: islandora_object
+  page: page
+  photography: photography
+  repository: repository
+filetypes: {  }
+_core:
+  default_config_hash: Ws80dA0r_3vsw6I-EIauGqduZJCloQeye3IRJ2ypW6E

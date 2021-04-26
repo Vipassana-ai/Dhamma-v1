@@ -1,0 +1,244 @@
+uuid: 5fe4fd1e-e4ee-44c8-a65f-be2eccf3282d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.photography.field_exif_aperturefnumber
+    - field.field.node.photography.field_exif_author
+    - field.field.node.photography.field_exif_comments
+    - field.field.node.photography.field_exif_datetime
+    - field.field.node.photography.field_exif_exposuremode
+    - field.field.node.photography.field_exif_exposureprogram
+    - field.field.node.photography.field_exif_exposuretime
+    - field.field.node.photography.field_exif_flash
+    - field.field.node.photography.field_exif_focallength
+    - field.field.node.photography.field_exif_imagedescription
+    - field.field.node.photography.field_exif_isospeedratings
+    - field.field.node.photography.field_exif_keywords
+    - field.field.node.photography.field_exif_make
+    - field.field.node.photography.field_exif_model
+    - field.field.node.photography.field_exif_orientation
+    - field.field.node.photography.field_exif_scenecapturetype
+    - field.field.node.photography.field_exif_title
+    - field.field.node.photography.field_exif_whitebalance
+    - field.field.node.photography.field_image
+    - field.field.node.photography.layout_builder__layout
+    - node.type.photography
+  module:
+    - datetime
+    - field_layout
+    - layout_builder
+    - responsive_image
+    - taxonomy
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.photography.search_index
+targetEntityType: node
+bundle: photography
+mode: search_index
+content:
+  display_media_entity_view_1:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  display_media_entity_view_2:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  display_media_service_file:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  display_media_thumbnail:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_exif_aperturefnumber:
+    label: above
+    type: text_default
+    weight: 127
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_author:
+    label: above
+    type: entity_reference_rss_category
+    weight: 137
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_comments:
+    label: above
+    type: text_default
+    weight: 123
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_datetime:
+    label: above
+    type: datetime_custom
+    weight: 122
+    settings:
+      date_format: 'Y-m-d\TH:i:s'
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_exif_exposuremode:
+    label: above
+    type: text_default
+    weight: 133
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_exposureprogram:
+    label: above
+    type: text_default
+    weight: 132
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_exposuretime:
+    label: above
+    type: text_default
+    weight: 128
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_flash:
+    label: above
+    type: text_default
+    weight: 131
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_focallength:
+    label: above
+    type: text_default
+    weight: 130
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_imagedescription:
+    label: above
+    type: text_default
+    weight: 124
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_isospeedratings:
+    label: above
+    type: text_default
+    weight: 139
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_keywords:
+    label: above
+    type: entity_reference_rss_category
+    weight: 140
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_make:
+    label: above
+    type: text_default
+    weight: 126
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_model:
+    label: above
+    type: entity_reference_rss_category
+    weight: 138
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_orientation:
+    label: above
+    type: text_default
+    weight: 136
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_scenecapturetype:
+    label: above
+    type: text_default
+    weight: 135
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_title:
+    label: above
+    type: text_default
+    weight: 125
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_whitebalance:
+    label: above
+    type: text_default
+    weight: 134
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    label: above
+    type: responsive_image
+    weight: 121
+    settings:
+      responsive_image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  openseadragon_media_evas_entity_view_1:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  openseadragon_media_evas_entity_view_2:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  openseadragon_media_evas_service_file:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  pdfjs_media_evas_entity_view_1:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  pdfjs_media_evas_entity_view_2:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  pdfjs_media_evas_service_file:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

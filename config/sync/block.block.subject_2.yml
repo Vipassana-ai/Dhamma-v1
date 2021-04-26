@@ -1,0 +1,23 @@
+uuid: 0815632e-b6a3-4f50-87ec-38a6babd5263
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.subject
+  module:
+    - facets
+  theme:
+    - solid
+id: subject_2
+theme: solid
+region: sidebar
+weight: 0
+provider: null
+plugin: 'facet_block:subject'
+settings:
+  id: 'facet_block:subject'
+  label: Subject
+  provider: facets
+  label_display: visible
+  block_id: subject_2
+visibility: {  }

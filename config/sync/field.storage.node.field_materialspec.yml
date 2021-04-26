@@ -1,0 +1,21 @@
+uuid: ac5a4a0a-4351-4813-8766-ad84e258aa05
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: m0P8JuqOChk0w3mmb14EOZrReF5VlC1Y0xOm7JkhuCY
+id: node.field_materialspec
+field_name: field_materialspec
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

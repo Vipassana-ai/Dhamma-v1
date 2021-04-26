@@ -1,0 +1,24 @@
+uuid: 8165da63-97a3-4609-aff7-ae085d3697ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rescan_date1
+    - node.type.islandora_object
+  module:
+    - datetime
+id: node.islandora_object.field_rescan_date1
+field_name: field_rescan_date1
+entity_type: node
+bundle: islandora_object
+label: 'Rescan date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

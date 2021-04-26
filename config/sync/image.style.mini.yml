@@ -1,0 +1,15 @@
+uuid: 781dacf2-8c5c-470c-98f6-fded3f7a0f3a
+langcode: en
+status: true
+dependencies: {  }
+name: mini
+label: Mini
+effects:
+  7ba0c935-b4cb-42ef-a50a-95803d866dfc:
+    uuid: 7ba0c935-b4cb-42ef-a50a-95803d866dfc
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 50
+      height: 50
+      anchor: center-center

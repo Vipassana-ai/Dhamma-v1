@@ -1,0 +1,29 @@
+uuid: dde4677b-cc74-4009-bf96-28512dbb5688
+langcode: en
+status: true
+dependencies:
+  module:
+    - dimension
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: custom
+id: node.field_dimensions_height_11
+field_name: field_dimensions_height_11
+entity_type: node
+type: area_field_type
+settings:
+  width_precision: '10'
+  width_scale: '2'
+  height_precision: '10'
+  height_scale: '2'
+  value_precision: '10'
+  value_scale: '2'
+module: dimension
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

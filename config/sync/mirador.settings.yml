@@ -1,0 +1,12 @@
+iiif_server: 'http://127.0.0.1:8080/cantaloupe/iiif/2'
+endpoint: rest_endpoint
+annotation_create: 'http://localhost:8000/entity/'
+annotation_create_method: POST
+annotation_search: 'http://localhost:8000/annotation/search/{resource_entity_id}'
+annotation_search_method: GET
+annotation_update: 'http://localhost:8000//{annotation_id}'
+annotation_update_method: PATCH
+annotation_delete: 'http://localhost:8000//{annotation_id}'
+annotation_delete_method: DELETE
+annotation_bundle: Article
+annotation_text: field_images_annotation

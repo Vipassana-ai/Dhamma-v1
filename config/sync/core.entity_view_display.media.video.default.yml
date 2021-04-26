@@ -1,0 +1,264 @@
+uuid: cea3b6a6-6478-4178-bd86-c0e5ff8e9db5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.video.field_access_terms
+    - field.field.media.video.field_file_size
+    - field.field.media.video.field_media_of
+    - field.field.media.video.field_media_use
+    - field.field.media.video.field_media_video_file
+    - field.field.media.video.field_mime_type
+    - field.field.media.video.field_original_name
+    - media.type.video
+  module:
+    - field_layout
+    - file
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          562fc540-7622-4a8a-9410-83f66448eace:
+            uuid: 562fc540-7622-4a8a-9410-83f66448eace
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:video:name'
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          ab2223d2-7c41-4a4e-99f9-44a7d8851c59:
+            uuid: ab2223d2-7c41-4a4e-99f9-44a7d8851c59
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:video:field_media_video_file'
+              formatter:
+                type: file_video
+                label: visually_hidden
+                settings:
+                  muted: false
+                  width: 640
+                  height: 480
+                  controls: true
+                  autoplay: false
+                  loop: false
+                  multiple_file_display_type: tags
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
+          92de04b2-8916-42b9-aa8d-cce9a84ae897:
+            uuid: 92de04b2-8916-42b9-aa8d-cce9a84ae897
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:video:field_mime_type'
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 2
+          541801d6-d939-4987-950a-97b965554d69:
+            uuid: 541801d6-d939-4987-950a-97b965554d69
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:video:field_file_size'
+              formatter:
+                type: number_integer
+                label: above
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            additional: {  }
+            weight: 3
+          95c03956-c5b5-42be-be70-21cc22aadf0b:
+            uuid: 95c03956-c5b5-42be-be70-21cc22aadf0b
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:video:field_media_of'
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            additional: {  }
+            weight: 4
+          f353cde5-c25c-4015-9e63-cd41e2ada27b:
+            uuid: f353cde5-c25c-4015-9e63-cd41e2ada27b
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:video:field_media_use'
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            additional: {  }
+            weight: 5
+          c6f13e57-51a0-4ad2-a62d-6fede9e751fb:
+            uuid: c6f13e57-51a0-4ad2-a62d-6fede9e751fb
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:video:field_access_terms'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 6
+          6a271213-cc0d-442e-9a15-716fc944745b:
+            uuid: 6a271213-cc0d-442e-9a15-716fc944745b
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:media:video:field_gemini_uri'
+            additional: {  }
+            weight: 7
+          28f6a93a-7f58-477f-8d6d-13889f530e9a:
+            uuid: 28f6a93a-7f58-477f-8d6d-13889f530e9a
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:video:field_original_name'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: basic_string
+            additional: {  }
+            weight: 8
+        third_party_settings: {  }
+_core:
+  default_config_hash: vLzYRJOw7vN__DvPOfqESPVCf5PekD5_yup5dPJnI4g
+id: media.video.default
+targetEntityType: media
+bundle: video
+mode: default
+content:
+  field_access_terms:
+    weight: 6
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_file_size:
+    type: number_integer
+    weight: 3
+    region: content
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+  field_gemini_uri:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_media_of:
+    type: entity_reference_label
+    weight: 4
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_media_use:
+    type: entity_reference_label
+    weight: 5
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_media_video_file:
+    type: file_video
+    weight: 1
+    label: visually_hidden
+    settings:
+      muted: false
+      width: 640
+      height: 480
+      controls: true
+      autoplay: false
+      loop: false
+      multiple_file_display_type: tags
+    third_party_settings: {  }
+    region: content
+  field_mime_type:
+    type: string
+    weight: 2
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_original_name:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  name:
+    type: string
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

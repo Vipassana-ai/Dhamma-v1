@@ -1,0 +1,5 @@
+html.js .field--widget-date-range-picker-field-widget .fieldset-wrapper > .label,
+html.js .field--widget-date-range-picker-field-widget .fieldset-wrapper > .container-inline {
+    display: none;
+}
+

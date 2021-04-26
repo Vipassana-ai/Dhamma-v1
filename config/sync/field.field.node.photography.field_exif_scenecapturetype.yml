@@ -1,0 +1,21 @@
+uuid: 4f87a24f-7fe9-4b28-ae7a-eb43345954a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_exif_scenecapturetype
+    - node.type.photography
+  module:
+    - text
+id: node.photography.field_exif_scenecapturetype
+field_name: field_exif_scenecapturetype
+entity_type: node
+bundle: photography
+label: 'scene Mode'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

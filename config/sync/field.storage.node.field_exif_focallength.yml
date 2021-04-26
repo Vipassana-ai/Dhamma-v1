@@ -1,0 +1,20 @@
+uuid: 68d00f7e-bd84-475e-841a-50e58ea49863
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_exif_focallength
+field_name: field_exif_focallength
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

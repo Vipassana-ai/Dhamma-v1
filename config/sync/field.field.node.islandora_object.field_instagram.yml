@@ -1,0 +1,23 @@
+uuid: 5fa79903-0879-4141-91d7-cad9a236d202
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_instagram
+    - node.type.islandora_object
+id: node.islandora_object.field_instagram
+field_name: field_instagram
+entity_type: node
+bundle: islandora_object
+label: Instagram
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

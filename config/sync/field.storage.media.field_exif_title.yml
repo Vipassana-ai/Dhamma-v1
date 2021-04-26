@@ -1,0 +1,20 @@
+uuid: 3ffb3db0-8583-4e59-9436-e81fef8b1de4
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - text
+id: media.field_exif_title
+field_name: field_exif_title
+entity_type: media
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

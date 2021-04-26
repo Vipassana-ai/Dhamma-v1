@@ -1,0 +1,22 @@
+uuid: e9cbf66a-924c-4c32-ae42-5f8616dfed5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.video
+_core:
+  default_config_hash: IQWsECCfmPY2ej2CeeDlg1PmvJ_3-4pGfvX-1s-X0HY
+id: media.video.name
+field_name: name
+entity_type: media
+bundle: video
+label: Name
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

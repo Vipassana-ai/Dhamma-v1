@@ -1,0 +1,23 @@
+uuid: 3f6bb1a3-595b-4a80-9ad9-0336f181117f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_abstract
+    - node.type.archival_resource
+  module:
+    - text
+_core:
+  default_config_hash: lU1NagRt2mg6wL4eplo8WWWwqNU0TiZmSbarsSwwcJY
+id: node.archival_resource.field_abstract
+field_name: field_abstract
+entity_type: node
+bundle: archival_resource
+label: Abstract
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

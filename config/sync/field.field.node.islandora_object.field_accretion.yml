@@ -1,0 +1,29 @@
+uuid: e610c236-61cd-475e-87a6-16acba3030e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_accretion
+    - node.type.islandora_object
+    - taxonomy.vocabulary.conservator
+id: node.islandora_object.field_accretion
+field_name: field_accretion
+entity_type: node
+bundle: islandora_object
+label: Accretion
+description: 'The process of growth or enlargement'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      conservator: conservator
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

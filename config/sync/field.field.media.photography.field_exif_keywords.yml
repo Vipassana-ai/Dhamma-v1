@@ -1,0 +1,23 @@
+uuid: 9b93c3b8-1eb4-4c82-b445-53fa0f06f84e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_exif_keywords
+    - media.type.photography
+id: media.photography.field_exif_keywords
+field_name: field_exif_keywords
+entity_type: media
+bundle: photography
+label: Tags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      photographs_metadata: photographs_metadata
+field_type: entity_reference

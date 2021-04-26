@@ -1,0 +1,5 @@
+img_annotator.prompt_message:
+  title: 'Image Annotator prompt messages'
+  base_route_name: img_annotator.prompt_admin_settings
+  names:
+    - img_annotator.prompt_message

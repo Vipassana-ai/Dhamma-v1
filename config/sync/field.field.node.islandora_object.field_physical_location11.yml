@@ -1,0 +1,25 @@
+uuid: 07cd9de6-8fab-4f5d-b4fb-5e3e27eee81c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_physical_location11
+    - node.type.islandora_object
+  module:
+    - address
+id: node.islandora_object.field_physical_location11
+field_name: field_physical_location11
+entity_type: node
+bundle: islandora_object
+label: 'Physical Location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides: {  }
+  fields: {  }
+field_type: address

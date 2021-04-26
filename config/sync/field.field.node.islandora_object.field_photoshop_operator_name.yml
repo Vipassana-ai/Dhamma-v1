@@ -1,0 +1,19 @@
+uuid: f056d0ae-7b19-475f-b198-5c52c1248dec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_photoshop_operator_name
+    - node.type.islandora_object
+id: node.islandora_object.field_photoshop_operator_name
+field_name: field_photoshop_operator_name
+entity_type: node
+bundle: islandora_object
+label: 'Photoshop Operator Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

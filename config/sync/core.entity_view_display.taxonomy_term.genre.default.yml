@@ -1,0 +1,91 @@
+uuid: 36d9f350-a07c-4ef7-87fd-66c72c0f9b87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.genre.field_authority_link
+    - taxonomy.vocabulary.genre
+  module:
+    - controlled_access_terms
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          c98c345d-a74a-4519-a45d-8b61c38f1b9f:
+            uuid: c98c345d-a74a-4519-a45d-8b61c38f1b9f
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:genre:description'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          65ed762e-9bb0-4c13-b5d5-8c701420e986:
+            uuid: 65ed762e-9bb0-4c13-b5d5-8c701420e986
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:genre:field_authority_link'
+              formatter:
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: _blank
+                third_party_settings: {  }
+                type: authority_formatter_default
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+_core:
+  default_config_hash: dqReSRpiwgsw70IML1yD4yHdffSWD3G7wWNSEycgDz8
+id: taxonomy_term.genre.default
+targetEntityType: taxonomy_term
+bundle: genre
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_authority_link:
+    weight: 1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: _blank
+    third_party_settings: {  }
+    type: authority_formatter_default
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,21 @@
+uuid: 962cc28f-0ed0-44a0-ba8a-a222de9d3c0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_exif_imagedescription
+    - node.type.photography
+  module:
+    - text
+id: node.photography.field_exif_imagedescription
+field_name: field_exif_imagedescription
+entity_type: node
+bundle: photography
+label: 'Photo Description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

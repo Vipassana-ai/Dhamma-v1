@@ -1,0 +1,32 @@
+uuid: 10aa4a53-d224-47f9-9867-c4331ffaf18b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+_core:
+  default_config_hash: rEi7wuO7MvQaobu1vxzdujJHHptyHoZ4B4BcTM2WH-M
+id: node.field_vra_core_level
+field_name: field_vra_core_level
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: collection
+      label: Collection
+    -
+      value: image
+      label: Image
+    -
+      value: work
+      label: Work
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

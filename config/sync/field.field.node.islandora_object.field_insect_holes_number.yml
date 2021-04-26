@@ -1,0 +1,23 @@
+uuid: 21929661-d1a4-4a21-9fa4-56b0fb5b9694
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_insect_holes_number
+    - node.type.islandora_object
+id: node.islandora_object.field_insect_holes_number
+field_name: field_insect_holes_number
+entity_type: node
+bundle: islandora_object
+label: 'Insect holes number'
+description: Count.
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

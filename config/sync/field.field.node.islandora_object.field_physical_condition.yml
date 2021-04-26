@@ -1,0 +1,21 @@
+uuid: a3a77c8e-4056-40b9-a0f7-57ad9b6fc10c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_physical_condition
+    - node.type.islandora_object
+  module:
+    - options
+id: node.islandora_object.field_physical_condition
+field_name: field_physical_condition
+entity_type: node
+bundle: islandora_object
+label: 'Physical Condition'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

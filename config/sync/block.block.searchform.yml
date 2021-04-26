@@ -1,0 +1,23 @@
+uuid: 367769a0-bab5-41e9-9933-3afc58348106
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - carapace
+_core:
+  default_config_hash: NhEuwBshcroh3U1BHe8EjztyBE3BzS84L-aEYW-KDxQ
+id: searchform
+theme: carapace
+region: navbar
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+  page_id: ''
+visibility: {  }

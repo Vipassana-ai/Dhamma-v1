@@ -1,0 +1,8 @@
+uuid: 3c14d8db-c2d4-4a6b-ac0f-a7dccb08a25b
+langcode: en
+status: true
+dependencies: {  }
+name: 'Conservation Treatment'
+vid: proposed_conservation_treatment_
+description: '1st recommendation Proposed, Final Conservation treatment and Action Taken, Immediate action required'
+weight: -9

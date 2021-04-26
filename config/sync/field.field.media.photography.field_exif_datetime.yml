@@ -1,0 +1,21 @@
+uuid: aed09cd0-9fcc-47b2-838d-ed475d543212
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_exif_datetime
+    - media.type.photography
+  module:
+    - datetime
+id: media.photography.field_exif_datetime
+field_name: field_exif_datetime
+entity_type: media
+bundle: photography
+label: 'Creation date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

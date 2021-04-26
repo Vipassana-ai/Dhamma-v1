@@ -1,0 +1,91 @@
+uuid: 408113ff-b9c9-495d-87cf-df12407c67c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.islandora_models.field_external_uri
+    - taxonomy.vocabulary.islandora_models
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - link
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          4520ff3e-389f-4116-b47c-8f72d144713e:
+            uuid: 4520ff3e-389f-4116-b47c-8f72d144713e
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:islandora_models:description'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          656277fb-e383-411d-a53e-46b9ef041ed3:
+            uuid: 656277fb-e383-411d-a53e-46b9ef041ed3
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:islandora_models:field_external_uri'
+              formatter:
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+                type: link
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+_core:
+  default_config_hash: Y-gOXIhSmxlX1Dl4mPKJS39A4nH47vbEMlQu4uBa7XM
+id: taxonomy_term.islandora_models.default
+targetEntityType: taxonomy_term
+bundle: islandora_models
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_external_uri:
+    weight: 1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

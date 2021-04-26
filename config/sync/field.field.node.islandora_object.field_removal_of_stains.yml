@@ -1,0 +1,29 @@
+uuid: e6c8ba4d-db05-4440-ae1e-cf3a64b13f78
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_removal_of_stains
+    - node.type.islandora_object
+    - taxonomy.vocabulary.conservator
+id: node.islandora_object.field_removal_of_stains
+field_name: field_removal_of_stains
+entity_type: node
+bundle: islandora_object
+label: 'Removal of stains'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      conservator: conservator
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

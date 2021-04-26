@@ -1,0 +1,19 @@
+uuid: 49e8bc6b-8be7-46a7-ac89-62a40bd1d26b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_labelling
+    - node.type.islandora_object
+id: node.islandora_object.field_labelling
+field_name: field_labelling
+entity_type: node
+bundle: islandora_object
+label: Labelling
+description: 'The label on the physical container.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

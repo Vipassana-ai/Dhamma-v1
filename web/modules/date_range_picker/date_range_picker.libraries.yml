@@ -1,0 +1,9 @@
+litepicker:
+  js:
+    /libraries/litepicker/main.js: {}
+    js/litepicker.js: {}
+  css:
+    component:
+      css/date_range_picker.css: {}
+  dependencies:
+    - core/drupal

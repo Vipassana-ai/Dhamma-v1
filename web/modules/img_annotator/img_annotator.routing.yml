@@ -1,0 +1,71 @@
+img_annotator.admin_config:
+  path: '/admin/config/img_annotator'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Image Annotator'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE
+
+img_annotator.basic_admin_settings:
+  path: '/admin/config/img_annotator/basic'
+  defaults:
+    _form: '\Drupal\img_annotator\Form\BasicAdminSettingsForm'
+    _title: 'Annotation Basic Settings'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE
+
+img_annotator.node_admin_settings:
+  path: '/admin/config/img_annotator/node'
+  defaults:
+    _form: '\Drupal\img_annotator\Form\NodeAdminSettingsForm'
+    _title: 'Annotation Node Settings'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE
+
+img_annotator.prompt_admin_settings:
+  path: '/admin/config/img_annotator/prompt'
+  defaults:
+    _form: '\Drupal\img_annotator\Form\PromptAdminSettingsForm'
+    _title: 'Annotation Prompt Settings'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE
+
+img_annotator.save_action:
+  path: '/img_annotator/save_action'
+  defaults:
+    _controller: '\Drupal\img_annotator\Controller\AnnotationsActionsController::save'
+    _title: 'Save Annotation'
+  requirements:
+    _permission: 'access content'
+
+img_annotator.update_action:
+  path: '/img_annotator/update_action'
+  defaults:
+    _controller: '\Drupal\img_annotator\Controller\AnnotationsActionsController::update'
+    _title: 'Update Annotation'
+  requirements:
+    _permission: 'access content'
+
+img_annotator.delete_action:
+  path: '/img_annotator/delete_action'
+  defaults:
+    _controller: '\Drupal\img_annotator\Controller\AnnotationsActionsController::delete'
+    _title: 'Delete Annotation'
+  requirements:
+    _permission: 'access content'
+
+img_annotator.retrieve_action:
+  path: '/img_annotator/retrieve_action'
+  defaults:
+    _controller: '\Drupal\img_annotator\Controller\AnnotationsActionsController::retrieve'
+    _title: 'Retrieve Annotation'
+  requirements:
+    _permission: 'access content'

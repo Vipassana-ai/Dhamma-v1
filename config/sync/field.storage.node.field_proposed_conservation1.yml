@@ -1,0 +1,24 @@
+uuid: 05bce6f5-f938-4c7b-8b55-6eb3bf5b5de9
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - taxonomy
+third_party_settings:
+  field_permissions:
+    permission_type: custom
+id: node.field_proposed_conservation1
+field_name: field_proposed_conservation1
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

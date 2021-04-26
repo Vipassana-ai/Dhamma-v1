@@ -1,0 +1,23 @@
+uuid: f15e2c9e-ba31-431c-8bd6-88b4dd8b78d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - physical
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_physical_features
+field_name: field_physical_features
+entity_type: node
+type: physical_dimensions
+settings: {  }
+module: physical
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

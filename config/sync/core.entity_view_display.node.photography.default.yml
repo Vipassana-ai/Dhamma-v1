@@ -1,0 +1,943 @@
+uuid: c7114647-f951-4231-9479-679a9a640128
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.photography.field_exif_aperturefnumber
+    - field.field.node.photography.field_exif_author
+    - field.field.node.photography.field_exif_comments
+    - field.field.node.photography.field_exif_datetime
+    - field.field.node.photography.field_exif_exposuremode
+    - field.field.node.photography.field_exif_exposureprogram
+    - field.field.node.photography.field_exif_exposuretime
+    - field.field.node.photography.field_exif_flash
+    - field.field.node.photography.field_exif_focallength
+    - field.field.node.photography.field_exif_imagedescription
+    - field.field.node.photography.field_exif_isospeedratings
+    - field.field.node.photography.field_exif_keywords
+    - field.field.node.photography.field_exif_make
+    - field.field.node.photography.field_exif_model
+    - field.field.node.photography.field_exif_orientation
+    - field.field.node.photography.field_exif_scenecapturetype
+    - field.field.node.photography.field_exif_title
+    - field.field.node.photography.field_exif_whitebalance
+    - field.field.node.photography.field_image
+    - field.field.node.photography.layout_builder__layout
+    - node.type.photography
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          d9abee7a-e6ca-4d7f-92e6-3f3b45ebbfa6:
+            uuid: d9abee7a-e6ca-4d7f-92e6-3f3b45ebbfa6
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:photography:display_media_service_file'
+            additional: {  }
+            weight: 0
+          7e03c1ff-edba-4d4e-8f66-7cab48a76924:
+            uuid: 7e03c1ff-edba-4d4e-8f66-7cab48a76924
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:photography:display_media_entity_view_2'
+            additional: {  }
+            weight: 1
+          d11cb35c-61ff-4bbc-b62b-101cad1ae704:
+            uuid: d11cb35c-61ff-4bbc-b62b-101cad1ae704
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:photography:pdfjs_media_evas_entity_view_1'
+            additional: {  }
+            weight: 2
+          0b76feef-2e2c-4acc-9d07-8b851ade7fc8:
+            uuid: 0b76feef-2e2c-4acc-9d07-8b851ade7fc8
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:photography:openseadragon_media_evas_service_file'
+            additional: {  }
+            weight: 3
+          5597832b-ee21-425b-bf42-ab6299d6b71d:
+            uuid: 5597832b-ee21-425b-bf42-ab6299d6b71d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:photography:openseadragon_media_evas_entity_view_2'
+            additional: {  }
+            weight: 4
+          ce29cb8c-90a1-497b-8a36-88ec51ee3bab:
+            uuid: ce29cb8c-90a1-497b-8a36-88ec51ee3bab
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:photography:openseadragon_media_evas_entity_view_1'
+            additional: {  }
+            weight: 5
+          31ca84c5-92f1-4f01-b61b-4ff51e8ebb93:
+            uuid: 31ca84c5-92f1-4f01-b61b-4ff51e8ebb93
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:photography:display_media_thumbnail'
+            additional: {  }
+            weight: 6
+          4a8bb339-17c1-467c-b168-3425117a8c81:
+            uuid: 4a8bb339-17c1-467c-b168-3425117a8c81
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:photography:pdfjs_media_evas_service_file'
+            additional: {  }
+            weight: 7
+          9bff9dfc-de16-4248-9f7a-be665a04e7ba:
+            uuid: 9bff9dfc-de16-4248-9f7a-be665a04e7ba
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:photography:display_media_entity_view_1'
+            additional: {  }
+            weight: 8
+          c95fb178-6662-4789-a6e4-7b8be3956460:
+            uuid: c95fb178-6662-4789-a6e4-7b8be3956460
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:photography:pdfjs_media_evas_entity_view_2'
+            additional: {  }
+            weight: 9
+          a049f853-776b-49ca-bd33-0b34fb283df1:
+            uuid: a049f853-776b-49ca-bd33-0b34fb283df1
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:photography:links'
+            additional: {  }
+            weight: 10
+          cb86b7b4-5b35-4ac2-bef7-9c9e20667165:
+            uuid: cb86b7b4-5b35-4ac2-bef7-9c9e20667165
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_datetime'
+              formatter:
+                label: above
+                type: datetime_custom
+                settings:
+                  date_format: 'Y-m-d\TH:i:s'
+                  timezone_override: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 13
+          afc359e1-6545-4834-af02-842bbd122d7b:
+            uuid: afc359e1-6545-4834-af02-842bbd122d7b
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_comments'
+              formatter:
+                label: above
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 14
+          13fef267-2fd7-4e3e-9e08-01a5bbef28f2:
+            uuid: 13fef267-2fd7-4e3e-9e08-01a5bbef28f2
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_imagedescription'
+              formatter:
+                label: above
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 15
+          30ccc694-4e95-4671-a7da-649195934d1c:
+            uuid: 30ccc694-4e95-4671-a7da-649195934d1c
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_title'
+              formatter:
+                label: above
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 16
+          a8495dec-5309-4484-8a38-d8481839a3dc:
+            uuid: a8495dec-5309-4484-8a38-d8481839a3dc
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_make'
+              formatter:
+                label: above
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 17
+          eff4e4da-d5ff-463a-ba34-bd57c72fe1f8:
+            uuid: eff4e4da-d5ff-463a-ba34-bd57c72fe1f8
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_aperturefnumber'
+              formatter:
+                label: above
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 18
+          391efae3-a296-453e-8aef-d8e75bfb0225:
+            uuid: 391efae3-a296-453e-8aef-d8e75bfb0225
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_exposuretime'
+              formatter:
+                label: above
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 19
+          24cfc9e9-0ff9-4c94-8296-14fad4dd7171:
+            uuid: 24cfc9e9-0ff9-4c94-8296-14fad4dd7171
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_focallength'
+              formatter:
+                label: above
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 20
+          5e23ae08-538a-4eb5-bb85-4f0de20acbec:
+            uuid: 5e23ae08-538a-4eb5-bb85-4f0de20acbec
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_flash'
+              formatter:
+                label: above
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 21
+          eec555b5-5a12-49d1-92a8-428f2ff04125:
+            uuid: eec555b5-5a12-49d1-92a8-428f2ff04125
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_exposureprogram'
+              formatter:
+                label: above
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 22
+          5c0844d2-aadb-4fb9-bf62-3e2e1f8e22e1:
+            uuid: 5c0844d2-aadb-4fb9-bf62-3e2e1f8e22e1
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_exposuremode'
+              formatter:
+                label: above
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 23
+          2c33c319-d51c-47ac-bcdb-63f69b8e87f5:
+            uuid: 2c33c319-d51c-47ac-bcdb-63f69b8e87f5
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_whitebalance'
+              formatter:
+                label: above
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 24
+          49015ca4-4f42-488c-bf32-db02e8570772:
+            uuid: 49015ca4-4f42-488c-bf32-db02e8570772
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_scenecapturetype'
+              formatter:
+                label: above
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 25
+          4eb75363-1ff5-45a7-a2fe-f6c372dfd61a:
+            uuid: 4eb75363-1ff5-45a7-a2fe-f6c372dfd61a
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_orientation'
+              formatter:
+                label: above
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 26
+          ab034ace-8ea3-47b2-bcdf-1d497da92b01:
+            uuid: ab034ace-8ea3-47b2-bcdf-1d497da92b01
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_author'
+              formatter:
+                label: above
+                type: entity_reference_rss_category
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 27
+          3af325dc-9f56-4d44-9ea0-22fb7e76a35e:
+            uuid: 3af325dc-9f56-4d44-9ea0-22fb7e76a35e
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_model'
+              formatter:
+                label: above
+                type: entity_reference_rss_category
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 28
+          c7734cc5-839e-4b55-b204-de61dfda68fb:
+            uuid: c7734cc5-839e-4b55-b204-de61dfda68fb
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_isospeedratings'
+              formatter:
+                label: above
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 29
+          1aefe073-bf72-4012-b3cb-2641365cc844:
+            uuid: 1aefe073-bf72-4012-b3cb-2641365cc844
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_keywords'
+              formatter:
+                label: above
+                type: entity_reference_rss_category
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 30
+          c54da92d-dd8a-45ea-a6d9-ba6b9e9f9d8d:
+            uuid: c54da92d-dd8a-45ea-a6d9-ba6b9e9f9d8d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_image'
+              formatter:
+                label: above
+                type: responsive_image
+                settings:
+                  responsive_image_style: ''
+                  image_link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 12
+          35d7ee46-9604-4de0-9d5e-467f83bdb2d3:
+            uuid: 35d7ee46-9604-4de0-9d5e-467f83bdb2d3
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_image'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 31
+          81ec6a40-cc28-4d4d-86fd-cabcc382e69a:
+            uuid: 81ec6a40-cc28-4d4d-86fd-cabcc382e69a
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_datetime'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 32
+          85523b87-7e44-4134-917f-4b7cc524c23f:
+            uuid: 85523b87-7e44-4134-917f-4b7cc524c23f
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_comments'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 33
+          4cd200b5-7f12-4421-a322-e342815f6b53:
+            uuid: 4cd200b5-7f12-4421-a322-e342815f6b53
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_imagedescription'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 34
+          8911d5d5-0918-499c-9258-7ef3624c4f8d:
+            uuid: 8911d5d5-0918-499c-9258-7ef3624c4f8d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_title'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 35
+          1e57c881-c3dc-4165-a448-e0d3216176d7:
+            uuid: 1e57c881-c3dc-4165-a448-e0d3216176d7
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_make'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 36
+          14749c1e-7732-4b20-9112-190d1779748c:
+            uuid: 14749c1e-7732-4b20-9112-190d1779748c
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_aperturefnumber'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 37
+          85a48693-41f5-410a-b53d-1feb7c3ac099:
+            uuid: 85a48693-41f5-410a-b53d-1feb7c3ac099
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_exposuretime'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 38
+          93f14291-01eb-4e4b-ad71-104b1f25e593:
+            uuid: 93f14291-01eb-4e4b-ad71-104b1f25e593
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_isospeedratings'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 39
+          2ccb06a6-bc02-4e51-9f0d-890b4c078410:
+            uuid: 2ccb06a6-bc02-4e51-9f0d-890b4c078410
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_focallength'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 40
+          ee1aa2f1-332f-42bf-bbb8-eca1e9a024d1:
+            uuid: ee1aa2f1-332f-42bf-bbb8-eca1e9a024d1
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_flash'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 41
+          11513354-1638-480d-ac80-40396bb42ae3:
+            uuid: 11513354-1638-480d-ac80-40396bb42ae3
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_exposureprogram'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 42
+          8e149bfc-d2ee-4151-a0f0-1bf9950e0443:
+            uuid: 8e149bfc-d2ee-4151-a0f0-1bf9950e0443
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_exposuremode'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 43
+          7218a7e7-ecf3-4a81-b341-deb30546935d:
+            uuid: 7218a7e7-ecf3-4a81-b341-deb30546935d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_whitebalance'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 44
+          2bb1bc2a-45ef-428a-bc41-ed33e2404b07:
+            uuid: 2bb1bc2a-45ef-428a-bc41-ed33e2404b07
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_scenecapturetype'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 45
+          cb897cf0-4b2d-44ea-9480-5d44253d0a68:
+            uuid: cb897cf0-4b2d-44ea-9480-5d44253d0a68
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_orientation'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 46
+          7a7a59ce-7235-4dd1-99a4-ebf3b3f5e815:
+            uuid: 7a7a59ce-7235-4dd1-99a4-ebf3b3f5e815
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_author'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 47
+          8202b0f8-2d80-4bba-9b65-8aca4871e79d:
+            uuid: 8202b0f8-2d80-4bba-9b65-8aca4871e79d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_model'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 48
+          6882fe31-842c-4baa-83d7-00a96da074a7:
+            uuid: 6882fe31-842c-4baa-83d7-00a96da074a7
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_isospeedratings'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 49
+          a5d55afa-5e7f-4675-9087-cd159a1b458d:
+            uuid: a5d55afa-5e7f-4675-9087-cd159a1b458d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:photography:field_exif_keywords'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 50
+        third_party_settings: {  }
+    allow_custom: false
+id: node.photography.default
+targetEntityType: node
+bundle: photography
+mode: default
+content:
+  display_media_entity_view_1:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  display_media_entity_view_2:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  display_media_service_file:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  display_media_thumbnail:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_exif_aperturefnumber:
+    label: hidden
+    type: text_default
+    weight: 147
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_author:
+    label: hidden
+    type: text_default
+    weight: 157
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_comments:
+    label: hidden
+    type: text_default
+    weight: 143
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_datetime:
+    label: hidden
+    type: text_default
+    weight: 142
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_exposuremode:
+    label: hidden
+    type: text_default
+    weight: 153
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_exposureprogram:
+    label: hidden
+    type: text_default
+    weight: 152
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_exposuretime:
+    label: hidden
+    type: text_default
+    weight: 148
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_flash:
+    label: hidden
+    type: text_default
+    weight: 151
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_focallength:
+    label: hidden
+    type: text_default
+    weight: 150
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_imagedescription:
+    label: hidden
+    type: text_default
+    weight: 144
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_isospeedratings:
+    label: hidden
+    type: text_default
+    weight: 159
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_keywords:
+    label: hidden
+    type: text_default
+    weight: 160
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_make:
+    label: hidden
+    type: text_default
+    weight: 146
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_model:
+    label: hidden
+    type: text_default
+    weight: 158
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_orientation:
+    label: hidden
+    type: text_default
+    weight: 156
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_scenecapturetype:
+    label: hidden
+    type: text_default
+    weight: 155
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_title:
+    label: hidden
+    type: text_default
+    weight: 145
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_exif_whitebalance:
+    label: hidden
+    type: text_default
+    weight: 154
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    label: hidden
+    type: text_default
+    weight: 141
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  openseadragon_media_evas_entity_view_1:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  openseadragon_media_evas_entity_view_2:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  openseadragon_media_evas_service_file:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  pdfjs_media_evas_entity_view_1:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  pdfjs_media_evas_entity_view_2:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  pdfjs_media_evas_service_file:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

@@ -1,0 +1,23 @@
+uuid: b2bb842a-840e-4e60-8228-794aa0341ae0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_physloc
+    - node.type.archival_object
+  module:
+    - text
+_core:
+  default_config_hash: czS5Sy0BWaCIXdb18dZgvpuMT9GfpkOReMsW_wq1Gm8
+id: node.archival_object.field_physloc
+field_name: field_physloc
+entity_type: node
+bundle: archival_object
+label: 'Physical Location'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

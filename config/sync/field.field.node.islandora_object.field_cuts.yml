@@ -1,0 +1,29 @@
+uuid: 02b32686-eb1e-45c5-8b15-0e866c61b6df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cuts
+    - node.type.islandora_object
+    - taxonomy.vocabulary.conservator
+id: node.islandora_object.field_cuts
+field_name: field_cuts
+entity_type: node
+bundle: islandora_object
+label: Cuts
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      conservator: conservator
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

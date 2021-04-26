@@ -1,0 +1,22 @@
+{
+    "name": "drupal/export_tools",
+    "description": "Provides export tools for exporting data",
+    "type": "drupal-module",
+    "license": "GPL-2.0+",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/export_tools",
+        "source": "https://www.drupal.org/project/export_tools"
+    },
+    "keywords": [
+        "Drupal",
+        "Spreadsheet",
+        "CSV",
+        "Excel",
+        "Export"
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.0.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

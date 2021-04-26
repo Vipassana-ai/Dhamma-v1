@@ -1,0 +1,95 @@
+uuid: a1cb141f-c2a8-425e-a820-90255e526b8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.audio.field_access_terms
+    - field.field.media.audio.field_file_size
+    - field.field.media.audio.field_media_audio_file
+    - field.field.media.audio.field_media_of
+    - field.field.media.audio.field_media_use
+    - field.field.media.audio.field_mime_type
+    - field.field.media.audio.field_original_name
+    - image.style.thumbnail
+    - media.type.audio
+  module:
+    - field_layout
+    - image
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          1d6de754-2ac0-413f-8028-64199cd50a00:
+            uuid: 1d6de754-2ac0-413f-8028-64199cd50a00
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:audio:thumbnail'
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_style: thumbnail
+                  image_link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          3cb4880d-b771-4e01-8ff5-c29550ea1d89:
+            uuid: 3cb4880d-b771-4e01-8ff5-c29550ea1d89
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:media:audio:field_gemini_uri'
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+_core:
+  default_config_hash: bluLijrv0ELGIq1uFR777kImy6ZH6VLl8mBCOwvuLg4
+id: media.audio.media_library
+targetEntityType: media
+bundle: audio
+mode: media_library
+content:
+  field_gemini_uri:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  thumbnail:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_access_terms: true
+  field_file_size: true
+  field_media_audio_file: true
+  field_media_of: true
+  field_media_use: true
+  field_mime_type: true
+  field_original_name: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  uid: true

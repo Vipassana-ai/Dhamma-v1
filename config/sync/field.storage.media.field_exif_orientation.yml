@@ -1,0 +1,20 @@
+uuid: cbb27a20-db1f-4d27-a542-3c8cc5dd5fa3
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - text
+id: media.field_exif_orientation
+field_name: field_exif_orientation
+entity_type: media
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,11 @@
+uuid: a20a0125-15c1-4544-a4fc-b0c221b27844
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.physical_description
+id: taxonomy_term.physical_description
+target_entity_type_id: taxonomy_term
+target_bundle: physical_description
+default_langcode: site_default
+language_alterable: false

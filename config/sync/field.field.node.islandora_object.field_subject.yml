@@ -1,0 +1,31 @@
+uuid: 47737f9f-10b1-4655-be3e-3afc2ffb1d1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subject
+    - node.type.islandora_object
+    - taxonomy.vocabulary.classification3
+_core:
+  default_config_hash: OtTjefnDL9wxlQAGypGQ_6MzW1CT7u1acC59N6P5Boc
+id: node.islandora_object.field_subject
+field_name: field_subject
+entity_type: node
+bundle: islandora_object
+label: Subject
+description: 'Keywords. Eg: Sayagyi - Meditation.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      classification3: classification3
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: classification1
+field_type: entity_reference

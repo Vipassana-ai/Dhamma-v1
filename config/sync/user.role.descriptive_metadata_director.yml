@@ -1,0 +1,27 @@
+uuid: 8cbc5299-d4de-4113-ab9a-80df3163aeaf
+langcode: en
+status: true
+dependencies: {  }
+id: descriptive_metadata_director
+label: 'Descriptive Metadata Director'
+weight: 5
+is_admin: null
+permissions:
+  - 'view field_unique_id'
+  - 'view own field_at_location'
+  - 'view own field_at_location1'
+  - 'view own field_bt_location'
+  - 'view own field_bt_location1'
+  - 'view own field_dt_location'
+  - 'view own field_dt_location1'
+  - 'view own field_physical_color_mode'
+  - 'view own field_physical_condition'
+  - 'view own field_physical_location'
+  - 'view own field_physical_location11'
+  - 'view own field_processing_location'
+  - 'view own field_processing_location1'
+  - 'view own field_raw_location'
+  - 'view own field_raw_location1'
+  - 'view own field_rescan_date1'
+  - 'view own field_rescan_done'
+  - 'view own field_scanner_name'

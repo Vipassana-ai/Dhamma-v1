@@ -1,0 +1,24 @@
+uuid: bb7c1e3d-d578-48fb-ae89-336b39a2f01b
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - taxonomy
+third_party_settings:
+  field_permissions:
+    permission_type: custom
+id: node.field_removal_of_stains
+field_name: field_removal_of_stains
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

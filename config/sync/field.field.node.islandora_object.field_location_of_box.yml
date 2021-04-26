@@ -1,0 +1,19 @@
+uuid: 64cb0622-48c7-4681-bc7f-37c1ccb6da0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location_of_box
+    - node.type.islandora_object
+id: node.islandora_object.field_location_of_box
+field_name: field_location_of_box
+entity_type: node
+bundle: islandora_object
+label: 'Location of Box'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,35 @@
+uuid: 4abd1e42-2b27-4cb6-9fd9-bf7a24c20107
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.archival_container_list
+  module:
+    - node
+    - views
+  theme:
+    - bartik
+_core:
+  default_config_hash: jxOUIX5rqKS4KGWImJC4a3qo4b0no-BK_5Zk2zAC-bc
+id: views_block__archival_container_list_block_1
+theme: bartik
+region: content
+weight: 1
+provider: null
+plugin: 'views_block:archival_container_list-block_1'
+settings:
+  id: 'views_block:archival_container_list-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      archival_top_container: archival_top_container
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

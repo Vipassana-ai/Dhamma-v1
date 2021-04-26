@@ -1,0 +1,23 @@
+uuid: 8c3ac3d5-3cab-4921-aa39-e8b4af29eac1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_youtube
+    - node.type.islandora_object
+id: node.islandora_object.field_youtube
+field_name: field_youtube
+entity_type: node
+bundle: islandora_object
+label: YouTube
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,13 @@
+name: 'ArchivesSpace plus Islandora Defaults'
+type: module
+description: 'Adds default configurations for ArchivesSpace migrations and re-uses some fields from Islandora.'
+core_version_requirement: ^8.8 || ^9
+package: ArchivesSpace
+dependencies:
+  - archivesspace:archivesspace_core_defaults
+  - islandora:islandora_defaults
+
+# Information added by Drupal.org packaging script on 2021-01-19
+version: '8.x-1.1'
+project: 'archivesspace'
+datestamp: 1611097482

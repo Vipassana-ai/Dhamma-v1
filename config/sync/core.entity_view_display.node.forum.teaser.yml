@@ -1,0 +1,254 @@
+uuid: d59da327-4265-449a-8340-265981035f25
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.forum.body
+    - field.field.node.forum.comment_forum
+    - field.field.node.forum.taxonomy_forums
+    - node.type.forum
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          545db46c-7af8-4d36-bd5d-30bb5f2e7d08:
+            uuid: 545db46c-7af8-4d36-bd5d-30bb5f2e7d08
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:forum:display_media_entity_view_1'
+            additional: {  }
+            weight: 0
+          45f7fc23-62f1-4ec3-969d-b6f2e2c7c043:
+            uuid: 45f7fc23-62f1-4ec3-969d-b6f2e2c7c043
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:forum:display_media_entity_view_2'
+            additional: {  }
+            weight: 1
+          e8a656c5-a10a-42c0-90dd-8219e16ccc25:
+            uuid: e8a656c5-a10a-42c0-90dd-8219e16ccc25
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:forum:display_media_service_file'
+            additional: {  }
+            weight: 2
+          542b7f0f-71ee-4fa5-9a05-c169e1134c6e:
+            uuid: 542b7f0f-71ee-4fa5-9a05-c169e1134c6e
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:forum:display_media_thumbnail'
+            additional: {  }
+            weight: 3
+          5bf5192c-2caa-4f57-bbb0-79bebf8f66fa:
+            uuid: 5bf5192c-2caa-4f57-bbb0-79bebf8f66fa
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:forum:openseadragon_media_evas_entity_view_1'
+            additional: {  }
+            weight: 4
+          5586cf17-4bf3-40e6-a8bc-4cb0c94ae47a:
+            uuid: 5586cf17-4bf3-40e6-a8bc-4cb0c94ae47a
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:forum:openseadragon_media_evas_entity_view_2'
+            additional: {  }
+            weight: 5
+          29c9b7f4-a8e7-4b3f-b598-9b0167751fef:
+            uuid: 29c9b7f4-a8e7-4b3f-b598-9b0167751fef
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:forum:openseadragon_media_evas_service_file'
+            additional: {  }
+            weight: 6
+          f4c30599-9fca-409c-93c8-ecda00fe8e03:
+            uuid: f4c30599-9fca-409c-93c8-ecda00fe8e03
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:forum:pdfjs_media_evas_entity_view_1'
+            additional: {  }
+            weight: 7
+          da5f83de-284c-4c8d-b25d-97780077828e:
+            uuid: da5f83de-284c-4c8d-b25d-97780077828e
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:forum:pdfjs_media_evas_entity_view_2'
+            additional: {  }
+            weight: 8
+          ef58b0e8-fc7c-47ad-94ac-7f7925238493:
+            uuid: ef58b0e8-fc7c-47ad-94ac-7f7925238493
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:forum:pdfjs_media_evas_service_file'
+            additional: {  }
+            weight: 9
+          202a5b66-f6e3-4422-9d4b-68d02d3f6f25:
+            uuid: 202a5b66-f6e3-4422-9d4b-68d02d3f6f25
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:forum:taxonomy_forums'
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            additional: {  }
+            weight: 10
+          d9765c78-e104-4639-9fdc-e85c94c71bcb:
+            uuid: d9765c78-e104-4639-9fdc-e85c94c71bcb
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:forum:body'
+              formatter:
+                label: hidden
+                type: text_summary_or_trimmed
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            additional: {  }
+            weight: 11
+          5cd069c9-dba1-4cb3-8d8a-b8ef35dc6ef5:
+            uuid: 5cd069c9-dba1-4cb3-8d8a-b8ef35dc6ef5
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:forum:links'
+            additional: {  }
+            weight: 12
+        third_party_settings: {  }
+_core:
+  default_config_hash: MK_j248n6esK84n87ulM_yPeqdkndKn94h4vTJC4wjw
+id: node.forum.teaser
+targetEntityType: node
+bundle: forum
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 100
+    region: content
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  display_media_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  display_media_entity_view_2:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  display_media_service_file:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  display_media_thumbnail:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 101
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  openseadragon_media_evas_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  openseadragon_media_evas_entity_view_2:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  openseadragon_media_evas_service_file:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  pdfjs_media_evas_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  pdfjs_media_evas_entity_view_2:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  pdfjs_media_evas_service_file:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  taxonomy_forums:
+    type: entity_reference_label
+    weight: 10
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+hidden:
+  comment_forum: true
+  langcode: true
+  search_api_excerpt: true

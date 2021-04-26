@@ -1,0 +1,23 @@
+uuid: 8ab2e1d6-0db4-48a7-84d3-9f3c7ddfe551
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - carapace
+_core:
+  default_config_hash: Gd3Xqh2B02FF1ls4fBC6uWHdlT2fpbwjkeAO0pnYls0
+id: carapace_search
+theme: carapace
+region: header_second
+weight: -13
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: '0'
+  page_id: ''
+visibility: {  }

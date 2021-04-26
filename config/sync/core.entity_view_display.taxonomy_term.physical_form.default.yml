@@ -1,0 +1,91 @@
+uuid: d573b91c-0718-4b64-a20b-d63c2e22d012
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.physical_form.field_authority_link
+    - taxonomy.vocabulary.physical_form
+  module:
+    - controlled_access_terms
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          239cc616-a4f1-45cc-b325-db0bddfc192e:
+            uuid: 239cc616-a4f1-45cc-b325-db0bddfc192e
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:physical_form:description'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          23069860-4ae4-47e6-a723-6b27100958ee:
+            uuid: 23069860-4ae4-47e6-a723-6b27100958ee
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:physical_form:field_authority_link'
+              formatter:
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: _blank
+                third_party_settings: {  }
+                type: authority_formatter_default
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+_core:
+  default_config_hash: 7esFqnYo_84BYbxSC05U6mkL1KNPze2_qAbAZrbHGng
+id: taxonomy_term.physical_form.default
+targetEntityType: taxonomy_term
+bundle: physical_form
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_authority_link:
+    weight: 1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: _blank
+    third_party_settings: {  }
+    type: authority_formatter_default
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,20 @@
+uuid: 01404d66-b778-4223-ba35-40448fdd4cb7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_exif_title
+field_name: field_exif_title
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: -1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

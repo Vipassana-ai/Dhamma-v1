@@ -1,0 +1,8 @@
+uuid: 211b6779-97a5-4fe4-aa68-25edea61bece
+langcode: en
+status: true
+dependencies: {  }
+name: 'Polyester sleeve'
+vid: polyester_sleeve
+description: 'different size of sleeve we using for preserving Documents '
+weight: -8

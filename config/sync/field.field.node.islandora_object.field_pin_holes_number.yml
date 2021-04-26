@@ -1,0 +1,23 @@
+uuid: 32b71bd2-7375-44ff-b1eb-d9fe07f705ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pin_holes_number
+    - node.type.islandora_object
+id: node.islandora_object.field_pin_holes_number
+field_name: field_pin_holes_number
+entity_type: node
+bundle: islandora_object
+label: 'Pin holes number'
+description: Count.
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

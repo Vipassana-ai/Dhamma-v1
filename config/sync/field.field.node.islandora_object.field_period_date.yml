@@ -1,0 +1,21 @@
+uuid: a16b58da-abf2-4a94-a8a7-498a2129c361
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_period_date
+    - node.type.islandora_object
+  module:
+    - datetime_range
+id: node.islandora_object.field_period_date
+field_name: field_period_date
+entity_type: node
+bundle: islandora_object
+label: Period/Date
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

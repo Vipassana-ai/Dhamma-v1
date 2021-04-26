@@ -1,0 +1,369 @@
+uuid: a3ed0e9e-6c2e-4958-9ecb-185134c64c07
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.archival_resource.field_abstract
+    - field.field.node.archival_resource.field_accessrestrict
+    - field.field.node.archival_resource.field_accruals
+    - field.field.node.archival_resource.field_acqinfo
+    - field.field.node.archival_resource.field_altformavail
+    - field.field.node.archival_resource.field_appraisal
+    - field.field.node.archival_resource.field_archival_record_level
+    - field.field.node.archival_resource.field_arrangement
+    - field.field.node.archival_resource.field_as_agent_links
+    - field.field.node.archival_resource.field_as_classifications
+    - field.field.node.archival_resource.field_as_date
+    - field.field.node.archival_resource.field_as_ead_id
+    - field.field.node.archival_resource.field_as_extent
+    - field.field.node.archival_resource.field_as_finding_aid_desc_rules
+    - field.field.node.archival_resource.field_as_subject
+    - field.field.node.archival_resource.field_bioghist
+    - field.field.node.archival_resource.field_custodhist
+    - field.field.node.archival_resource.field_dimensions
+    - field.field.node.archival_resource.field_external_documents
+    - field.field.node.archival_resource.field_fileplan
+    - field.field.node.archival_resource.field_filing_title
+    - field.field.node.archival_resource.field_finding_aid_author
+    - field.field.node.archival_resource.field_finding_aid_date
+    - field.field.node.archival_resource.field_finding_aid_link
+    - field.field.node.archival_resource.field_langmaterial
+    - field.field.node.archival_resource.field_legalstatus
+    - field.field.node.archival_resource.field_materialspec
+    - field.field.node.archival_resource.field_odd
+    - field.field.node.archival_resource.field_originalsloc
+    - field.field.node.archival_resource.field_otherfindaid
+    - field.field.node.archival_resource.field_physdesc
+    - field.field.node.archival_resource.field_physfacet
+    - field.field.node.archival_resource.field_physloc
+    - field.field.node.archival_resource.field_phystech
+    - field.field.node.archival_resource.field_prefercite
+    - field.field.node.archival_resource.field_printable_pdf
+    - field.field.node.archival_resource.field_processinfo
+    - field.field.node.archival_resource.field_relatedmaterial
+    - field.field.node.archival_resource.field_repository
+    - field.field.node.archival_resource.field_resource_identifier
+    - field.field.node.archival_resource.field_resource_resource_type
+    - field.field.node.archival_resource.field_restrictions_bool
+    - field.field.node.archival_resource.field_scopecontent
+    - field.field.node.archival_resource.field_separatedmaterial
+    - field.field.node.archival_resource.field_user_mtime
+    - field.field.node.archival_resource.field_userestrict
+    - node.type.archival_resource
+  module:
+    - archivesspace
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          e36324a9-d732-42c0-a400-5cbadf2721f7:
+            uuid: e36324a9-d732-42c0-a400-5cbadf2721f7
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:archival_resource:links'
+            additional: {  }
+            weight: 0
+          ab447a42-dbee-4300-a103-aa7dfa8820e6:
+            uuid: ab447a42-dbee-4300-a103-aa7dfa8820e6
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:archival_resource:field_as_date'
+              formatter:
+                type: as_date_default
+                label: inline
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
+          e69b0d42-b215-46be-8377-7270ce38b2d7:
+            uuid: e69b0d42-b215-46be-8377-7270ce38b2d7
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:archival_resource:field_abstract'
+              formatter:
+                type: text_trimmed
+                label: inline
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            additional: {  }
+            weight: 2
+          aca0485b-043d-42a0-a49a-76b358195802:
+            uuid: aca0485b-043d-42a0-a49a-76b358195802
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:archival_resource:display_media_service_file'
+            additional: {  }
+            weight: 3
+          90290de9-d961-4945-8e9d-d3cb1efd0c00:
+            uuid: 90290de9-d961-4945-8e9d-d3cb1efd0c00
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:archival_resource:display_media_thumbnail'
+            additional: {  }
+            weight: 4
+          1fe91d5d-6ba8-41b3-9fd9-c270ef2e07f9:
+            uuid: 1fe91d5d-6ba8-41b3-9fd9-c270ef2e07f9
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:archival_resource:display_media_entity_view_2'
+            additional: {  }
+            weight: 5
+          49ac555a-7455-4d19-b261-024748e7316a:
+            uuid: 49ac555a-7455-4d19-b261-024748e7316a
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:archival_resource:openseadragon_media_evas_entity_view_1'
+            additional: {  }
+            weight: 6
+          4d8031d9-3c2a-4c15-a48e-b2f1214d84d0:
+            uuid: 4d8031d9-3c2a-4c15-a48e-b2f1214d84d0
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:archival_resource:openseadragon_media_evas_entity_view_2'
+            additional: {  }
+            weight: 7
+          326510dc-139d-428e-82f6-7ccdcde6cef7:
+            uuid: 326510dc-139d-428e-82f6-7ccdcde6cef7
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:archival_resource:openseadragon_media_evas_service_file'
+            additional: {  }
+            weight: 8
+          d6708c18-7cb5-467a-bb77-6de5fd26c615:
+            uuid: d6708c18-7cb5-467a-bb77-6de5fd26c615
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:archival_resource:pdfjs_media_evas_entity_view_1'
+            additional: {  }
+            weight: 9
+          8d3886b1-9d84-4577-9209-a6a28673404c:
+            uuid: 8d3886b1-9d84-4577-9209-a6a28673404c
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:archival_resource:pdfjs_media_evas_entity_view_2'
+            additional: {  }
+            weight: 10
+          8bb55ceb-fa9a-43f7-84f8-30f269125e7d:
+            uuid: 8bb55ceb-fa9a-43f7-84f8-30f269125e7d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:archival_resource:pdfjs_media_evas_service_file'
+            additional: {  }
+            weight: 11
+          c45aec30-9a19-483d-89b2-405c4b34063a:
+            uuid: c45aec30-9a19-483d-89b2-405c4b34063a
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:archival_resource:display_media_entity_view_1'
+            additional: {  }
+            weight: 12
+          6c18978c-93da-4c03-807b-af99d6d61711:
+            uuid: 6c18978c-93da-4c03-807b-af99d6d61711
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:archival_resource:archival_container_list_eva_entity_view_1'
+            additional: {  }
+            weight: 13
+          f33e292d-82d2-40ce-a743-b846a5fd08ec:
+            uuid: f33e292d-82d2-40ce-a743-b846a5fd08ec
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:archival_resource:field_gemini_uri'
+            additional: {  }
+            weight: 14
+        third_party_settings: {  }
+_core:
+  default_config_hash: bCvgnl9oDly4opJphC-sc1inIush-nwuD-SExUnq6Ds
+id: node.archival_resource.teaser
+targetEntityType: node
+bundle: archival_resource
+mode: teaser
+content:
+  archival_container_list_eva_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  display_media_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  display_media_entity_view_2:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  display_media_service_file:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  display_media_thumbnail:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_abstract:
+    type: text_trimmed
+    weight: 2
+    region: content
+    label: inline
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_as_date:
+    type: as_date_default
+    weight: 1
+    region: content
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+  field_gemini_uri:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  openseadragon_media_evas_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  openseadragon_media_evas_entity_view_2:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  openseadragon_media_evas_service_file:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  pdfjs_media_evas_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  pdfjs_media_evas_entity_view_2:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  pdfjs_media_evas_service_file:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_accessrestrict: true
+  field_accruals: true
+  field_acqinfo: true
+  field_altformavail: true
+  field_appraisal: true
+  field_archival_record_level: true
+  field_arrangement: true
+  field_as_agent_links: true
+  field_as_classifications: true
+  field_as_ead_id: true
+  field_as_extent: true
+  field_as_finding_aid_desc_rules: true
+  field_as_subject: true
+  field_bioghist: true
+  field_custodhist: true
+  field_dimensions: true
+  field_external_documents: true
+  field_fileplan: true
+  field_filing_title: true
+  field_finding_aid_author: true
+  field_finding_aid_date: true
+  field_finding_aid_link: true
+  field_langmaterial: true
+  field_legalstatus: true
+  field_materialspec: true
+  field_odd: true
+  field_originalsloc: true
+  field_otherfindaid: true
+  field_physdesc: true
+  field_physfacet: true
+  field_physloc: true
+  field_phystech: true
+  field_prefercite: true
+  field_printable_pdf: true
+  field_processinfo: true
+  field_relatedmaterial: true
+  field_repository: true
+  field_resource_identifier: true
+  field_resource_resource_type: true
+  field_restrictions_bool: true
+  field_scopecontent: true
+  field_separatedmaterial: true
+  field_user_mtime: true
+  field_userestrict: true
+  langcode: true
+  search_api_excerpt: true

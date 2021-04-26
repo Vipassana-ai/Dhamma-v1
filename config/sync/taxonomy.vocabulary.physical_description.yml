@@ -1,0 +1,8 @@
+uuid: b8328c74-ef72-43b2-8eea-cb170c847e05
+langcode: en
+status: true
+dependencies: {  }
+name: 'Physical Description'
+vid: physical_description
+description: 'Status of physical material'
+weight: -6

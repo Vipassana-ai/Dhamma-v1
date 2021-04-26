@@ -1,0 +1,29 @@
+uuid: 662a1f8d-5fcc-4fed-b1a8-207e41be41f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_status_alarm_sign_
+    - node.type.islandora_object
+    - taxonomy.vocabulary.status
+id: node.islandora_object.field_status_alarm_sign_
+field_name: field_status_alarm_sign_
+entity_type: node
+bundle: islandora_object
+label: 'Status (alarm sign)'
+description: 'checking the condition of folios (documents) and write their status'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      status: status
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: a58d8bfd-85bc-4603-a998-6f4c41581d0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_scanner_name
+    - node.type.islandora_object
+id: node.islandora_object.field_scanner_name
+field_name: field_scanner_name
+entity_type: node
+bundle: islandora_object
+label: 'Scanner name'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: Epson
+default_value_callback: ''
+settings: {  }
+field_type: string

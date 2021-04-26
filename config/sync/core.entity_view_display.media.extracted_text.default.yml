@@ -1,0 +1,166 @@
+uuid: 430f2891-1ea6-484c-85f5-38b269526ff6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.extracted_text.field_edited_text
+    - field.field.media.extracted_text.field_media_file
+    - field.field.media.extracted_text.field_media_of
+    - field.field.media.extracted_text.field_media_use
+    - field.field.media.extracted_text.field_mime_type
+    - media.type.extracted_text
+  module:
+    - field_layout
+    - file
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          8e68b546-7619-4ee3-b8dd-6485e72e5322:
+            uuid: 8e68b546-7619-4ee3-b8dd-6485e72e5322
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:extracted_text:uid'
+              formatter:
+                label: hidden
+                type: author
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          5fe86853-1a00-45c7-8367-754dc40c08cc:
+            uuid: 5fe86853-1a00-45c7-8367-754dc40c08cc
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:extracted_text:created'
+              formatter:
+                label: hidden
+                type: timestamp
+                settings:
+                  date_format: medium
+                  custom_date_format: ''
+                  timezone: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
+          3761c9ec-0f8f-40c3-908c-b65e30489a5c:
+            uuid: 3761c9ec-0f8f-40c3-908c-b65e30489a5c
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:extracted_text:field_media_file'
+              formatter:
+                type: file_default
+                label: above
+                settings:
+                  use_description_as_link_text: true
+                third_party_settings: {  }
+            additional: {  }
+            weight: 2
+          14e99384-a5c0-4c03-8eac-fbfca5da95a2:
+            uuid: 14e99384-a5c0-4c03-8eac-fbfca5da95a2
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:extracted_text:field_edited_text'
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 3
+          312aba17-0e9c-4348-9dac-f645c0d9def2:
+            uuid: 312aba17-0e9c-4348-9dac-f645c0d9def2
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:extracted_text:field_media_of'
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            additional: {  }
+            weight: 4
+        third_party_settings: {  }
+_core:
+  default_config_hash: 98rg2WZr7qjNh0gmlzYQcToIh749Znv-1ZYBDHYSAwc
+id: media.extracted_text.default
+targetEntityType: media
+bundle: extracted_text
+mode: default
+content:
+  created:
+    label: hidden
+    type: timestamp
+    weight: 1
+    region: content
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  field_edited_text:
+    type: text_default
+    weight: 3
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_media_file:
+    type: file_default
+    weight: 2
+    region: content
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+  field_media_of:
+    type: entity_reference_label
+    weight: 4
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  uid:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_media_use: true
+  field_mime_type: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true

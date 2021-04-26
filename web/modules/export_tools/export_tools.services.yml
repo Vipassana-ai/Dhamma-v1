@@ -1,0 +1,13 @@
+services:
+  plugin.manager.export_destination:
+    class: Drupal\export_tools\ExportDestinationPluginManager
+    parent: default_plugin_manager
+  plugin.manager.export_field_process:
+    class: Drupal\export_tools\ExportFieldProcessPluginManager
+    parent: default_plugin_manager
+  plugin.manager.export_tools.destination:
+    class: Drupal\export_tools\ExportDestinationPluginManager
+    arguments: ['@container.namespaces', '@cache.discovery', '@module_handler']
+  export_tools.generator.spreadsheet:
+    class: Drupal\export_tools\Helper\SpreadsheetGeneratorHelper
+    arguments: ['@file_system', '@current_user', '@module_handler']

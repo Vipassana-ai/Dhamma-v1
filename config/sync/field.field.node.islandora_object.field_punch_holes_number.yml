@@ -1,0 +1,23 @@
+uuid: c5735de8-b3cb-486f-ab38-b71a87678f88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_punch_holes_number
+    - node.type.islandora_object
+id: node.islandora_object.field_punch_holes_number
+field_name: field_punch_holes_number
+entity_type: node
+bundle: islandora_object
+label: 'Punch holes number'
+description: 'Eg: 1,2,3... (Count)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

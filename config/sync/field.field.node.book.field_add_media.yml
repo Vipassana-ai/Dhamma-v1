@@ -1,0 +1,34 @@
+uuid: fb981a50-2e88-446e-aa35-6011036994d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_add_media
+    - media.type.document
+    - media.type.extracted_text
+    - media.type.file
+    - media.type.image
+    - node.type.book
+id: node.book.field_add_media
+field_name: field_add_media
+entity_type: node
+bundle: book
+label: 'Add Media'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+      extracted_text: extracted_text
+      file: file
+      image: image
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: file
+field_type: entity_reference

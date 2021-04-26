@@ -1,0 +1,20 @@
+uuid: 3e42ccc1-587e-4a31-9f32-1610fc0c459a
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.temporal
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+_core:
+  default_config_hash: 5wTjbCvROfzoWkFSxtTz46_ntx_IIb4GIVM36Tv53t4
+id: taxonomy_term.temporal
+target_entity_type_id: taxonomy_term
+target_bundle: temporal
+default_langcode: site_default
+language_alterable: true

@@ -1,0 +1,23 @@
+uuid: f9ce9d34-d867-4589-83e9-cc44758ccedb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cupboard_drawer_number
+    - node.type.islandora_object
+id: node.islandora_object.field_cupboard_drawer_number
+field_name: field_cupboard_drawer_number
+entity_type: node
+bundle: islandora_object
+label: 'Cupboard Drawer Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

@@ -1,0 +1,23 @@
+uuid: c94eab01-209e-4ed9-8bb3-e11c64fa800d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_exif_author
+    - media.type.photography
+id: media.photography.field_exif_author
+field_name: field_exif_author
+entity_type: media
+bundle: photography
+label: Photographer
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      photographs_metadata: photographs_metadata
+field_type: entity_reference

@@ -1,0 +1,107 @@
+uuid: 9479d0ac-4a59-4910-b545-d8cf03f9c56a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.source
+    - field.field.media.video.field_access_terms
+    - field.field.media.video.field_file_size
+    - field.field.media.video.field_media_of
+    - field.field.media.video.field_media_use
+    - field.field.media.video.field_media_video_file
+    - field.field.media.video.field_mime_type
+    - field.field.media.video.field_original_name
+    - media.type.video
+  enforced:
+    module:
+      - islandora_core_feature
+  module:
+    - field_layout
+    - file
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          0f63f1f5-6202-44c4-a13a-24992fba4bf7:
+            uuid: 0f63f1f5-6202-44c4-a13a-24992fba4bf7
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:video:field_media_video_file'
+              formatter:
+                type: file_video
+                label: visually_hidden
+                settings:
+                  muted: false
+                  width: 640
+                  height: 480
+                  controls: true
+                  autoplay: false
+                  loop: false
+                  multiple_file_display_type: tags
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          1f8681e1-411b-416c-a849-17b682e530c1:
+            uuid: 1f8681e1-411b-416c-a849-17b682e530c1
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:media:video:field_gemini_uri'
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+_core:
+  default_config_hash: 2M-aYtI4eDlwWYDmfUiwO-JnX1MRa4IrqzxzGfZIjls
+id: media.video.source
+targetEntityType: media
+bundle: video
+mode: source
+content:
+  field_gemini_uri:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_media_video_file:
+    type: file_video
+    weight: 0
+    label: visually_hidden
+    settings:
+      muted: false
+      width: 640
+      height: 480
+      controls: true
+      autoplay: false
+      loop: false
+      multiple_file_display_type: tags
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_access_terms: true
+  field_file_size: true
+  field_media_of: true
+  field_media_use: true
+  field_mime_type: true
+  field_original_name: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

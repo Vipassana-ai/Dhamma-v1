@@ -1,0 +1,19 @@
+uuid: 8968f367-251a-46cf-8fd7-f690e142ca9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_check_operator_name
+    - node.type.islandora_object
+id: node.islandora_object.field_check_operator_name
+field_name: field_check_operator_name
+entity_type: node
+bundle: islandora_object
+label: 'Check Operator Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

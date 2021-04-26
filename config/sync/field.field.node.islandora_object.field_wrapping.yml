@@ -1,0 +1,29 @@
+uuid: 5bb5fef0-5f22-4f76-973b-7bde0fab6db5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_wrapping
+    - node.type.islandora_object
+    - taxonomy.vocabulary.conservator
+id: node.islandora_object.field_wrapping
+field_name: field_wrapping
+entity_type: node
+bundle: islandora_object
+label: Wrapping
+description: 'Any rounded folds.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      conservator: conservator
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

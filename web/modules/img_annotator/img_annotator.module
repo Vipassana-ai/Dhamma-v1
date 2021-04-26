@@ -1,0 +1,111 @@
+<?php
+
+/**
+ * @file
+ * Contains hook implementations for img_annotator module.
+ */
+
+declare(strict_types = 1);
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\node\NodeInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+
+/**
+ * Implements hook_help().
+ */
+function img_annotator_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.img_annotator':
+      $help = '<p>' . t('This module allows you to add annotations on nodes image fields.') . '</p>';
+      return $help;
+  }
+}
+
+/**
+ * Implements hook_entity_view().
+ *
+ * Altering Node View to add Annotorious Library.
+ */
+function img_annotator_entity_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+
+  // Acts only on node.
+  if (!($entity instanceof NodeInterface)) {
+    return;
+  }
+
+  $node_type = $entity->getType();
+  $config = \Drupal::config('img_annotator.node_settings');
+  $bundles = $config->get('bundles');
+
+  // Annotation is not enabled for this bundle.
+  if (!isset($bundles[$node_type]) || !$bundles[$node_type]['flag']) {
+    return;
+  }
+
+  $account = \Drupal::currentUser();
+  $nodeOwner = ($entity->getOwnerId() == $account->id()) ? TRUE : FALSE;
+
+  $canCreate = $account->hasPermission('img_annotator create');
+  $canCreateOwn = $account->hasPermission('img_annotator own create');
+  $canView = $account->hasPermission('img_annotator view');
+  $canViewOwn = $account->hasPermission('img_annotator own view');
+  $canEdit = $account->hasPermission('img_annotator edit');
+  $canEditOwn = $account->hasPermission('img_annotator own edit');
+
+  // User can interact with Annotorious library.
+  if ($canCreate || $canEdit || $canView || (($canCreateOwn || $canEditOwn || $canViewOwn) && $nodeOwner)) {
+    // Other configs.
+    $promptConfigs = \Drupal::config('img_annotator.prompt_settings');
+    $showAlerts = $promptConfigs->get('prompt');
+    $showAlerts = $showAlerts ? $showAlerts : 0;
+
+    $promptMsgConfigs = \Drupal::config('img_annotator.prompt_message');
+    $promptMessages = $promptMsgConfigs->get();
+
+    // Adding JS vars.
+    $setting_vars = [
+      'nodeId' => $entity->id(),
+      'nodeOwner' => $nodeOwner,
+      'showAlerts' => $showAlerts,
+      'promptMsg' => $promptMessages,
+      'canCreate' => $canCreate,
+      'canUpdate' => $canEdit,
+      'canDelete' => $canEdit,
+      'canView' => $canView,
+      'canCreateOwn' => $canCreateOwn,
+      'canUpdateOwn' => $canEditOwn,
+      'canDeleteOwn' => $canEditOwn,
+      'canViewOwn' => $canViewOwn,
+    ];
+    $build['#attached']['drupalSettings']['img_annotator'] = $setting_vars;
+
+    // DO NOT cache the view.
+    $build['#cache']['max-age'] = 0;
+
+    // Add library with configured theme.
+    $basicConfigs = \Drupal::config('img_annotator.basic_settings');
+    $annoTheme = $basicConfigs->get('anno_theme');
+    $annoTheme = $annoTheme ? $annoTheme : 'basic';
+
+    if ($annoTheme == 'basic') {
+      $build['#attached']['library'][] = 'img_annotator/annotorious_basic';
+    }
+    else {
+      $build['#attached']['library'][] = 'img_annotator/annotorious_dark';
+    }
+
+    // Adding class to image fields.
+    foreach ($bundles[$node_type]['img_fields'] as $imgField) {
+      // Multi valued images.
+      $index = 0;
+      while (isset($build[$imgField][$index])) {
+        $build[$imgField][$index]['#item_attributes']['class'][] = 'annotatable';
+        $build[$imgField][$index]['#item_attributes']['class'][] = 'annoimg_' . $imgField;
+
+        $index++;
+      }
+    }
+  }
+}

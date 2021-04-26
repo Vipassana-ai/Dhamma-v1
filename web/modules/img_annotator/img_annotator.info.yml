@@ -1,0 +1,14 @@
+name: 'Image Annotator'
+type: module
+description: 'Annotating images using Annotorious library.'
+core_version_requirement: ^8.8 || ^9
+package: 'Media'
+configure: img_annotator.admin_config
+dependencies:
+  - drupal:image
+  - drupal:node
+
+# Information added by Drupal.org packaging script on 2021-04-16
+version: '8.x-1.3'
+project: 'img_annotator'
+datestamp: 1618578010

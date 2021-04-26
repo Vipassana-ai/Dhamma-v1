@@ -1,0 +1,10 @@
+name: 'Export tools'
+type: module
+description: 'Provides export tools features to export entities and data.'
+package: Export
+core: 8.x
+
+# Information added by Drupal.org packaging script on 2020-04-10
+version: '1.0.0-alpha1'
+project: 'export_tools'
+datestamp: 1586520331

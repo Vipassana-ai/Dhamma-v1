@@ -1,0 +1,23 @@
+uuid: bc284e68-801b-48c9-9d36-9496361561b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_processing_location1
+    - node.type.islandora_object
+  module:
+    - link
+id: node.islandora_object.field_processing_location1
+field_name: field_processing_location1
+entity_type: node
+bundle: islandora_object
+label: 'Processing location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

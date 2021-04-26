@@ -1,0 +1,83 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the img_annotator module.
+ */
+
+declare(strict_types = 1);
+
+/**
+ * Implements hook_schema().
+ */
+function img_annotator_schema() {
+  $schema = [];
+  $schema['img_annotator'] = [
+    'description' => 'Maintains image annotations.',
+    'fields' => [
+      'aid' => [
+        'description' => 'Annotation ID.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+      'nid' => [
+        'description' => 'Node ID.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+      'uid' => [
+        'description' => 'User added annotation.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+      'field' => [
+        'description' => 'Node image-field name.',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ],
+      'annotation' => [
+        'description' => 'Image annotations.',
+        'type' => 'blob',
+        'not null' => TRUE,
+        'size' => 'big',
+      ],
+      'updated' => [
+        'description' => 'Updated timestamp.',
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ],
+    ],
+    'primary key' => ['aid'],
+  ];
+
+  return $schema;
+}
+
+/**
+ * Update img_annotator.node_settings config structure.
+ */
+function img_annotator_update_8100() {
+  $config = \Drupal::configFactory()->getEditable('img_annotator.node_settings');
+  $previous_bundle_structure = $config->get();
+  $bundles = [];
+
+  foreach ($previous_bundle_structure as $previous_bundle => $previous_bundle_infos) {
+    // Extract bundle machine name, remove 'node_type_'.
+    $machine_name = substr($previous_bundle, 10);
+    $fields = explode(', ', $previous_bundle_infos['img_fields']);
+
+    $bundles[$machine_name] = [
+      'flag' => (bool) $previous_bundle_infos['flag'],
+      'img_fields' => array_combine($fields, $fields),
+    ];
+    $config->clear($previous_bundle);
+  }
+
+  $config->set('bundles', $bundles);
+  $config->save();
+}

@@ -1,0 +1,235 @@
+uuid: 14bd5865-1842-47d9-a10e-994fe1cbe157
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.repository.body
+    - field.field.node.repository.field_as_address
+    - field.field.node.repository.field_repository_org_code
+    - field.field.node.repository.field_repository_parent_name
+    - field.field.node.repository.field_repository_short_name
+    - node.type.repository
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          d7a24f2f-62c4-4e2a-ae80-8673708ed0a9:
+            uuid: d7a24f2f-62c4-4e2a-ae80-8673708ed0a9
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:repository:display_media_entity_view_1'
+            additional: {  }
+            weight: 0
+          629a28cc-10b5-4d3c-976a-2a275b41d70e:
+            uuid: 629a28cc-10b5-4d3c-976a-2a275b41d70e
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:repository:display_media_entity_view_2'
+            additional: {  }
+            weight: 1
+          4316bcbd-e65e-4123-b1a2-6a7db31568f4:
+            uuid: 4316bcbd-e65e-4123-b1a2-6a7db31568f4
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:repository:display_media_service_file'
+            additional: {  }
+            weight: 2
+          3f9f352d-90da-478d-8fc6-5cc7d7e8ae6c:
+            uuid: 3f9f352d-90da-478d-8fc6-5cc7d7e8ae6c
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:repository:display_media_thumbnail'
+            additional: {  }
+            weight: 3
+          4e6c39b5-76e3-46da-af80-fdd4fb41e8b4:
+            uuid: 4e6c39b5-76e3-46da-af80-fdd4fb41e8b4
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:repository:openseadragon_media_evas_entity_view_1'
+            additional: {  }
+            weight: 4
+          0fbbb1b7-2dba-4871-8bd2-47ac2daa035b:
+            uuid: 0fbbb1b7-2dba-4871-8bd2-47ac2daa035b
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:repository:openseadragon_media_evas_entity_view_2'
+            additional: {  }
+            weight: 5
+          4af276bb-ec34-417d-8af9-ccfcd4861918:
+            uuid: 4af276bb-ec34-417d-8af9-ccfcd4861918
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:repository:openseadragon_media_evas_service_file'
+            additional: {  }
+            weight: 6
+          cf14f4f2-8c3c-4198-8dce-771d3d25df37:
+            uuid: cf14f4f2-8c3c-4198-8dce-771d3d25df37
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:repository:pdfjs_media_evas_entity_view_1'
+            additional: {  }
+            weight: 7
+          344925a3-40a1-4806-9277-19c6e6db2977:
+            uuid: 344925a3-40a1-4806-9277-19c6e6db2977
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:repository:pdfjs_media_evas_entity_view_2'
+            additional: {  }
+            weight: 8
+          5e0626f8-b835-48ae-a06e-8bccbede9755:
+            uuid: 5e0626f8-b835-48ae-a06e-8bccbede9755
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:repository:pdfjs_media_evas_service_file'
+            additional: {  }
+            weight: 9
+          a0a6b86c-0124-4d5b-a53d-5648ff04c85c:
+            uuid: a0a6b86c-0124-4d5b-a53d-5648ff04c85c
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:repository:links'
+            additional: {  }
+            weight: 10
+          f2f54d46-5123-4a25-bd4c-6adaaab70523:
+            uuid: f2f54d46-5123-4a25-bd4c-6adaaab70523
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:repository:body'
+              formatter:
+                label: hidden
+                type: text_summary_or_trimmed
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            additional: {  }
+            weight: 11
+        third_party_settings: {  }
+_core:
+  default_config_hash: _UpYOS3JLh755zhaXwTADzd8hTfO532yggQdf2-zC5c
+id: node.repository.teaser
+targetEntityType: node
+bundle: repository
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  display_media_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  display_media_entity_view_2:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  display_media_service_file:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  display_media_thumbnail:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  openseadragon_media_evas_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  openseadragon_media_evas_entity_view_2:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  openseadragon_media_evas_service_file:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  pdfjs_media_evas_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  pdfjs_media_evas_entity_view_2:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  pdfjs_media_evas_service_file:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_as_address: true
+  field_repository_org_code: true
+  field_repository_parent_name: true
+  field_repository_short_name: true
+  langcode: true
+  search_api_excerpt: true

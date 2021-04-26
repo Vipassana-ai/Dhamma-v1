@@ -1,0 +1,23 @@
+uuid: 567b0c86-6d50-4ba2-a367-4752b5f55196
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tota
+    - node.type.islandora_object
+id: node.islandora_object.field_tota
+field_name: field_tota
+entity_type: node
+bundle: islandora_object
+label: 'Total file variations'
+description: Count.
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

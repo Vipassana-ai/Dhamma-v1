@@ -1,0 +1,18 @@
+# Schema for the configuration files of the export tools module.
+
+export_tools.export_definition.*:
+  type: config_entity
+  label: 'Export definition'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    fields:
+      type: ignore
+      label: 'Fields'
+    destination:
+      type: ignore
+      label: 'Destination'

@@ -1,0 +1,21 @@
+uuid: 8835bc98-fac0-432f-a1a9-fce87eb99615
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_check_date
+    - node.type.islandora_object
+  module:
+    - datetime
+id: node.islandora_object.field_check_date
+field_name: field_check_date
+entity_type: node
+bundle: islandora_object
+label: 'Check Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

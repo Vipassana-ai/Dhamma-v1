@@ -1,0 +1,19 @@
+uuid: 73075143-ac98-42e0-a84a-6b80b929645e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_retouching
+    - node.type.islandora_object
+id: node.islandora_object.field_retouching
+field_name: field_retouching
+entity_type: node
+bundle: islandora_object
+label: Retouching
+description: 'Type Yes/No.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

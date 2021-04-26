@@ -1,0 +1,21 @@
+uuid: c68e3926-079f-4d3a-8385-92a3cf2cb797
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_exif_aperturefnumber
+    - media.type.photography
+  module:
+    - text
+id: media.photography.field_exif_aperturefnumber
+field_name: field_exif_aperturefnumber
+entity_type: media
+bundle: photography
+label: Aperture
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

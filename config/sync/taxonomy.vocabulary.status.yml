@@ -1,0 +1,8 @@
+uuid: 8b64d8c3-0b28-42d2-8698-da0484d53673
+langcode: en
+status: true
+dependencies: {  }
+name: 'Preservator - status'
+vid: status
+description: 'Status of physical material'
+weight: -7

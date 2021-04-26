@@ -1,0 +1,23 @@
+uuid: 03cb956d-5d10-411f-913f-2c2857850aa6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_accessrestrict
+    - node.type.archival_resource
+  module:
+    - text
+_core:
+  default_config_hash: OD3yH8qUl_bPaXJvHxay4HusjiqG0_c-XbjeUXFq94s
+id: node.archival_resource.field_accessrestrict
+field_name: field_accessrestrict
+entity_type: node
+bundle: archival_resource
+label: 'Conditions Governing Access'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

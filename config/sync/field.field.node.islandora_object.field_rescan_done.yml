@@ -1,0 +1,23 @@
+uuid: 076cd01e-185c-4d14-899e-fd8d305a533c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rescan_done
+    - node.type.islandora_object
+id: node.islandora_object.field_rescan_done
+field_name: field_rescan_done
+entity_type: node
+bundle: islandora_object
+label: 'Rescan Done?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

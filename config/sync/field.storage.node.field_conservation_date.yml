@@ -1,0 +1,24 @@
+uuid: 4ee591f4-9d02-49ad-8fba-9ef65258ee7c
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: custom
+id: node.field_conservation_date
+field_name: field_conservation_date
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

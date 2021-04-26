@@ -1,0 +1,21 @@
+uuid: 4e139069-ffa9-4a95-b0c0-90b584f9376e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_physical_features
+    - node.type.islandora_object
+  module:
+    - physical
+id: node.islandora_object.field_physical_features
+field_name: field_physical_features
+entity_type: node
+bundle: islandora_object
+label: 'Physical features'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: physical_dimensions

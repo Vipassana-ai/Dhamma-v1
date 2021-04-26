@@ -1,0 +1,18 @@
+uuid: 259a9ad9-a41a-431f-93f8-5d60e103e633
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - islandora_core_feature
+  module:
+    - islandora
+_core:
+  default_config_hash: '-ZsKI6c-bcE6sbzhjC4XSLsnnls5L4J3drABTJHWqn8'
+id: index_file_in_fedora
+label: 'Index Fedora File in Gemini'
+type: file
+plugin: emit_file_event
+configuration:
+  queue: islandora-indexing-fcrepo-file
+  event: Update

@@ -1,0 +1,44 @@
+uuid: 4cdc16d8-3a41-480f-9704-0462cb0f84c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.extracted_text.field_edited_text
+    - field.field.media.extracted_text.field_media_file
+    - field.field.media.extracted_text.field_media_of
+    - field.field.media.extracted_text.field_media_use
+    - field.field.media.extracted_text.field_mime_type
+    - media.type.extracted_text
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: media.extracted_text.media_library
+targetEntityType: media
+bundle: extracted_text
+mode: media_library
+content:
+  name:
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 0
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_edited_text: true
+  field_media_file: true
+  field_media_of: true
+  field_media_use: true
+  field_mime_type: true
+  langcode: true
+  path: true
+  status: true
+  uid: true

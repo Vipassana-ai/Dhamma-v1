@@ -1,0 +1,14 @@
+uuid: 7620edce-1651-43fe-beed-e580724062e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.descriptive_metadata_director
+  module:
+    - user
+id: user_remove_role_action.descriptive_metadata_director
+label: 'Remove the Descriptive Metadata Director role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: descriptive_metadata_director

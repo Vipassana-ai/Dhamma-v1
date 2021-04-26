@@ -1,0 +1,13 @@
+uuid: 425abea4-168a-4950-9e5d-17d5273c1eef
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.archival_top_container
+_core:
+  default_config_hash: V7UMWAe6gVqM0reuimut2CmrYrZtzQZdefCudaaD_0k
+id: node.archival_top_container
+target_entity_type_id: node
+target_bundle: archival_top_container
+default_langcode: site_default
+language_alterable: false

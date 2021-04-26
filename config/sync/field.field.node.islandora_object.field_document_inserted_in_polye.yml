@@ -1,0 +1,21 @@
+uuid: 9880afa1-af32-431b-962f-ef8b46fa70ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_document_inserted_in_polye
+    - node.type.islandora_object
+  module:
+    - datetime
+id: node.islandora_object.field_document_inserted_in_polye
+field_name: field_document_inserted_in_polye
+entity_type: node
+bundle: islandora_object
+label: 'Document Inserted in polyester sleeve'
+description: 'Date of preservation of documents in a polyester sleeve'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

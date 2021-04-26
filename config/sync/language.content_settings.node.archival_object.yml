@@ -1,0 +1,13 @@
+uuid: 42ddba3b-8ce1-4df0-81bf-3d8a5f899f43
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.archival_object
+_core:
+  default_config_hash: CUGId3Uz1NNhw1UlXhvKs8-Gz3_gw7ZPX8gs3lAcwL4
+id: node.archival_object
+target_entity_type_id: node
+target_bundle: archival_object
+default_langcode: site_default
+language_alterable: false

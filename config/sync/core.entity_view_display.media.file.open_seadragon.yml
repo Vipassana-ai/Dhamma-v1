@@ -1,0 +1,79 @@
+uuid: b4b260e8-1c6e-4cf1-8015-48832bcff3fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.open_seadragon
+    - field.field.media.file.field_access_terms
+    - field.field.media.file.field_file_size
+    - field.field.media.file.field_media_file
+    - field.field.media.file.field_media_of
+    - field.field.media.file.field_media_use
+    - field.field.media.file.field_mime_type
+    - field.field.media.file.field_original_name
+    - media.type.file
+  enforced:
+    module:
+      - islandora_defaults
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - openseadragon
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          cc84f51a-2138-4aca-9adb-6fb838246947:
+            uuid: cc84f51a-2138-4aca-9adb-6fb838246947
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:file:field_media_file'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: openseadragon_image
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+_core:
+  default_config_hash: '-78UGWpsfXyTMx1xpGjziIAWC8LsIDT5K0-OJygDyPg'
+id: media.file.open_seadragon
+targetEntityType: media
+bundle: file
+mode: open_seadragon
+content:
+  field_media_file:
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: openseadragon_image
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_access_terms: true
+  field_file_size: true
+  field_gemini_uri: true
+  field_media_of: true
+  field_media_use: true
+  field_mime_type: true
+  field_original_name: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

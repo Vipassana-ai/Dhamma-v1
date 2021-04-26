@@ -1,0 +1,29 @@
+uuid: 7091c2fe-a429-43dc-b7aa-76a4854db7ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fungus
+    - node.type.islandora_object
+    - taxonomy.vocabulary.conservator
+id: node.islandora_object.field_fungus
+field_name: field_fungus
+entity_type: node
+bundle: islandora_object
+label: Fungus
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      conservator: conservator
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: ad47da05-6ba5-43d5-8d56-7146053cba5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_exif_exposureprogram
+    - node.type.photography
+  module:
+    - text
+id: node.photography.field_exif_exposureprogram
+field_name: field_exif_exposureprogram
+entity_type: node
+bundle: photography
+label: 'Exposure Program'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

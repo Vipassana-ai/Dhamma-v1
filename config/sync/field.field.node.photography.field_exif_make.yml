@@ -1,0 +1,21 @@
+uuid: 3c03b299-dfbe-4fff-b668-f0026511ba53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_exif_make
+    - node.type.photography
+  module:
+    - text
+id: node.photography.field_exif_make
+field_name: field_exif_make
+entity_type: node
+bundle: photography
+label: Make
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

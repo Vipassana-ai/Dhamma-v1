@@ -1,0 +1,23 @@
+uuid: bbe37e69-2e9e-4632-9a6e-5ebfcc136f2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_exif_model
+    - node.type.photography
+id: node.photography.field_exif_model
+field_name: field_exif_model
+entity_type: node
+bundle: photography
+label: Camera
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      photographs_metadata: photographs_metadata
+field_type: entity_reference

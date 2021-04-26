@@ -1,0 +1,11 @@
+uuid: 40de3193-2d26-4189-830d-0b09906fa18e
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.fits_technical_metadata
+id: media.fits_technical_metadata
+target_entity_type_id: media
+target_bundle: fits_technical_metadata
+default_langcode: site_default
+language_alterable: false

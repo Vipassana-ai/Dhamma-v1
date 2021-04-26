@@ -1,0 +1,16 @@
+uuid: 26ac46eb-2709-42c1-ae0d-0368cdddd031
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.conservator_select
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.conservator_select
+target_entity_type_id: taxonomy_term
+target_bundle: conservator_select
+default_langcode: site_default
+language_alterable: false

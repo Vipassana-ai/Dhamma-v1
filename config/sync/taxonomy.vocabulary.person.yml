@@ -1,0 +1,10 @@
+uuid: 516861d0-dcbe-40ce-b1b3-cbca5b89695e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: GAHBiBARA1hdVQoJq1P1oyK47vGxwTr3vyiPsnwqD44
+name: Person
+vid: person
+description: Meditators
+weight: -2

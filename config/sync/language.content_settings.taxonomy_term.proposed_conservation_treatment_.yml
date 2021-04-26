@@ -1,0 +1,11 @@
+uuid: 7383136b-bbae-4256-98d4-c18f2619987b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.proposed_conservation_treatment_
+id: taxonomy_term.proposed_conservation_treatment_
+target_entity_type_id: taxonomy_term
+target_bundle: proposed_conservation_treatment_
+default_langcode: site_default
+language_alterable: false

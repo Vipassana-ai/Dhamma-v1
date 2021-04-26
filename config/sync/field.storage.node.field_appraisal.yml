@@ -1,0 +1,21 @@
+uuid: de99134e-9a83-4009-965f-7e1530ef08ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: 3NXQQknZHmfuwDbGsle6xt4lFp0UhkS2qeuvnnbLgh8
+id: node.field_appraisal
+field_name: field_appraisal
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

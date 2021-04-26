@@ -1,0 +1,225 @@
+uuid: a12b13ee-dfb0-43f8-9b26-bcfe47e9f48e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.corporate_body.field_authority_link
+    - field.field.taxonomy_term.corporate_body.field_cat_date_begin
+    - field.field.taxonomy_term.corporate_body.field_cat_date_end
+    - field.field.taxonomy_term.corporate_body.field_corp_alt_name
+    - field.field.taxonomy_term.corporate_body.field_relationships
+    - field.field.taxonomy_term.corporate_body.field_type
+    - taxonomy.vocabulary.corporate_body
+  module:
+    - controlled_access_terms
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - options
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          b651247f-3083-449f-be8c-b8e092d96a67:
+            uuid: b651247f-3083-449f-be8c-b8e092d96a67
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:corporate_body:field_type'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: list_default
+            additional: {  }
+            weight: 0
+          d61deac9-0239-4336-b784-efbdf5ec925b:
+            uuid: d61deac9-0239-4336-b784-efbdf5ec925b
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:corporate_body:field_authority_link'
+              formatter:
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: _blank
+                third_party_settings: {  }
+                type: authority_formatter_default
+            additional: {  }
+            weight: 1
+          efd942c2-2e01-464b-b962-5ba4e4ad98b2:
+            uuid: efd942c2-2e01-464b-b962-5ba4e4ad98b2
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:corporate_body:field_cat_date_begin'
+              formatter:
+                label: above
+                settings:
+                  date_separator: dash
+                  date_order: big_endian
+                  month_format: mm
+                  day_format: dd
+                third_party_settings: {  }
+                type: edtf_default
+            additional: {  }
+            weight: 2
+          e57746a6-6fa8-44e4-a3f5-fa77fb514227:
+            uuid: e57746a6-6fa8-44e4-a3f5-fa77fb514227
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:corporate_body:field_cat_date_end'
+              formatter:
+                label: above
+                settings:
+                  date_separator: dash
+                  date_order: big_endian
+                  month_format: mm
+                  day_format: dd
+                third_party_settings: {  }
+                type: edtf_default
+            additional: {  }
+            weight: 3
+          80c96039-a058-49d9-b7dd-4a016e5d9a53:
+            uuid: 80c96039-a058-49d9-b7dd-4a016e5d9a53
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:corporate_body:field_corp_alt_name'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: basic_string
+            additional: {  }
+            weight: 4
+          531ad74d-9a30-4741-97f2-2f3bf9c5da0e:
+            uuid: 531ad74d-9a30-4741-97f2-2f3bf9c5da0e
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:corporate_body:description'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 5
+          47dc0cf5-3e7b-4f1a-aa50-f8c20ade0767:
+            uuid: 47dc0cf5-3e7b-4f1a-aa50-f8c20ade0767
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:corporate_body:field_relationships'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: typed_relation_default
+            additional: {  }
+            weight: 6
+        third_party_settings: {  }
+_core:
+  default_config_hash: eg7su46-dvGu8agiWB3umWh6Q43kphzdGfbB3zcmlOc
+id: taxonomy_term.corporate_body.default
+targetEntityType: taxonomy_term
+bundle: corporate_body
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_authority_link:
+    weight: 1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: _blank
+    third_party_settings: {  }
+    type: authority_formatter_default
+    region: content
+  field_cat_date_begin:
+    weight: 2
+    label: above
+    settings:
+      date_separator: dash
+      date_order: big_endian
+      month_format: mm
+      day_format: dd
+    third_party_settings: {  }
+    type: edtf_default
+    region: content
+  field_cat_date_end:
+    weight: 3
+    label: above
+    settings:
+      date_separator: dash
+      date_order: big_endian
+      month_format: mm
+      day_format: dd
+    third_party_settings: {  }
+    type: edtf_default
+    region: content
+  field_corp_alt_name:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_relationships:
+    weight: 7
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: typed_relation_default
+    region: content
+  field_type:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

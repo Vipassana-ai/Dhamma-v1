@@ -1,0 +1,21 @@
+uuid: ced04932-e84d-441c-9962-69f2e19607ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_conservation_date
+    - node.type.islandora_object
+  module:
+    - datetime
+id: node.islandora_object.field_conservation_date
+field_name: field_conservation_date
+entity_type: node
+bundle: islandora_object
+label: 'Conservation Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

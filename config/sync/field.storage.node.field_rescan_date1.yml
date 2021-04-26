@@ -1,0 +1,24 @@
+uuid: 33fc97f7-b552-42a2-b637-8b221aa036bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: custom
+id: node.field_rescan_date1
+field_name: field_rescan_date1
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: c2f1dddb-31b1-4699-92e2-789203ff141f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_raw_location
+    - node.type.islandora_object
+  module:
+    - link
+id: node.islandora_object.field_raw_location
+field_name: field_raw_location
+entity_type: node
+bundle: islandora_object
+label: 'Raw Location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

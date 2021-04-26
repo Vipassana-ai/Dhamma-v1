@@ -1,0 +1,12 @@
+uuid: 5164b04d-ed07-42ce-9c18-e0399dfa93a0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: icNxZKY6SpxkaiQfnOd2CeeyIG4zuUHhCla7oaMGov0
+id: node.pdfjs
+label: PDFjs
+targetEntityType: node
+cache: true

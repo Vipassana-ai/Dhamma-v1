@@ -1,0 +1,20 @@
+uuid: 2dea4777-7486-430b-a034-c4e2bc95bce8
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: C0BXXwFygGclYzDeJaR0LTfubhCTF9-ZlOOAzdientg
+name: 'Archival Top Container'
+type: archival_top_container
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

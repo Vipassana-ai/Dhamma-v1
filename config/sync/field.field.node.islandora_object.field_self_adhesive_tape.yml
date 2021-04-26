@@ -1,0 +1,29 @@
+uuid: 23598ffd-09ed-4025-b6ff-9140eb0d50b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_self_adhesive_tape
+    - node.type.islandora_object
+    - taxonomy.vocabulary.conservator
+id: node.islandora_object.field_self_adhesive_tape
+field_name: field_self_adhesive_tape
+entity_type: node
+bundle: islandora_object
+label: 'Self Adhesive tape'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      conservator: conservator
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

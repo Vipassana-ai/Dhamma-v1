@@ -1,0 +1,23 @@
+uuid: d13da147-7d20-4028-8003-e10b28283ff7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_otherfindaid
+    - node.type.archival_object
+  module:
+    - text
+_core:
+  default_config_hash: Q5RsvgiDZzXIKYYAmX55jeuk6PwSoGdImrSzQ-Lp1Ow
+id: node.archival_object.field_otherfindaid
+field_name: field_otherfindaid
+entity_type: node
+bundle: archival_object
+label: 'Other Finding Aids'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

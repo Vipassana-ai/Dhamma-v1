@@ -1,0 +1,85 @@
+uuid: f99d81a4-fbff-4671-a19f-480739128526
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.open_seadragon
+    - field.field.media.image.field_access_terms
+    - field.field.media.image.field_dropbox
+    - field.field.media.image.field_file_size
+    - field.field.media.image.field_height
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_media_of
+    - field.field.media.image.field_media_use
+    - field.field.media.image.field_mime_type
+    - field.field.media.image.field_original_name
+    - field.field.media.image.field_width
+    - media.type.image
+  enforced:
+    module:
+      - islandora_defaults
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - openseadragon
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          91a117d0-dda1-4e03-bd65-1965e76c746b:
+            uuid: 91a117d0-dda1-4e03-bd65-1965e76c746b
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:image:field_media_image'
+              formatter:
+                label: visually_hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: openseadragon_image
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+_core:
+  default_config_hash: eh47H7rkaD3xK-hM_DEodnS-m01pYTWtYpG0-58F7ZA
+id: media.image.open_seadragon
+targetEntityType: media
+bundle: image
+mode: open_seadragon
+content:
+  field_media_image:
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: openseadragon_image
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_access_terms: true
+  field_dropbox: true
+  field_file_size: true
+  field_gemini_uri: true
+  field_height: true
+  field_media_of: true
+  field_media_use: true
+  field_mime_type: true
+  field_original_name: true
+  field_width: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

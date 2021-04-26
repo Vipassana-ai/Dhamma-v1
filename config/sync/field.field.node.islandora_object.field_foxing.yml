@@ -1,0 +1,29 @@
+uuid: 2d2c7abf-a185-4546-81ff-35738a07ccde
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_foxing
+    - node.type.islandora_object
+    - taxonomy.vocabulary.conservator
+id: node.islandora_object.field_foxing
+field_name: field_foxing
+entity_type: node
+bundle: islandora_object
+label: Foxing
+description: 'An age-related process of deterioration that causes spots and browning on old paper documents'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      conservator: conservator
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

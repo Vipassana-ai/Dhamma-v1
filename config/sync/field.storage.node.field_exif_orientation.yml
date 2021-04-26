@@ -1,0 +1,20 @@
+uuid: f653ab0e-f2bb-4dee-a4c6-7b66f7340ba1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_exif_orientation
+field_name: field_exif_orientation
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

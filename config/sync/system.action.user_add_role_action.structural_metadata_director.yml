@@ -1,0 +1,14 @@
+uuid: 0a48ef94-60c1-4dfb-95eb-7051a5bd7d3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.structural_metadata_director
+  module:
+    - user
+id: user_add_role_action.structural_metadata_director
+label: 'Add the Structural Metadata Director role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: structural_metadata_director

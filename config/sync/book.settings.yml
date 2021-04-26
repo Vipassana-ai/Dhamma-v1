@@ -1,0 +1,9 @@
+allowed_types:
+  - book
+  - islandora_object
+block:
+  navigation:
+    mode: 'all pages'
+child_type: islandora_object
+_core:
+  default_config_hash: i-_2TVi6FUEAqBgNRJkt6aaYmiw1k_LTrXzJS6wlZ4U

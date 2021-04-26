@@ -1,0 +1,22 @@
+uuid: 235ee7bf-d446-45dd-a75e-5f716d804130
+langcode: en
+status: true
+dependencies:
+  module:
+    - archivesspace
+    - node
+_core:
+  default_config_hash: tKwkSnRz7-FR8ntTjOeuxwyrFrvmBkj9Kq53n-oH-ow
+id: node.field_archival_container
+field_name: field_archival_container
+entity_type: node
+type: archival_physical_instance
+settings:
+  target_type: node
+module: archivesspace
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

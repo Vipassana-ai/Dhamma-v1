@@ -1,0 +1,3612 @@
+uuid: 8d3e9415-7c3d-4fab-8496-637aa9d5910b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.islandora_object.field_abrasions
+    - field.field.node.islandora_object.field_access_terms
+    - field.field.node.islandora_object.field_accretion
+    - field.field.node.islandora_object.field_action_taken1
+    - field.field.node.islandora_object.field_action_taken_on_date
+    - field.field.node.islandora_object.field_after_treatment_ph
+    - field.field.node.islandora_object.field_alternative_title
+    - field.field.node.islandora_object.field_antifungul
+    - field.field.node.islandora_object.field_any_other_insect_attack
+    - field.field.node.islandora_object.field_any_other_residues_of_adhe
+    - field.field.node.islandora_object.field_any_special_instructions_f
+    - field.field.node.islandora_object.field_archival_box_number
+    - field.field.node.islandora_object.field_at_location
+    - field.field.node.islandora_object.field_at_location1
+    - field.field.node.islandora_object.field_author1
+    - field.field.node.islandora_object.field_before_treatment_ph
+    - field.field.node.islandora_object.field_bleeding_in_ink
+    - field.field.node.islandora_object.field_brittleness
+    - field.field.node.islandora_object.field_bt_location
+    - field.field.node.islandora_object.field_bt_location1
+    - field.field.node.islandora_object.field_check_date
+    - field.field.node.islandora_object.field_check_operator_name
+    - field.field.node.islandora_object.field_color_corrections
+    - field.field.node.islandora_object.field_condition_report
+    - field.field.node.islandora_object.field_conservation_date
+    - field.field.node.islandora_object.field_coordinates
+    - field.field.node.islandora_object.field_creases
+    - field.field.node.islandora_object.field_cupboard_drawer_number
+    - field.field.node.islandora_object.field_cupboard_number
+    - field.field.node.islandora_object.field_cuts
+    - field.field.node.islandora_object.field_de_acidification
+    - field.field.node.islandora_object.field_description
+    - field.field.node.islandora_object.field_dewey_classification
+    - field.field.node.islandora_object.field_dimensions_height_11
+    - field.field.node.islandora_object.field_display_hints
+    - field.field.node.islandora_object.field_document_inserted_in_polye
+    - field.field.node.islandora_object.field_dpi
+    - field.field.node.islandora_object.field_dt_location
+    - field.field.node.islandora_object.field_dt_location1
+    - field.field.node.islandora_object.field_dusting_and_spotting
+    - field.field.node.islandora_object.field_edition
+    - field.field.node.islandora_object.field_edtf_date_created
+    - field.field.node.islandora_object.field_edtf_date_issued
+    - field.field.node.islandora_object.field_extent
+    - field.field.node.islandora_object.field_facebook
+    - field.field.node.islandora_object.field_facebook_link
+    - field.field.node.islandora_object.field_fading_of_ink
+    - field.field.node.islandora_object.field_file_formats
+    - field.field.node.islandora_object.field_file_re_name_1
+    - field.field.node.islandora_object.field_file_re_name_1_date
+    - field.field.node.islandora_object.field_filled_in_archival_box
+    - field.field.node.islandora_object.field_final_high_jpeg
+    - field.field.node.islandora_object.field_final_high_jpeg_link
+    - field.field.node.islandora_object.field_final_high_jpeg_upload
+    - field.field.node.islandora_object.field_final_low_jpeg
+    - field.field.node.islandora_object.field_final_low_jpeg1
+    - field.field.node.islandora_object.field_final_low_jpeg_upload1
+    - field.field.node.islandora_object.field_final_proposed
+    - field.field.node.islandora_object.field_final_tiff
+    - field.field.node.islandora_object.field_final_tiff_link
+    - field.field.node.islandora_object.field_final_tiff_upload
+    - field.field.node.islandora_object.field_finger_marks
+    - field.field.node.islandora_object.field_flattening
+    - field.field.node.islandora_object.field_foxing
+    - field.field.node.islandora_object.field_fungus
+    - field.field.node.islandora_object.field_genre
+    - field.field.node.islandora_object.field_geographic_subject
+    - field.field.node.islandora_object.field_handling_folds
+    - field.field.node.islandora_object.field_identifier
+    - field.field.node.islandora_object.field_images_annotation
+    - field.field.node.islandora_object.field_immediate_action1
+    - field.field.node.islandora_object.field_in_filling
+    - field.field.node.islandora_object.field_insect_holes
+    - field.field.node.islandora_object.field_insect_holes_number
+    - field.field.node.islandora_object.field_instagram
+    - field.field.node.islandora_object.field_instagram_link
+    - field.field.node.islandora_object.field_instructions
+    - field.field.node.islandora_object.field_isbn
+    - field.field.node.islandora_object.field_labelling
+    - field.field.node.islandora_object.field_language1
+    - field.field.node.islandora_object.field_lcc_classification
+    - field.field.node.islandora_object.field_lining
+    - field.field.node.islandora_object.field_linked_agent
+    - field.field.node.islandora_object.field_local_identifier
+    - field.field.node.islandora_object.field_local_repairs_for_tear_hol
+    - field.field.node.islandora_object.field_local_stains
+    - field.field.node.islandora_object.field_location_of_box
+    - field.field.node.islandora_object.field_location_of_cupboard
+    - field.field.node.islandora_object.field_losses
+    - field.field.node.islandora_object.field_medium
+    - field.field.node.islandora_object.field_member_of
+    - field.field.node.islandora_object.field_model
+    - field.field.node.islandora_object.field_monitoring_after_one_year
+    - field.field.node.islandora_object.field_note
+    - field.field.node.islandora_object.field_oclc_number
+    - field.field.node.islandora_object.field_ocr
+    - field.field.node.islandora_object.field_ocr1
+    - field.field.node.islandora_object.field_ocr_upload
+    - field.field.node.islandora_object.field_opening_of_folds
+    - field.field.node.islandora_object.field_owner
+    - field.field.node.islandora_object.field_period_date
+    - field.field.node.islandora_object.field_photoshop_date
+    - field.field.node.islandora_object.field_photoshop_operator_name
+    - field.field.node.islandora_object.field_photoshop_upload
+    - field.field.node.islandora_object.field_physical_cleaning
+    - field.field.node.islandora_object.field_physical_color_mode
+    - field.field.node.islandora_object.field_physical_condition
+    - field.field.node.islandora_object.field_physical_copies
+    - field.field.node.islandora_object.field_physical_description
+    - field.field.node.islandora_object.field_physical_features
+    - field.field.node.islandora_object.field_physical_form
+    - field.field.node.islandora_object.field_physical_location
+    - field.field.node.islandora_object.field_physical_location11
+    - field.field.node.islandora_object.field_pi
+    - field.field.node.islandora_object.field_pid
+    - field.field.node.islandora_object.field_pin_holes_number
+    - field.field.node.islandora_object.field_place_published
+    - field.field.node.islandora_object.field_polyster_sleeve
+    - field.field.node.islandora_object.field_processing_location
+    - field.field.node.islandora_object.field_processing_location1
+    - field.field.node.islandora_object.field_proposed_conservation1
+    - field.field.node.islandora_object.field_psb
+    - field.field.node.islandora_object.field_psb1
+    - field.field.node.islandora_object.field_punch_holes
+    - field.field.node.islandora_object.field_punch_holes_number
+    - field.field.node.islandora_object.field_raw_location
+    - field.field.node.islandora_object.field_raw_location1
+    - field.field.node.islandora_object.field_received_date
+    - field.field.node.islandora_object.field_relation
+    - field.field.node.islandora_object.field_remarks
+    - field.field.node.islandora_object.field_removal_of_stains
+    - field.field.node.islandora_object.field_rescan_date1
+    - field.field.node.islandora_object.field_rescan_done
+    - field.field.node.islandora_object.field_resource_type
+    - field.field.node.islandora_object.field_retouching
+    - field.field.node.islandora_object.field_return_date
+    - field.field.node.islandora_object.field_rusted_pin_marks
+    - field.field.node.islandora_object.field_scan_color_mode
+    - field.field.node.islandora_object.field_scan_date
+    - field.field.node.islandora_object.field_scan_file_name
+    - field.field.node.islandora_object.field_scan_file_name_file_re_nam
+    - field.field.node.islandora_object.field_scan_operator_name
+    - field.field.node.islandora_object.field_scanner_name
+    - field.field.node.islandora_object.field_select_options
+    - field.field.node.islandora_object.field_self_adhesive_tape
+    - field.field.node.islandora_object.field_stains_overall
+    - field.field.node.islandora_object.field_status_alarm_sign_
+    - field.field.node.islandora_object.field_strip_lining
+    - field.field.node.islandora_object.field_subject
+    - field.field.node.islandora_object.field_table_of_contents
+    - field.field.node.islandora_object.field_tears
+    - field.field.node.islandora_object.field_temporal_subject
+    - field.field.node.islandora_object.field_tests_and_problems_faced_w
+    - field.field.node.islandora_object.field_tiff
+    - field.field.node.islandora_object.field_tiff1
+    - field.field.node.islandora_object.field_tiff_upload
+    - field.field.node.islandora_object.field_tota
+    - field.field.node.islandora_object.field_treatment_date
+    - field.field.node.islandora_object.field_trimmed_edges
+    - field.field.node.islandora_object.field_unique_id
+    - field.field.node.islandora_object.field_video1
+    - field.field.node.islandora_object.field_watermarks_stamps
+    - field.field.node.islandora_object.field_weight
+    - field.field.node.islandora_object.field_white_background
+    - field.field.node.islandora_object.field_wrapping
+    - field.field.node.islandora_object.field_youtube
+    - field.field.node.islandora_object.field_youtube_file_upload1
+    - field.field.node.islandora_object.field_youtube_link
+    - image.style.thumbnail
+    - node.type.islandora_object
+  enforced:
+    module:
+      - islandora_defaults
+  module:
+    - address
+    - conditional_fields
+    - controlled_access_terms
+    - cshs
+    - datetime
+    - datetime_range
+    - dimension
+    - field_group
+    - field_layout
+    - geolocation
+    - image
+    - imce
+    - languagefield
+    - layout_discovery
+    - link
+    - path
+    - physical
+    - text
+    - video
+    - video_embed_field
+third_party_settings:
+  field_group:
+    group_structure:
+      children:
+        - field_model
+        - field_relation
+        - field_member_of
+        - langcode
+        - field_display_hints
+        - field_weight
+        - translation
+        - path
+        - status
+        - promote
+        - uid
+        - created
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+        open: false
+      label: System
+      region: content
+    group_descriptive:
+      children:
+        - title
+        - field_alternative_title
+        - field_unique_id
+        - field_identifier
+        - field_resource_type
+        - field_period_date
+        - field_subject
+        - field_description
+        - field_coordinates
+        - field_author1
+        - field_owner
+        - field_language1
+        - field_received_date
+        - field_return_date
+        - field_genre
+        - field_edtf_date_created
+        - field_edtf_date_issued
+        - field_edition
+        - field_local_identifier
+        - field_isbn
+        - field_oclc_number
+        - field_note
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+        open: false
+      label: General
+      region: content
+    group_conservator:
+      children:
+        - field_select_options
+        - field_watermarks_stamps
+        - field_wrapping
+        - field_handling_folds
+        - field_creases
+        - field_tears
+        - field_cuts
+        - field_trimmed_edges
+        - field_abrasions
+        - field_losses
+        - field_punch_holes
+        - field_punch_holes_number
+        - field_pi
+        - field_pin_holes_number
+        - field_insect_holes
+        - field_insect_holes_number
+        - field_any_other_insect_attack
+        - field_finger_marks
+        - field_local_stains
+        - field_rusted_pin_marks
+        - field_stains_overall
+        - field_accretion
+        - field_self_adhesive_tape
+        - field_any_other_residues_of_adhe
+        - field_foxing
+        - field_bleeding_in_ink
+        - field_fading_of_ink
+        - field_fungus
+        - field_brittleness
+        - field_before_treatment_ph
+        - field_conservation_date
+        - field_condition_report
+        - field_proposed_conservation1
+        - field_antifungul
+        - field_physical_cleaning
+        - field_opening_of_folds
+        - field_removal_of_stains
+        - field_de_acidification
+        - field_local_repairs_for_tear_hol
+        - field_strip_lining
+        - field_lining
+        - field_flattening
+        - field_in_filling
+        - field_tests_and_problems_faced_w
+        - field_final_proposed
+        - field_treatment_date
+        - field_after_treatment_ph
+        - field_any_special_instructions_f
+        - field_monitoring_after_one_year
+        - field_status_alarm_sign_
+        - field_immediate_action1
+        - field_action_taken1
+        - field_action_taken_on_date
+      parent_name: ''
+      weight: 12
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: Conservator
+    group_preservation:
+      children:
+        - field_document_inserted_in_polye
+        - field_polyster_sleeve
+        - field_filled_in_archival_box
+        - field_archival_box_number
+        - field_location_of_box
+        - field_cupboard_number
+        - field_cupboard_drawer_number
+        - field_location_of_cupboard
+      parent_name: ''
+      weight: 13
+      format_type: details
+      region: content
+      format_settings:
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+        open: false
+      label: Preservator
+    group_location:
+      children:
+        - field_raw_location1
+        - field_raw_location
+        - field_bt_location
+        - field_bt_location1
+        - field_dt_location
+        - field_dt_location1
+        - field_at_location
+        - field_at_location1
+        - field_processing_location
+        - field_processing_location1
+        - field_ocr
+        - field_ocr1
+        - field_ocr_upload
+        - field_psb
+        - field_psb1
+        - field_photoshop_upload
+        - field_tiff
+        - field_tiff1
+        - field_tiff_upload
+        - field_final_low_jpeg
+        - field_final_low_jpeg1
+        - field_final_low_jpeg_upload1
+        - field_final_high_jpeg
+        - field_final_high_jpeg_link
+        - field_final_high_jpeg_upload
+        - field_youtube
+        - field_youtube_link
+        - field_youtube_file_upload1
+        - field_instagram
+        - field_instagram_link
+        - field_facebook
+        - field_facebook_link
+        - field_final_tiff
+        - field_final_tiff_link
+        - field_final_tiff_upload
+        - field_tota
+        - field_file_formats
+        - field_remarks
+      parent_name: ''
+      weight: 8
+      format_type: details
+      region: content
+      format_settings:
+        description: 'Various Formats'
+        required_fields: true
+        id: ''
+        classes: ''
+        open: false
+      label: Location
+    group_physical_features:
+      children:
+        - field_physical_description
+        - field_medium
+        - field_physical_location
+        - field_physical_location11
+        - field_physical_features
+        - field_dimensions_height_11
+        - field_physical_condition
+        - field_physical_color_mode
+        - field_physical_copies
+        - field_labelling
+      parent_name: ''
+      weight: 9
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: 'Physical features'
+    group_scan_related:
+      children:
+        - field_scan_date
+        - field_scan_color_mode
+        - field_scanner_name
+        - field_scan_operator_name
+        - field_scan_file_name
+        - field_rescan_done
+        - field_rescan_date1
+        - field_file_re_name_1
+        - field_file_re_name_1_date
+        - field_scan_file_name_file_re_nam
+        - field_dpi
+      parent_name: ''
+      weight: 10
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: 'Scan related'
+    group_digitization:
+      children:
+        - field_dusting_and_spotting
+        - field_retouching
+        - field_color_corrections
+        - field_white_background
+        - field_instructions
+        - field_photoshop_date
+        - field_photoshop_operator_name
+        - field_check_date
+        - field_check_operator_name
+      parent_name: ''
+      weight: 11
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: Digitization
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+_core:
+  default_config_hash: HLvUbruUDjxBUB1PEtEQF7ZvGRY-87E68yLt78KBruM
+id: node.islandora_object.default
+targetEntityType: node
+bundle: islandora_object
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_abrasions:
+    weight: 87
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        caf64b14-3cb8-436d-b672-20a5a87b5758:
+          dependee: field_select_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '1908'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_accretion:
+    weight: 100
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        0d4260a4-bd0d-4235-a334-c7e698433513:
+          dependee: field_select_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '1921'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_action_taken1:
+    weight: 130
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        f7d61808-6ff9-49a9-8883-4dab3f933f8e:
+          dependee: field_monitoring_after_one_year
+          settings:
+            state: visible
+            condition: '!empty'
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: null
+                _weight: '0'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+        e807de52-6674-41dd-bc49-9151391b6383:
+          dependee: field_monitoring_after_one_year
+          settings:
+            state: visible
+            condition: '!empty'
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: null
+                _weight: '0'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_action_taken_on_date:
+    weight: 131
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        481ea773-d811-4f52-9cbe-33e7df1901dc:
+          dependee: field_monitoring_after_one_year
+          settings:
+            state: visible
+            condition: '!empty'
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: null
+                _weight: '0'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: datetime_default
+    region: content
+  field_after_treatment_ph:
+    weight: 125
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_alternative_title:
+    type: string_textfield
+    weight: 11
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_antifungul:
+    weight: 112
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        6c12a98c-279e-44e9-9595-0f24eb55b985:
+          dependee: field_proposed_conservation1
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '119'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_any_other_insect_attack:
+    weight: 95
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        aa18bd8d-8949-4ce0-8a9b-cd40072f674f:
+          dependee: field_insect_holes
+          settings:
+            state: visible
+            condition: '!empty'
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '38'
+                _weight: '0'
+              -
+                target_id: null
+                _weight: '1'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+        bc898574-22cf-440d-862e-46a7cfb82ee6:
+          dependee: field_select_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '1916'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: string_textfield
+    region: content
+  field_any_other_residues_of_adhe:
+    weight: 102
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        5013fb2f-e762-4e4b-9180-41a0945583f8:
+          dependee: field_select_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '1923'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_any_special_instructions_f:
+    weight: 126
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_archival_box_number:
+    weight: 127
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_at_location:
+    weight: 14
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_at_location1:
+    weight: 15
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings:
+      conditional_fields:
+        a4054432-a0d0-4812-8b32-698b7bc5afe1:
+          dependee: field_at_location
+          settings:
+            state: visible
+            condition: checked
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: link_default
+    region: content
+  field_author1:
+    weight: 19
+    settings:
+      parent: '0'
+      level_labels: ''
+      force_deepest: false
+      save_lineage: false
+      hierarchy_depth: 0
+      required_depth: 0
+    third_party_settings:
+      conditional_fields: {  }
+    type: cshs
+    region: content
+  field_before_treatment_ph:
+    weight: 108
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_bleeding_in_ink:
+    weight: 104
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        2a8307e4-9172-4770-ac9c-f54a79cdde33:
+          dependee: field_select_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '1925'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_brittleness:
+    weight: 107
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        1f99d096-4619-410e-b327-20a718608a2e:
+          dependee: field_select_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '1928'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_bt_location:
+    weight: 10
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_bt_location1:
+    weight: 11
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings:
+      conditional_fields:
+        39eee005-da08-420c-be06-67216ea572c7:
+          dependee: field_bt_location
+          settings:
+            state: visible
+            condition: checked
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: link_default
+    region: content
+  field_check_date:
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_check_operator_name:
+    weight: 21
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_color_corrections:
+    weight: 15
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_condition_report:
+    weight: 110
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_conservation_date:
+    weight: 109
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_coordinates:
+    weight: 18
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        7921cb20-ad24-477e-9411-c99459b7db95:
+          dependee: field_resource_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '157'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+        f5938d73-27aa-4e44-8195-988f5e63d774:
+          dependee: field_resource_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '106'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: geolocation_latlng
+    region: content
+  field_creases:
+    weight: 83
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        8cb3300b-a1fe-4ff5-ab58-bce61dfd0c6b:
+          dependee: field_select_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '1904'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_cupboard_drawer_number:
+    weight: 130
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_cupboard_number:
+    weight: 129
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_cuts:
+    weight: 85
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        59209fd0-437c-4efa-9df6-3d57470b88c1:
+          dependee: field_select_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '1906'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_de_acidification:
+    weight: 116
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        9bee5f43-98d4-44f6-991f-74d797f8379d:
+          dependee: field_proposed_conservation1
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '123'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_description:
+    type: string_textarea
+    weight: 17
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_dimensions_height_11:
+    weight: 23
+    settings:
+      width:
+        placeholder: ''
+        label: Width
+        description: ''
+      height:
+        placeholder: ''
+        label: Height
+        description: ''
+    third_party_settings: {  }
+    type: area_field_widget
+    region: content
+  field_display_hints:
+    type: options_buttons
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_document_inserted_in_polye:
+    weight: 124
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_dpi:
+    weight: 25
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_dt_location:
+    weight: 12
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_dt_location1:
+    weight: 13
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings:
+      conditional_fields:
+        6eccf4f2-d102-4e85-9f0f-8692bafb2030:
+          dependee: field_dt_location
+          settings:
+            state: visible
+            condition: checked
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: link_default
+    region: content
+  field_dusting_and_spotting:
+    weight: 13
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_edition:
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        e4fbe7e5-29a3-4949-bea2-b407b6402c57:
+          dependee: field_resource_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '105'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: string_textfield
+    region: content
+  field_edtf_date_created:
+    type: edtf_default
+    weight: 25
+    region: content
+    settings:
+      strict_dates: false
+      intervals: false
+      sets: false
+    third_party_settings:
+      conditional_fields:
+        b900e17d-8d04-4a0e-8a53-3478e80ec8f3:
+          dependee: field_resource_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '11'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+        5f98931f-eca7-40b7-a568-b3904ecc15c5:
+          dependee: field_resource_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '156'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+  field_edtf_date_issued:
+    type: edtf_default
+    weight: 26
+    region: content
+    settings:
+      strict_dates: false
+      intervals: false
+      sets: false
+    third_party_settings:
+      conditional_fields:
+        92fbb5ff-b13f-45c3-ac78-9f5dcebef976:
+          dependee: field_resource_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '105'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+  field_facebook:
+    weight: 38
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_facebook_link:
+    weight: 39
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings:
+      conditional_fields:
+        418ae8e5-499b-46bc-8bb3-09e2071b75a7:
+          dependee: field_facebook
+          settings:
+            state: visible
+            condition: checked
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: link_default
+    region: content
+  field_fading_of_ink:
+    weight: 105
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        40ecceab-3116-41ff-82ea-0c7a41048e76:
+          dependee: field_select_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '1926'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_file_formats:
+    weight: 44
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_file_re_name_1:
+    weight: 22
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_file_re_name_1_date:
+    weight: 23
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        a64f19f4-a29f-4086-a58f-d82d2f7269c2:
+          dependee: field_file_re_name_1
+          settings:
+            state: visible
+            condition: '!empty'
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: ''
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: datetime_default
+    region: content
+  field_filled_in_archival_box:
+    weight: 126
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_final_high_jpeg:
+    weight: 30
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_final_high_jpeg_link:
+    weight: 31
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings:
+      conditional_fields:
+        08f5a24d-4b9a-4f29-b753-a217d1765edd:
+          dependee: field_final_high_jpeg
+          settings:
+            state: visible
+            condition: checked
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: link_default
+    region: content
+  field_final_high_jpeg_upload:
+    weight: 32
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        18b5cafa-7237-4a49-b784-39fb829ac3ba:
+          dependee: field_final_high_jpeg
+          settings:
+            state: visible
+            condition: checked
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_final_low_jpeg:
+    weight: 27
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_final_low_jpeg1:
+    weight: 28
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings:
+      conditional_fields:
+        f9fca085-79fc-4a4e-b0e7-25061e2300e8:
+          dependee: field_final_low_jpeg
+          settings:
+            state: visible
+            condition: checked
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: link_default
+    region: content
+  field_final_low_jpeg_upload1:
+    weight: 29
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        1713ad22-201e-4c18-83d6-259c17140451:
+          dependee: field_final_low_jpeg
+          settings:
+            state: visible
+            condition: checked
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_final_proposed:
+    weight: 123
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_final_tiff:
+    weight: 40
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_final_tiff_link:
+    weight: 41
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings:
+      conditional_fields:
+        794a7e01-ccb0-4efe-8513-f4bdb5e4a84f:
+          dependee: field_final_tiff
+          settings:
+            state: visible
+            condition: checked
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: link_default
+    region: content
+  field_final_tiff_upload:
+    weight: 42
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        0c9e7a85-d8b3-4c58-a1e1-e9ad532200a2:
+          dependee: field_final_tiff
+          settings:
+            state: visible
+            condition: checked
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_finger_marks:
+    weight: 96
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        0d8b914a-1862-4396-8338-5206ebc0831e:
+          dependee: field_select_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '1917'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_flattening:
+    weight: 120
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        ec5cb3ac-d841-42ff-bf5e-f3447f355806:
+          dependee: field_proposed_conservation1
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '127'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_foxing:
+    weight: 103
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        db7dc454-6f04-4a1a-b0e9-2f9e9238abe4:
+          dependee: field_select_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '1924'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_fungus:
+    weight: 106
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        977c29c4-e5d4-4c2a-8b66-bd41758d3496:
+          dependee: field_select_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '1927'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_genre:
+    type: entity_reference_autocomplete
+    weight: 24
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings:
+      conditional_fields:
+        a6acb204-e396-4328-8840-0c1c0b4777ae:
+          dependee: field_resource_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '156'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+  field_handling_folds:
+    weight: 82
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        91e2a027-4e6d-4322-9f7e-2656a6044790:
+          dependee: field_select_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '1903'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_identifier:
+    type: string_textfield
+    weight: 13
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_images_annotation:
+    weight: 138
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
+    type: image_image
+    region: content
+  field_immediate_action1:
+    weight: 129
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        3382c280-5a66-49f3-9769-ea5b1dbcb5a0:
+          dependee: field_monitoring_after_one_year
+          settings:
+            state: visible
+            condition: '!empty'
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: null
+                _weight: '0'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_in_filling:
+    weight: 121
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        c8d2bc73-60b0-40d9-84d9-39e710329ddd:
+          dependee: field_proposed_conservation1
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '128'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_insect_holes:
+    weight: 93
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        715e44a6-b13e-4500-b72f-6642f64b0790:
+          dependee: field_select_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '1914'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_insect_holes_number:
+    weight: 94
+    settings:
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        e72a596e-ca9e-425d-990c-ea416caafef1:
+          dependee: field_insect_holes
+          settings:
+            state: visible
+            condition: '!empty'
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: null
+                _weight: '0'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: number
+    region: content
+  field_instagram:
+    weight: 36
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_instagram_link:
+    weight: 37
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings:
+      conditional_fields:
+        23e1d933-92aa-428f-bbc0-b93f4c273e52:
+          dependee: field_instagram
+          settings:
+            state: visible
+            condition: checked
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: link_default
+    region: content
+  field_instructions:
+    weight: 17
+    settings:
+      size: 100
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_isbn:
+    weight: 30
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        a117ed26-356d-45bc-8ac9-801de6bceeeb:
+          dependee: field_resource_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '105'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: string_textfield
+    region: content
+  field_labelling:
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_language:
+    type: entity_reference_autocomplete
+    weight: 19
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+  field_language1:
+    weight: 21
+    settings:
+      format:
+        name: name
+    third_party_settings: {  }
+    type: languagefield_select
+    region: content
+  field_lining:
+    weight: 119
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        429c8e4e-8f1c-4553-b434-cf5a1cd54f2d:
+          dependee: field_proposed_conservation1
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '126'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_local_identifier:
+    weight: 29
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        8cd4008b-f463-48f4-8cae-d00c26021cfe:
+          dependee: field_resource_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '105'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: string_textfield
+    region: content
+  field_local_repairs_for_tear_hol:
+    weight: 117
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        ee2acd28-8d84-40b3-95a1-036b48d95b7b:
+          dependee: field_proposed_conservation1
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '191'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+        b8aaf1b1-ef71-4b7d-a0ba-e1ccf1c9c7f5:
+          dependee: field_proposed_conservation1
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '124'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_local_stains:
+    weight: 97
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        4375e491-30d5-441a-9844-1b1424cd32de:
+          dependee: field_select_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '1918'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_location_of_box:
+    weight: 128
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields: {  }
+    type: string_textfield
+    region: content
+  field_location_of_cupboard:
+    weight: 131
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_losses:
+    weight: 88
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        02990bda-1693-4adf-a0f5-868588966793:
+          dependee: field_select_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '1909'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_medium:
+    weight: 19
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_member_of:
+    type: entity_reference_autocomplete
+    weight: 10
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+  field_model:
+    type: options_select
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_monitoring_after_one_year:
+    weight: 127
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_note:
+    weight: 32
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_oclc_number:
+    weight: 31
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        ff75be04-0d9f-445d-a04c-a73a452eb099:
+          dependee: field_resource_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '105'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: string_textfield
+    region: content
+  field_ocr:
+    weight: 18
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_ocr1:
+    weight: 19
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings:
+      conditional_fields:
+        58b44773-835b-4f07-942c-92a55e6e8fe9:
+          dependee: field_ocr
+          settings:
+            state: visible
+            condition: checked
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: link_default
+    region: content
+  field_ocr_upload:
+    weight: 20
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        f71abe8a-544a-4adb-bde0-c247c2f34c69:
+          dependee: field_ocr
+          settings:
+            state: visible
+            condition: checked
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_opening_of_folds:
+    weight: 114
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        71182fef-b839-4f30-bb3f-05880c3c1fb5:
+          dependee: field_proposed_conservation1
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '121'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_owner:
+    weight: 20
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_period_date:
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_photoshop_date:
+    weight: 18
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_photoshop_operator_name:
+    weight: 19
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_photoshop_upload:
+    weight: 23
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        41d95e15-bbc0-473d-bae4-487e94de3a41:
+          dependee: field_psb
+          settings:
+            state: visible
+            condition: checked
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_physical_cleaning:
+    weight: 113
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        b56f7119-721d-44fd-9818-cd632aa9f20f:
+          dependee: field_proposed_conservation1
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '120'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_physical_color_mode:
+    weight: 25
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_physical_condition:
+    weight: 24
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_physical_copies:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_physical_description:
+    weight: 18
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_physical_features:
+    weight: 22
+    settings:
+      default_unit: ''
+      allow_unit_change: true
+    third_party_settings: {  }
+    type: physical_dimensions_default
+    region: content
+  field_physical_location:
+    weight: 20
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_physical_location11:
+    weight: 21
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        5a5301d3-e7ff-48fd-8074-f0d430e20997:
+          dependee: field_physical_location
+          settings:
+            state: visible
+            condition: checked
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: address_default
+    region: content
+  field_pi:
+    weight: 91
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        734bb656-d9f1-4cc0-a8bd-d0480375f98a:
+          dependee: field_select_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '1912'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_pin_holes_number:
+    weight: 92
+    settings:
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        0c0e20e6-6e96-4a14-b613-1620d3e1f886:
+          dependee: field_pi
+          settings:
+            state: visible
+            condition: '!empty'
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: null
+                _weight: '0'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: number
+    region: content
+  field_polyster_sleeve:
+    weight: 125
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_processing_location:
+    weight: 16
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_processing_location1:
+    weight: 17
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings:
+      conditional_fields:
+        a5438936-6b80-4063-911a-f8d7c163dbb3:
+          dependee: field_processing_location
+          settings:
+            state: visible
+            condition: checked
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: link_default
+    region: content
+  field_proposed_conservation1:
+    weight: 111
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_psb:
+    weight: 21
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_psb1:
+    weight: 22
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings:
+      conditional_fields:
+        d72d33b7-8ac9-4b6f-bac4-a69c78aa1e8b:
+          dependee: field_psb
+          settings:
+            state: visible
+            condition: checked
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: link_default
+    region: content
+  field_punch_holes:
+    weight: 89
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        6ed05036-8b4e-4867-8dd7-e8750ae11a6e:
+          dependee: field_select_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '1910'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_punch_holes_number:
+    weight: 90
+    settings:
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        5de00791-a190-4b85-997a-eb45fd35473d:
+          dependee: field_punch_holes
+          settings:
+            state: visible
+            condition: '!empty'
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: null
+                _weight: '0'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: number
+    region: content
+  field_raw_location:
+    weight: 9
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings:
+      conditional_fields:
+        c3ea9a1a-e08b-4337-ad15-d7cb0881cfde:
+          dependee: field_raw_location1
+          settings:
+            state: visible
+            condition: checked
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: link_default
+    region: content
+  field_raw_location1:
+    weight: 8
+    settings:
+      display_label: true
+    third_party_settings:
+      conditional_fields: {  }
+    type: boolean_checkbox
+    region: content
+  field_received_date:
+    weight: 22
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        3a120802-f76d-4d9c-8feb-0bcf4e48b7f7:
+          dependee: field_resource_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '157'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+        d22c39d7-8d2d-4d46-97bf-4e3ca2704500:
+          dependee: field_resource_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '106'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: datetime_default
+    region: content
+  field_relation:
+    weight: 9
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_remarks:
+    weight: 45
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_removal_of_stains:
+    weight: 115
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        cc73e996-853f-475e-a2e9-4de2d6dd8c48:
+          dependee: field_proposed_conservation1
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form: {  }
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+        8a511ca1-887c-48bc-bd41-09bdf6b68e37:
+          dependee: field_proposed_conservation1
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '122'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_rescan_date1:
+    weight: 21
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        0ddd9054-cf91-46d5-b824-e132459d0701:
+          dependee: field_rescan_done
+          settings:
+            state: visible
+            condition: checked
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: datetime_default
+    region: content
+  field_rescan_done:
+    weight: 20
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_resource_type:
+    weight: 14
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_retouching:
+    weight: 14
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_return_date:
+    weight: 23
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        7b8e5984-4314-4ec7-a296-58e6dd334700:
+          dependee: field_resource_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '157'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+        b480a55f-17cf-47e9-9a37-6806be323f06:
+          dependee: field_resource_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '106'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: datetime_default
+    region: content
+  field_rights:
+    type: string_textfield
+    weight: 21
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_rusted_pin_marks:
+    weight: 98
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        67b96ac6-c8eb-44cf-912d-f6185fb89fbf:
+          dependee: field_select_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '1919'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_scan_color_mode:
+    weight: 16
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_scan_date:
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_scan_file_name:
+    weight: 19
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_scan_file_name_file_re_nam:
+    weight: 24
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        803228bb-d960-47e9-a90c-d8d63259284e:
+          dependee: field_file_re_name_1
+          settings:
+            state: visible
+            condition: '!empty'
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: ''
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: string_textfield
+    region: content
+  field_scan_operator_name:
+    weight: 18
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_scanner_name:
+    weight: 17
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_select_options:
+    weight: 79
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_self_adhesive_tape:
+    weight: 101
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        daf4320d-cbfe-467a-8313-547178cc60d0:
+          dependee: field_select_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '1922'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_stains_overall:
+    weight: 99
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        a141943a-f007-4c3b-82e2-b14e06ff3bdb:
+          dependee: field_select_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '1920'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_status_alarm_sign_:
+    weight: 128
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        6c8d0dfc-95fa-469c-b37a-9501322046e1:
+          dependee: field_monitoring_after_one_year
+          settings:
+            state: visible
+            condition: '!empty'
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: null
+                _weight: '0'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_strip_lining:
+    weight: 118
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        f3a508d4-0f88-4d1d-9f23-6af64e80f3af:
+          dependee: field_proposed_conservation1
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '125'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_subject:
+    weight: 16
+    settings:
+      parent: '0'
+      level_labels: ''
+      force_deepest: false
+      save_lineage: false
+      hierarchy_depth: 0
+      required_depth: 0
+    third_party_settings: {  }
+    type: cshs
+    region: content
+  field_tears:
+    weight: 84
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        a208a2bb-a14e-4826-99c1-22765b7b7295:
+          dependee: field_select_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '1905'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_tests_and_problems_faced_w:
+    weight: 122
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_tiff:
+    weight: 24
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_tiff1:
+    weight: 25
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings:
+      conditional_fields:
+        25db1bd7-f1b2-42c9-8df9-58c470ffbcd9:
+          dependee: field_tiff
+          settings:
+            state: visible
+            condition: checked
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: link_default
+    region: content
+  field_tiff_upload:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        9b2fa442-0d93-4ede-823c-a3a8f76f6b32:
+          dependee: field_tiff
+          settings:
+            state: visible
+            condition: checked
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_tota:
+    weight: 43
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_treatment_date:
+    weight: 124
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_trimmed_edges:
+    weight: 86
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        e4c031e0-9505-44d7-9511-9da681e4058e:
+          dependee: field_select_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '1907'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_unique_id:
+    weight: 12
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_video1:
+    weight: 137
+    settings:
+      allowed_providers:
+        youtube: youtube
+        instagram: 0
+        vine: 0
+        facebook: 0
+        vimeo: 0
+        dailymotion: 0
+      file_directory: 'video-thumbnails/[date:custom:Y]-[date:custom:m]'
+      uri_scheme: dropboxexample
+    third_party_settings: {  }
+    type: video_embed
+    region: content
+  field_watermarks_stamps:
+    weight: 80
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        a070cab2-c85e-4852-a270-2a87b61414c8:
+          dependee: field_select_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '1901'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_weight:
+    type: number
+    weight: 13
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_white_background:
+    weight: 16
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_wrapping:
+    weight: 81
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        35e5ff9b-67bc-48d6-ac6a-5fa68271bc90:
+          dependee: field_select_options
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '1902'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: entity_reference_autocomplete
+    region: content
+  field_youtube:
+    weight: 33
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_youtube_file_upload1:
+    weight: 35
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        956e9362-457f-4e9f-94d4-a1b21f5b0823:
+          dependee: field_youtube
+          settings:
+            state: visible
+            condition: checked
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: video_embed_field_textfield
+    region: content
+  field_youtube_link:
+    weight: 34
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings:
+      conditional_fields:
+        dd3e4b1b-2142-4c13-993f-a121264b4c3b:
+          dependee: field_youtube
+          settings:
+            state: visible
+            condition: checked
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: islandora_object
+    type: link_default
+    region: content
+  langcode:
+    type: language_select
+    weight: 11
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 16
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 18
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 17
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 19
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+hidden:
+  field_access_terms: true
+  field_dewey_classification: true
+  field_extent: true
+  field_geographic_subject: true
+  field_lcc_classification: true
+  field_linked_agent: true
+  field_physical_form: true
+  field_pid: true
+  field_place_published: true
+  field_table_of_contents: true
+  field_temporal_subject: true
+  sticky: true

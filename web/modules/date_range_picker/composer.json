@@ -1,0 +1,13 @@
+{
+    "name": "date_range_picker",
+    "type": "drupal-module",
+    "description": "Pick a date range.",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/date_range_picker",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/date_range_picker",
+        "source": "http://cgit.drupalcode.org/date_range_picker"
+    }
+}

@@ -1,0 +1,21 @@
+uuid: 61f7f4da-6bb9-4647-94b4-dc3b8ab1febb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_exif_make
+    - media.type.photography
+  module:
+    - text
+id: media.photography.field_exif_make
+field_name: field_exif_make
+entity_type: media
+bundle: photography
+label: Make
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

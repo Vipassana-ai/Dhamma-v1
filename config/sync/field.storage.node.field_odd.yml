@@ -1,0 +1,21 @@
+uuid: de4bab9c-c00a-4628-896b-cf505aa6f775
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: viMrIsAkyAxzuT5GVdwApg-eeYTMgv2Pbw4zoO7xBJs
+id: node.field_odd
+field_name: field_odd
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

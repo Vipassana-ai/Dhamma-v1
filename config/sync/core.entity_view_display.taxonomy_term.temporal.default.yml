@@ -1,0 +1,106 @@
+uuid: 7f357fdb-4286-4545-a71d-1fa29d8ab391
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.temporal.field_authority_link
+    - taxonomy.vocabulary.temporal
+  module:
+    - controlled_access_terms
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          e7026429-d95d-4e79-9419-f68bc26a5569:
+            uuid: e7026429-d95d-4e79-9419-f68bc26a5569
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:temporal:description'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          c0bed150-dc66-4a8e-9aae-165b24853ca0:
+            uuid: c0bed150-dc66-4a8e-9aae-165b24853ca0
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:temporal:field_authority_link'
+              formatter:
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: _blank
+                third_party_settings: {  }
+                type: authority_formatter_default
+            additional: {  }
+            weight: 1
+          8f30a0ee-9125-4552-9a1c-2baa7c65385d:
+            uuid: 8f30a0ee-9125-4552-9a1c-2baa7c65385d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:taxonomy_term:temporal:field_gemini_uri'
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
+_core:
+  default_config_hash: 4xg3_o5L6v4utcicE4y_WDQnD0EIaINpxpReOdHkuwI
+id: taxonomy_term.temporal.default
+targetEntityType: taxonomy_term
+bundle: temporal
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_authority_link:
+    weight: 1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: _blank
+    third_party_settings: {  }
+    type: authority_formatter_default
+    region: content
+  field_gemini_uri:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

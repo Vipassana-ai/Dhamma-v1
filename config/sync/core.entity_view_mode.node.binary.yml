@@ -1,0 +1,15 @@
+uuid: 0badf89c-2fdc-4db3-8bdd-588a9eff9f3d
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - islandora_defaults
+  module:
+    - node
+_core:
+  default_config_hash: Zctdw0Qjxs9yz0TgG8o5WEVPoCvtxKAIx8MgaMXtZzQ
+id: node.binary
+label: Binary
+targetEntityType: node
+cache: true

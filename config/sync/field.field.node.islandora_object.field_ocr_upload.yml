@@ -1,0 +1,32 @@
+uuid: 9380c24e-8d70-4041-8561-fd94658b4042
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ocr_upload
+    - media.type.extracted_text
+    - media.type.file
+    - media.type.image
+    - node.type.islandora_object
+id: node.islandora_object.field_ocr_upload
+field_name: field_ocr_upload
+entity_type: node
+bundle: islandora_object
+label: 'OCR Upload'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      extracted_text: extracted_text
+      file: file
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: extracted_text
+field_type: entity_reference

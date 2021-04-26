@@ -1,0 +1,20 @@
+uuid: 645a49d7-2f11-4706-ba39-d25cf9f6b2dd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_exif_scenecapturetype
+field_name: field_exif_scenecapturetype
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

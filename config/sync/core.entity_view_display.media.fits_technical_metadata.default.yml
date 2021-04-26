@@ -1,0 +1,146 @@
+uuid: d6b8673b-85ea-43d6-bba3-07c9b50cc85a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.fits_technical_metadata.field_complete
+    - field.field.media.fits_technical_metadata.field_file_size
+    - field.field.media.fits_technical_metadata.field_media_file
+    - field.field.media.fits_technical_metadata.field_media_of
+    - field.field.media.fits_technical_metadata.field_media_use
+    - field.field.media.fits_technical_metadata.field_mime_type
+    - field.field.media.fits_technical_metadata.fits_ois_file_information_md5che
+    - media.type.fits_technical_metadata
+  enforced:
+    module:
+      - islandora_fits
+  module:
+    - field_layout
+    - islandora_fits
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          67788400-cd78-4dfa-b17a-6b95a6c9a828:
+            uuid: 67788400-cd78-4dfa-b17a-6b95a6c9a828
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:fits_technical_metadata:field_media_file'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: fits_formatter
+            additional: {  }
+            weight: 0
+          674502ba-61a4-4702-a6f2-59c0f23bf034:
+            uuid: 674502ba-61a4-4702-a6f2-59c0f23bf034
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:fits_technical_metadata:field_media_of'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 1
+          2eecf50c-b664-4745-a838-40777edb00d4:
+            uuid: 2eecf50c-b664-4745-a838-40777edb00d4
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:fits_technical_metadata:field_mime_type'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 2
+          6b7afa0f-01f2-4ff8-865a-d36c02883550:
+            uuid: 6b7afa0f-01f2-4ff8-865a-d36c02883550
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:fits_technical_metadata:field_media_use'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 3
+        third_party_settings: {  }
+_core:
+  default_config_hash: eQIgNGtw_hfVQxGPLc_JeBC1l1whFSoMsEYYNx0vOv4
+id: media.fits_technical_metadata.default
+targetEntityType: media
+bundle: fits_technical_metadata
+mode: default
+content:
+  field_media_file:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: fits_formatter
+    region: content
+  field_media_of:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_media_use:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_mime_type:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  created: true
+  field_complete: true
+  field_file_size: true
+  fits_ois_file_information_md5che: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true
